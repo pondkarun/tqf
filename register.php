@@ -35,7 +35,7 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">สมัครสมาชิก!</h1>
                                         </div>
-                                        <form class="login100-form validate-form flex-sb flex-w" action="chk_login.php" method="post">
+                                        <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
                                             <div class="form-group row">
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                                     <input class="form-control" type="text" name="name" required placeholder="First Name">
@@ -47,7 +47,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <input class="form-control" type="email" name="email" required placeholder="Email Address">
+                                                <input class="form-control" type="text" name="username" required placeholder="Username">
                                                 <span class="focus-input100"></span>
                                             </div>
                                             <div class="form-group row">
@@ -60,9 +60,7 @@
                                                     <span class="focus-input100"></span>
                                                 </div>
                                             </div>
-                                            <!-- <strong><a href="../../register.php">สมัครสมาชิก</a></strong> -->
                                             <input type="submit" name="submit" value="Register" class="btn btn-primary btn-user btn-block">
-                                            <a href="app/mko/login.php">
                                     </div>
                                 </div>
                             </div>
