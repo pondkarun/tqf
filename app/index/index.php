@@ -39,7 +39,7 @@
 	<header class="header-section">
 		<div class="container">
 			<a href="index.html" class="site-logo">
-				<img src="img/logo.png" alt="logo">
+				<img src="img/logo1.png" alt="logo">
 			</a>
 			<!-- Switch button -->
 			<div class="nav-switch">
@@ -67,7 +67,7 @@
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="img/bg.jpg">
+			<div class="hs-item set-bg" data-setbg="img/bg-01.jpg">
 				<div class="container">
 					<h2>กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติ</h2>
 					<div class="clearfix"></div>
