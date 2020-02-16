@@ -47,11 +47,12 @@
 			</div>
 			<div class="header-right">
 				<ul class="main-menu">
-					<li class="active"><a href="index.html">หน้าแรก</a></li>
-					<li><a href="coures.html">รายวิชา</a></li>
-					<li><a href="service.html">รายวิชาที่เปิดสอน</li>
-					<li><a href="blog.html">มคอ</a></li>
-					<li><a href="contact.html">พิมรายงาน</a></li>
+					<li class="active"><a href="index.php">หน้าแรก</a></li>
+					<li><a href="../../course.php">รายวิชา</a></li>
+					<li><a href="../../courseteacher.php">รายวิชาที่เปิดสอน</a></li>
+					<li><a href="../../blog.html">มคอ.</a></li>
+					<li><a href="../../contact.html">พิมพ์รายงาน</a></li>
+
 				</ul>
 				<div class="header-btns">
 					<a href="../mko/login.php" class="site-btn sb-c2">Login</a>

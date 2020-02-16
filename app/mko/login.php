@@ -64,9 +64,13 @@
 
 
 					<div class="w-full text-center p-t-55">
-						<label for="textfield"><strong><a href="#">ลืมรหัสผ่าน</a></strong> | <strong><a href="../../register.php">สมัครสมาชิก</a></strong></label>
+						<label for="textfield"><strong><a href="misspass.php">ลืมรหัสผ่าน</a></strong> | <strong><a href="../../register.php">สมัครสมาชิก</a></strong></label>
 					</div>
 					<div class="w-full text-center p-t-55">
+
+						<div>
+							<label for="textfield"><strong><a href="../../index.php">กลับหน้าเเรก</a></strong>
+						</div>
 
 					</div>
 				</form>
