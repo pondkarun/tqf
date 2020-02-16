@@ -1,9 +1,7 @@
-<php>
+<!DOCTYPE html>
+<html lang="en">
 
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,90 +18,70 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body class="bg-gradient-primary">
-    <div class="limiter">
-      <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-        <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
-          <form class="login100-form validate-form flex-sb flex-w" action="chk_login.php" method="post">
+<body class="bg-gradient-primary">
+    <div class="limiter" style="padding-top: 200px">
+        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+            <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+                <div class="container">
 
-
-            <div class="container">
-
-              <div class="card o-hidden border-0 shadow-lg my-5">
-                <div class="card-body p-0">
-                  <!-- Nested Row within Card Body -->
-                  <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block 5-image"></div>
-                    <div class="col-lg-7">
-                      <div class="p-5">
-                        <div class="text-center">
-                          <h1 class="h4 text-gray-900 mb-4">สมัครสมาชิก!</h1>
+                    <div class="card o-hidden border-0 shadow-lg my-5 ">
+                        <div class="card-body p-0">
+                            <!-- Nested Row within Card Body -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="p-5">
+                                        <div class="text-center">
+                                            <h1 class="h4 text-gray-900 mb-4">สมัครสมาชิก!</h1>
+                                        </div>
+                                        <form class="login100-form validate-form flex-sb flex-w" action="chk_login.php" method="post">
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                                    <input class="form-control" type="text" name="name" required placeholder="First Name">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="text" name="sername" required placeholder="Last Name">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="email" name="email" required placeholder="Email Address">
+                                                <span class="focus-input100"></span>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                                    <input class="form-control" type="password" name="password" required placeholder="Password">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="password" name="password_con" required placeholder="Repeat Password">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                            </div>
+                                            <!-- <strong><a href="../../register.php">สมัครสมาชิก</a></strong> -->
+                                            <input type="submit" name="submit" value="Register" class="btn btn-primary btn-user btn-block">
+                                            <a href="app/mko/login.php">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <form class="user">
-                          <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                              <input class="input100" type="text" name="name" required id="exampleFirstName" placeholder="First Name">
-                              <span class="focus-input100"></span>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" sername="sername" required id="exampleLastName" placeholder="Last Name">
-                              <span class="focus-input100"></span>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <input type="email" email="email" required id="exampleLastName" required id="exampleInputEmail" placeholder="Email Address">
-                            <span class="focus-input100"></span>
-                          </div>
-                          <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                              <input type="password" password="password" required id="exampleLastName" id="exampleInputPassword" placeholder="Password">
-                              <span class="focus-input100"></span>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="password" password="password" required id="exampleLastName" id="exampleRepeatPassword" placeholder="Repeat Password">
-                              <span class="focus-input100"></span>
-                            </div>
-                          </div>
-                          <!-- <strong><a href="../../register.php">สมัครสมาชิก</a></strong> -->
-                          <input type="submit" name="submit" value="Register" class="btn btn-primary btn-user btn-block">
-                          <a href="app/mko/login.php">
-
-
-                            <!-- <hr>
-                <a href="index.html" class="btn btn-google btn-user btn-block">
-                  <i class="fab fa-google fa-fw"></i> Register with Google
-                </a>
-                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                  <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                </a>
-              </form>
-              <hr> -->
-                            <!-- <div class="text-center">
-                              <a class="small" href="forgot-password.html">Forgot Password?</a>
-                            </div>
-                            <div class="text-center">
-                              <a class="small" href="login.html">Already have an account? Login!</a>
-                            </div> -->
-                      </div>
                     </div>
-                  </div>
+
                 </div>
-              </div>
-
             </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+</body>
 
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
-
-  </body>
-
-  </html>
+</html>
