@@ -81,21 +81,21 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">จำนวนหน่วยกิต</label>
+                                            <label class="col-sm-2 col-form-label">หลักสูตรและประเภทรายวิชา</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="kit">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">หลักสูตรและประเภทรายวิชา</label>
+                                            <label class="col-sm-2 col-form-label">หน่วยกิต</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="course">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">หลักสูตรและประเภทรายวิชา</label>
+                                            <label class="col-sm-2 col-form-label">อาจารย์ผู้รับผิดชอบรายวิชา</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="course">
                                             </div>
