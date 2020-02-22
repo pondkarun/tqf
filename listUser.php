@@ -1,7 +1,8 @@
 <?php
 include('include/condb.php');
-$query = "SELECT * FROM users where 1 ";
+$query = "SELECT * FROM dbcourse_add where 1 ";
 $result = mysqli_query($condb, $query);
+$i = 0
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +15,7 @@ $result = mysqli_query($condb, $query);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blankeesee</title>
+    <title>รายวิชา</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -42,7 +43,7 @@ $result = mysqli_query($condb, $query);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include('include/topbar.php'); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -50,7 +51,7 @@ $result = mysqli_query($condb, $query);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">รายวิชา</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -62,105 +63,111 @@ $result = mysqli_query($condb, $query);
 
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
+                                <div>
+                                    <div class="card-body">
 
-                                <div class="card-body">
-
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th width="10%">#</th>
-                                                <th width="30%">ชื่อ - นามสกุล</th>
-                                                <th width="15%">เพศ</th>
-                                                <th width="20%">email</th>
-                                                <th width="10%">จัดการ</th>
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-                                            <?php while ($row = mysqli_fetch_array($result)) { ?>
-                                                <tr>
-                                                    <td class="text-center"><?php echo ++$i; ?></td>
-                                                    <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
-                                                    <td><?php echo $row['sax']; ?></td>
-                                                    <td><?php echo $row['email']; ?></td>
-                                                    <td class="text-center">
-                                                        <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
-                                                        ||
-                                                        <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                                        <table class="table table-bordered" id="dataTable" width="" cellspacing="0">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th width="">#</th>
+                                                    <th width="">รหัสวิชา</th>
+                                                    <th width="">ชื่อวิชาภาษาไทย</th>
+                                                    <th width="">ชื่อวิชาภาษาอังกฤษ</th>
+                                                    <th width="">หลักสูตรและประเภทรายวิชา</th>
+                                                    <th width="">หน่วยกิต</th>
+                                                    <th width="">อาจารย์ผู้รับผิดชอบรายวิชา</th>
+                                                    <th width="">จัดการ</th>
                                                 </tr>
-                                            <?php  } ?>
-                                        </tbody>
-                                    </table>
+                                            </thead>
+
+                                            <tbody>
+                                                <?php while ($row = mysqli_fetch_array($result)) { ?>
+                                                    <tr>
+                                                        <td class="text-center"><?php echo ++$i; ?></td>
+                                                        <td><?php echo $row['Coursecode']; ?></td>
+                                                        <td><?php echo $row['Thaisubjectname']; ?></td>
+                                                        <td><?php echo $row['Englishsubjectname']; ?></td>
+                                                        <td><?php echo $row['credit']; ?></td>
+                                                        <td><?php echo $row['Curriculumandcoursetype']; ?></td>
+                                                        <td><?php echo $row['nameteacher']; ?></td>
+                                                        <td class="text-center">
+                                                            <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
+                                                            ||
+                                                            <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                                                    </tr>
+                                                <?php  } ?>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
 
                                 </div>
-
                             </div>
+
                         </div>
 
                     </div>
+                    <!-- /.container-fluid -->
 
                 </div>
-                <!-- /.container-fluid -->
+                <!-- End of Main Content -->
+
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2019</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
 
             </div>
-            <!-- End of Main Content -->
+            <!-- End of Content Wrapper -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2019</span>
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
                     </div>
                 </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#dataTable').DataTable();
-        });
-    </script>
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+        <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#dataTable').DataTable();
+            });
+        </script>
 </body>
 
 </html>

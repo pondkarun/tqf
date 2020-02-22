@@ -5,7 +5,7 @@ include('include/condb.php');  //ไฟล์เชื่อมต่อกั�
 $id = $_GET["id"];
 
 //2. query ข้อมูลจากตาราง: 
-$sql = "SELECT * FROM users WHERE id=$id ";
+$sql = "SELECT * FROM dbcourse_add WHERE id=$id ";
 $result = mysqli_query($condb, $sql);
 $row = mysqli_fetch_array($result);
 ?>
@@ -51,7 +51,7 @@ $row = mysqli_fetch_array($result);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include('include/topbar.php'); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -77,111 +77,76 @@ $row = mysqli_fetch_array($result);
                                     <form action="update_edit.php" method="POST">
                                         <div class="form-group row">
                                             <div class="col-md-12 col-lg-4">
-                                                <label for="">ซื่อ</label>
-                                                <input type="text" name="firstname" class="form-control form-control-user" placeholder="First Name" value="<?php echo $row['firstname']; ?>">
+                                                <label for="">รหัสวิชา</label>
+                                                <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="รหัสวิชา" value="<?php echo $row['Coursecode']; ?>">
                                             </div>
                                             <div class="col-md-12 col-lg-4">
-                                                <label for="">นามสกุล</label>
-                                                <input type="text" name="lastname" class="form-control form-control-user" placeholder="Last Name" value="<?php echo $row['lastname']; ?>">
+                                                <label for="">ชื่อวิชาภาษาไทย</label>
+                                                <input type="text" name="Thaisubjectname" class="form-control form-control-user" placeholder="ชื่อวิชาภาษาไทย" value="<?php echo $row['Thaisubjectname']; ?>">
                                             </div>
-                                            <div class="col-md-6 col-lg-2">
-                                                <label for="">เพศ</label>
-                                                <select class="form-control" name="sax" required>
-                                                    <?php
-                                                    if ($row['sax'] == "ชาย") { ?>
-
-                                                        <option value="ชาย">ชาย</option>
-                                                        <option value="หญิง">หญิง</option>
-
-                                                    <?php  } elseif ($row['sax'] == "หญิง") { ?>
-
-                                                        <option value="หญิง">หญิง</option>
-                                                        <option value="ชาย">ชาย</option>
-
-                                                    <?php } else { ?>
-
-                                                        <option value="">เพศ</option>
-                                                        <option value="ชาย">ชาย</option>
-                                                        <option value="หญิง">หญิง</option>
-
-                                                    <?php    }  ?>
-                                                </select>
+                                            <div class="col-md-12 col-lg-4">
+                                                <label for="">ชื่อวิชาภาษาอังกฤษ</label>
+                                                <input type="text" name="Englishsubjectname" class="form-control form-control-user" placeholder="ชื่อวิชาภาษาอังกฤษ" value="<?php echo $row['Englishsubjectname']; ?>">
                                             </div>
                                             <div class="col-md-6 col-lg-2">
 
-                                                <label for="">อายุ</label>
-                                                <input type="text" name="age" class="form-control form-control-user" placeholder="อายุ" value="<?php echo $row['age']; ?>">
+                                                <label for="">หน่วยกิต</label>
+                                                <input type="text" name="credit" class="form-control form-control-user" placeholder="หน่วยกิต" value="<?php echo $row['credit']; ?>">
                                             </div>
-                                        </div>
-
-                                        <div class="form-group row">
-
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">เลขบัตรประชาชน</label>
-                                                <input type="text" name="idcard" class="form-control form-control-user" placeholder="เลขบัตรประชาชน" value="<?php echo $row['idcard']; ?>">
+                                            <div class="col-md-12 col-lg-4">
+                                                <label for="">หลักสูตรและประเภทรายวิชา</label>
+                                                <input type="text" name="Curriculumandcoursetype" class="form-control form-control-user" placeholder="หลักสูตรและประเภทรายวิชา" value="<?php echo $row['Curriculumandcoursetype']; ?>">
                                             </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">วัน/เดือน/ปี</label>
-                                                <input type="date" name="date" class="form-control form-control-user" placeholder="วัน/เดือน/ปี" value="<?php echo $row['date']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">Email</label>
-                                                <input type="text" name="email" class="form-control form-control-user" placeholder="Email" value="<?php echo $row['email']; ?>">
+                                            <div class="col-md-12 col-lg-6">
+                                                <label for="">อาจารย์ผู้รับผิดชอบรายวิชา</label>
+                                                <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" value="<?php echo $row['nameteacher']; ?>">
                                             </div>
 
                                         </div>
-
-                                        <div class="form-group row">
-                                            <div class="col-md-6 col-lg-8">
-                                                <label for="">ที่อยู่</label>
-                                                <input type="text" name="address" class="form-control form-control-user" placeholder="ที่อยู่" value="<?php echo $row['address']; ?>">
-                                            </div>
-                                            <div class="col-md-6 col-lg-4">
-                                                <label for="">เบอร์โทรศัพท์</label>
-                                                <input type="text" name="number" class="form-control form-control-user" placeholder="เบอร์โทรศัพท์" value="<?php echo $row['number']; ?>">
-                                            </div>
-
-                                        </div>
-                                        <div class="col-12 text-center pt-5">
-
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
-                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
-                                                บันทึก
-
-                                            </button>
-                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
-
-                                                ยกเลิก
-
-                                            </button>
-
-                                        </div>
-                                    </form>
                                 </div>
-
                             </div>
+
                         </div>
+                        <div class="col-12 text-center pt-5">
 
+                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                บันทึก
+
+                            </button>
+                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                ยกเลิก
+
+                            </button>
+
+                        </div>
+                        </form>
                     </div>
 
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2019</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
 
         </div>
-        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Your Website 2019</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->

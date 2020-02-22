@@ -4,33 +4,26 @@
 // print_r($_POST);
 // echo '</pre>';
 // exit;
-
 $id = $_POST['id'];
-$sax = $_POST['sax'];
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$email = $_POST['email'];
-$age = $_POST['age'];
-$idcard = $_POST['idcard'];
-$address = $_POST['address'];
-$number = $_POST['number'];
+$Coursecode = $_POST['Coursecode'];
+$Thaisubjectname = $_POST['Thaisubjectname'];
+$Englishsubjectname = $_POST['Englishsubjectname'];
+$credit = $_POST['credit'];
+$Curriculumandcoursetype = $_POST['Curriculumandcoursetype'];
+$nameteacher = $_POST['nameteacher'];
+
 
 include('include/condb.php');
 
-$sql = "UPDATE `users` SET 
-        `firstname` = '$firstname',
-        `lastname` = '$lastname',
-        `sax` = '$sax',
-        `email` = '$email',
-        `idcard` = '$idcard',
-        `address` = '$address',
-        `number` = '$number',
-        `age` = '$age' 
-
+$sql = "UPDATE `dbcourse_add` SET 
+        `Coursecode` = '$Coursecode',
+        `Thaisubjectname` = '$Thaisubjectname',
+        `Englishsubjectname` = '$Englishsubjectname',
+        `credit` = '$credit',
+        `Curriculumandcoursetype` = '$Curriculumandcoursetype',
+        `nameteacher` = '$nameteacher'
         WHERE id = '$id' ";
 $result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
-
-
 mysqli_close($condb);
 
 if ($result) {

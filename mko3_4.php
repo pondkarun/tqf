@@ -91,63 +91,88 @@
                                                         <input type="checkbox" name="gender" value="Female">4.เครพสิทธิแลพรับฟังความคิดเห็นของผู้อื่นรวมทั้งเคารพในคุณค่าและศักดิ์ศรี
                                                         ความเป็นมนุษย์</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">5.เคารพกฏระเบียบและขอบังตับต่างๆ ขององค์กรและสังคม </input>
+                                                        <input type="checkbox" name="gender" value="Male">5.เคารพกฏระเบียบและขอบังคับต่างๆ ขององค์กรและสังคม </input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">1.ตระหนักในคุณค่าและคุณธรรม จริยธรรม เสียสละ แลพซื่อสัตว์สุจริต</input>
+                                                        <input type="checkbox" name="gender" value="Male">6.สามารถวิเคราะห์ผลกระทบจากการ ใช้คอมพิวเตอร์ต่อบุคคล องค์กรและสังคม</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">1.ตระหนักในคุณค่าและคุณธรรม จริยธรรม เสียสละ แลพซื่อสัตว์สุจริต</input>
+                                                        <input type="checkbox" name="gender" value="Male">7.มีจรรยาบรรณทางวิชาการและวิชาชีพ</input>
                                                         <br>
                                                         <input type="submit" name="submit" value="Submit" />
-                                                    </form>
-                                                    <?php
+                                                    </form> <?php
+                                                            if (isset($_POST['gender'])) {
+                                                                echo $_POST['gender']; // Displays value of checked checkbox.
+                                                            }
+                                                            ?>
+                                            </td>
+                                        </tr>
+                                    </table> <br>
+                                    <h5>ความรู้<h/5> <form action="#" method="post">
+                                            <input type="checkbox" name="gender" value="Male">1.มีความรู้ความเข้าใจเกี่ยวกับหลักการและทฤษฎีที่สำคัญในเนื้อหาวิชาที่ศึกษา</input>
+                                            <br>
+                                            <input type="checkbox" name="gender" value="Female">2.สามารถวิเคราะห์ปัญหา เข้าใจและอธิบายความต้องการทางคอมพิวเตอร์รวมทั้งประยุกต์ความรู้ ทักษะและการ
+                                            ใช้เครื่องมือที่เหมาะสมแก้ไขปัญหา</input>
+                                            <br>
+                                            <input type="checkbox" name="gender" value="Male">3.สามารถวิเคราะห์ออกแบบ ติดตั้งปรับปรุงและ/หรือประเมินระบบองค์ประกอบต่างๆ ของระบบคอมพิวเตอร์
+                                            ให้ได้ตรงตามข้อกำหนด</input>
+                                            <br>
+                                            <input type="checkbox" name="gender" value="Female">4.สามารถติดตามความก้าวหน้าทางวิชาการ และวิวัฒนาการคอมพิวเตอร์ร่วมทั้งการนำไปประยุกต์
+                                            ความเป็นมนุษย์</input>
+                                            <br>
+                                            <input type="checkbox" name="gender" value="Male">5.รู้เข้าใจและสนใจพัฒนาความรู้ความ ความชำนาญทางคอมพิวเตอร์อย่างต่อเนื่อง </input>
+                                            <br>
+                                            <input type="checkbox" name="gender" value="Male">6.มีความรู้ในแนวทางกว้างของสาขาวิชาที่ต้องศึกษาเพื่อให้เล็งเห็นการเปลี่ยนแปลง และเข้าใจผลกระทบของเทค
+                                            โนโลยีใหม่ๆ ที่เกี่ยวข้อง</input>
+                                            <br>
+                                            <input type="checkbox" name="gender" value="Male">7.มีประสบการณ์ในการพัฒนาและ/หรือประยุกต์ซอฟต์แวร์ที่ใช้งานได้จิง</input>
+                                            <br>
+                                            <input type="checkbox" name="gender" value="Male">8.สามารถบรูณาการความรู้ในสาขาวิชาที่ศึกษากับความรู้ในศาสตร์อื่นๆ ที่เกี่ยวข้อง</input>
+                                            <br>
+                                            <input type="submit" name="submit" value="Submit" />
+                                            </form> <?php
                                                     if (isset($_POST['gender'])) {
                                                         echo $_POST['gender']; // Displays value of checked checkbox.
                                                     }
                                                     ?>
 
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    <h5>คำอธิบายรายวิชา</h5>
-                                    <form>
 
-                                        <div class="form-group row">
-                                            <!-- <label class="col-sm-2 col-form-label">1.1</label> -->
-                                            <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="comcode">
-                                            </div>
-                                        </div>
-                                        <h5>จำนวนชั่วโมงที่ใช้ต่อภาคการศึกษา</h5>
+                                            <form>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">บรรยาย</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameth">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">สอนเสริม</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameeg">
-                                            </div>
-                                        </div>
+                                                <div class="form-group row">
+                                                    <!-- <label class="col-sm-2 col-form-label">1.1</label> -->
+                                                    <div class="col-sm-12">
+                                                        <input type="text" class="form-control" name="comcode">
+                                                    </div>
+                                                </div>
+                                                <h5>จำนวนชั่วโมงที่ใช้ต่อภาคการศึกษา</h5>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">การฝึกปฏิบัติ/งานภาคสนามการฝึกงาน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="kit">
-                                            </div>
-                                        </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">บรรยาย</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" name="nameth">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">สอนเสริม</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" name="nameeg">
+                                                    </div>
+                                                </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">การศึกษาด้วยตัวเอง</label>
-                                            <div class="col-sm-10">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">การฝึกปฏิบัติ/งานภาคสนามการฝึกงาน</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" name="kit">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">การศึกษาด้วยตัวเอง</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" name="course">
+                                                    </div>
+                                                </div>
+                                                <h5>จำนวนชั่วโมงต่อสัปดาห์ที่อาจารย์ให้คำปรึกษาและแนะนำทางวิชาการแก่นักศึกษาเป็นรายบุคคล</h5>
                                                 <input type="text" class="form-control" name="course">
-                                            </div>
-                                        </div>
-                                        <h5>จำนวนชั่วโมงต่อสัปดาห์ที่อาจารย์ให้คำปรึกษาและแนะนำทางวิชาการแก่นักศึกษาเป็นรายบุคคล</h5>
-                                        <input type="text" class="form-control" name="course">
 
                                 </div>
                                 <center> <button>หมวดที่4</button></center>
