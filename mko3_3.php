@@ -62,111 +62,80 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-
+                                    <table align="center" width="500">
+                                        <tr>
+                                            <td>
+                                                <h1 class="h3 mb-0 text-gray-800">หมวดที่ 3 ลักษณะและการดำเนินงาน</h1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <h5>คำอธิบายรายวิชา</h5>
                                     <form>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
-                                            <div class="col-sm-10">
+                                            <!-- <label class="col-sm-2 col-form-label">1.1</label> -->
+                                            <div class="col-sm-12">
                                                 <input type="text" class="form-control" name="comcode">
                                             </div>
                                         </div>
+                                        <h5>จำนวนชั่วโมงที่ใช้ต่อภาคการศึกษา</h5>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
+                                            <label class="col-sm-2 col-form-label">บรรยาย</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="nameth">
                                             </div>
                                         </div>
-                                        <br>
-                                        <br>
-                                        <table align="center" width="500">
-                                            <tr>
-                                                <td>
-                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 1 ข้อมูลโดยทั่วไป</h1>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-
-
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.รหัสและชื่อรายวิชา</label>
+                                            <label class="col-sm-2 col-form-label">สอนเสริม</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="nameeg">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">2.จำนวนหน่วยกิต</label>
+                                            <label class="col-sm-2 col-form-label">การฝึกปฏิบัติ/งานภาคสนามการฝึกงาน</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="kit">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">3.หลักสูตรและประเภทรายวิชา</label>
+                                            <label class="col-sm-2 col-form-label">การศึกษาด้วยตัวเอง</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="course">
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">4.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">5.ภาคการศึกษา/ชั้นปีที่่เรียน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">6.รายวิชาที่่ต้องเรียนมาก่อน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">7.รายวิชาที่ต้องเรียนพร้อมกัน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">8.สถานที่่เรียน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">9.วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชาครั้งล่าสุด</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
-                                            </div>
-                                        </div>
-                                        <center> <button>หมวดที่2</button></center>
-
-                                    </form>
+                                        <h5>จำนวนชั่วโมงต่อสัปดาห์ที่อาจารย์ให้คำปรึกษาและแนะนำทางวิชาการแก่นักศึกษาเป็นรายบุคคล</h5>
+                                        <input type="text" class="form-control" name="course">
 
                                 </div>
+                                <center> <button>หมวดที่4</button></center>
                             </div>
+                            <br>
+
+
+
+
+                            </form>
+
                         </div>
                     </div>
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-
-            <!-- End of Footer -->
-
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+
+    <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->
