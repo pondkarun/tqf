@@ -103,6 +103,7 @@ $row = mysqli_fetch_array($result);
                                             </div>
 
                                         </div>
+                                    </form>
                                 </div>
                             </div>
 

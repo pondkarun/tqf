@@ -57,50 +57,35 @@
 
                                     <!-- เนื้อหา -->
 
-                                    <form>
-
+                                    <form action="update_edit.php" method="POST">
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">รหัสวิชา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="comcode">
+                                            <div class="col-md-12 col-lg-6">
+                                                <label for="">รหัสวิชา</label>
+                                                <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="รหัสวิชา" ?>
                                             </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ชื่อวิชาภาษาไทย</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameth">
+                                            <div class="col-md-12 col-lg-6">
+                                                <label for="">ชื่อวิชาภาษาไทย</label>
+                                                <input type="text" name="Thaisubjectname" class="form-control form-control-user" placeholder="ชื่อวิชาภาษาไทย" ?>
                                             </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ชื่อวิชาภาษาอังกฤษ</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameeg">
+                                            <div class="col-md-12 col-lg-6">
+                                                <label for="">ชื่อวิชาภาษาอังกฤษ</label>
+                                                <input type="text" name="Englishsubjectname" class="form-control form-control-user" placeholder="ชื่อวิชาภาษาอังกฤษ" ?>
                                             </div>
-                                        </div>
+                                            <div class="col-md-6 col-lg-2">
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">หลักสูตรและประเภทรายวิชา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="kit">
+                                                <label for="">หน่วยกิต</label>
+                                                <input type="text" name="credit" class="form-control form-control-user" placeholder="หน่วยกิต" ?>
                                             </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">หน่วยกิต</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                            <div class="col-md-12 col-lg-6">
+                                                <label for="">หลักสูตรและประเภทรายวิชา</label>
+                                                <input type="text" name="Curriculumandcoursetype" class="form-control form-control-user" placeholder="หลักสูตรและประเภทรายวิชา" ?>
                                             </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">อาจารย์ผู้รับผิดชอบรายวิชา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                            <div class="col-md-12 col-lg-6">
+                                                <label for="">อาจารย์ผู้รับผิดชอบรายวิชา</label>
+                                                <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
                                             </div>
-                                        </div>
 
+                                        </div>
                                     </form>
 
                                 </div>

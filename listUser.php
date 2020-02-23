@@ -68,6 +68,7 @@ $i = 0
 
                                         <table class="table table-bordered" id="dataTable" width="" cellspacing="0">
                                             <thead>
+                                                <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">เพิ่มข้อมูล</a>
                                                 <tr class="text-center">
                                                     <th width="">#</th>
                                                     <th width="">รหัสวิชา</th>
@@ -98,7 +99,7 @@ $i = 0
                                                 <?php  } ?>
                                             </tbody>
                                         </table>
-
+                                        <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">เพิ่มข้อมูล</a>
                                     </div>
 
                                 </div>
