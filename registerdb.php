@@ -34,7 +34,9 @@ if ($num > 0) {
             name,
             sername,
             username,
-            password
+            password,
+            faculty,
+            email
   
         )
         VALUES
@@ -43,7 +45,10 @@ if ($num > 0) {
         '$_POST[name]',
         '$_POST[sername]',
         '$_POST[username]',
-        '$_POST[password]'
+        '$_POST[password]',
+        '$_POST[faculty]',
+        '$_POST[email]'
+        
   
         )";
 

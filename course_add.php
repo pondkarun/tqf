@@ -84,7 +84,11 @@
                                                 <label for="">อาจารย์ผู้รับผิดชอบรายวิชา</label>
                                                 <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
                                             </div>
+                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                                บันทึก
 
+                                            </button>
                                         </div>
                                     </form>
 

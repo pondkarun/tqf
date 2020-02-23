@@ -60,6 +60,17 @@
                                                     <span class="focus-input100"></span>
                                                 </div>
                                             </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                                    <input class="form-control" type="text" name="faculty" required placeholder="faculty">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                                    <input class="form-control" type="email" name="email" required placeholder="Email">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                            </div>
+
                                             <input type="submit" name="submit" value="Register" class="btn btn-primary btn-user btn-block">
                                     </div>
                                 </div>

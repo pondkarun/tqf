@@ -19,7 +19,7 @@ if (isset($_POST['username'])) {
         $_SESSION["login"] = "login";
 
 
-        Header("Location: ../../index2.php");
+        Header("Location: ../index/index.php");
     } else {
         echo "<script>";
         echo "alert(\" user หรือ  password ไม่ถูกต้อง\");";
