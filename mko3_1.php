@@ -147,7 +147,7 @@
                                                 <input type="text" class="form-control" name="course">
                                             </div>
                                         </div>
-                                        <center> <button>หมวดที่2</button></center>
+                                        <center><a href="mko3_2.php" <button>หมวดที่2</button> </center>
 
                                     </form>
 

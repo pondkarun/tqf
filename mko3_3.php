@@ -111,7 +111,7 @@
                                         <input type="text" class="form-control" name="course">
 
                                 </div>
-                                <center> <button>หมวดที่4</button></center>
+                                <center><a href="mko3_4.php" <button>หมวดที่4</button></center>
                             </div>
                             <br>
 
