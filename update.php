@@ -2,10 +2,10 @@
 //1. เชื่อมต่อ database: 
 include('include/condb.php');  //ไฟล์เชื่อมต่อกับ database ที่เราได้สร้างไว้ก่อนหน้าน้ี
 
-$id = $_GET["id"];
+
 
 //2. query ข้อมูลจากตาราง: 
-$sql = "SELECT * FROM dbcourse_add WHERE id=$id ";
+$sql = "SELECT * FROM dbcourse_add WHERE id ";
 $result = mysqli_query($condb, $sql);
 $row = mysqli_fetch_array($result);
 ?>
@@ -103,26 +103,27 @@ $row = mysqli_fetch_array($result);
                                             </div>
 
                                         </div>
+                                        <div class="col-12 text-center pt-5">
+
+                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                                บันทึก
+
+                                            </button>
+                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                                ยกเลิก
+
+                                            </button>
+
+                                        </div>
                                     </form>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-12 text-center pt-5">
 
-                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
-                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
-                                บันทึก
 
-                            </button>
-                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
-
-                                ยกเลิก
-
-                            </button>
-
-                        </div>
-                        </form>
                     </div>
 
                 </div>
