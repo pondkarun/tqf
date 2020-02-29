@@ -24,6 +24,8 @@ $sql = "UPDATE `dbcourse_add` SET
         `nameteacher` = '$nameteacher'
         WHERE id = '$id' ";
 $result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
+
+
 mysqli_close($condb);
 
 if ($result) {

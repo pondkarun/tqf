@@ -1,3 +1,17 @@
+<?php
+//1. เชื่อมต่อ database: 
+include('include/condb.php');  //ไฟล์เชื่อมต่อกับ database ที่เราได้สร้างไว้ก่อนหน้าน้ี
+
+
+
+//2. query ข้อมูลจากตาราง: 
+$sql = "SELECT * FROM dbcourse_add WHERE id ";
+$result = mysqli_query($condb, $sql);
+$row = mysqli_fetch_array($result);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,7 +71,7 @@
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="update_edit.php" method="POST">
+                                    <form action="course_adddb.php" method="POST">
                                         <div class="form-group row">
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">รหัสวิชา</label>
@@ -87,7 +101,6 @@
                                             <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก
-
                                             </button>
                                         </div>
                                     </form>

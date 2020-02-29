@@ -62,59 +62,60 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <table align="center" width="500">
-                                        <tr>
-                                            <td>
-                                                <h1 class="h3 mb-0 text-gray-800">หมวดที่ 2 จุดมุ่งหมายและวัตถุประสงค์</h1>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    <h5>จุดมุ่งหมายของรายวิชา/</h5>
-                                    <form>
+                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                        <table align="center" width="500">
+                                            <tr>
+                                                <td>
+                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 2 จุดมุ่งหมายและวัตถุประสงค์</h1>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <h5>จุดมุ่งหมายของรายวิชา/</h5>
+                                        <form>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.1</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="comcode">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">1.1</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="comcode">
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.2</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameth">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">1.2</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="nameth">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.3</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameeg">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">1.3</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="nameeg">
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.4</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="kit">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">1.4</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="kit">
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.5</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">1.5</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="course">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <h5>วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา</h5>
-                                        <input type="text" class="form-control" name="course">
+                                            <h5>วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา</h5>
+                                            <input type="text" class="form-control" name="course" placeholder="วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา">
 
                                 </div>
-                                <center><a href="mko3_3.php" <button>หมวดที่3</button></center>
+                                <center><a href="mko3_3.php"> <button class="btn btn-sm btn-primary">หมวดที่3</button> </center>
                             </div>
                             <br>
 
-
+                            </form>
 
 
                             </form>

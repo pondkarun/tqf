@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<meta charset="utf-8">
+<?php
+// echo '<pre>';
+// print_r($_POST);
+// echo '</pre>';
+// exit;
+
+include('include/condb.php');
+
+
+$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
+$result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
+$num = mysqli_num_rows($result1);
+?>
+
 <head>
 
     <meta charset="utf-8">
@@ -63,37 +78,38 @@
 
                                     <!-- เนื้อหา -->
 
-                                    <form>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="comcode">
-                                            </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="comcode">
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameth">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="nameth">
                                         </div>
-                                        <br>
-                                        <br>
-                                        <table align="center" width="500">
-                                            <tr>
-                                                <td>
-                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 1 ข้อมูลโดยทั่วไป</h1>
-                                                </td>
-                                            </tr>
-                                        </table>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <table align="center" width="500">
+                                        <tr>
+                                            <td>
+                                                <h1 class="h3 mb-0 text-gray-800">หมวดที่ 1 ข้อมูลโดยทั่วไป</h1>
+                                            </td>
+                                        </tr>
+                                    </table>
 
+                                    <form action="mko3_2.php">
 
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.รหัสและชื่อรายวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameeg">
+                                                <input type="text" class="form-control" name="nameth">
                                             </div>
                                         </div>
 
@@ -147,7 +163,8 @@
                                                 <input type="text" class="form-control" name="course">
                                             </div>
                                         </div>
-                                        <center><a href="mko3_2.php" <button>หมวดที่2</button> </center>
+                                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                            <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
 
                                     </form>
 

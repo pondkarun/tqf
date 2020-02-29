@@ -78,6 +78,7 @@ $i = 0
                                                     <th width="">หน่วยกิต</th>
                                                     <th width="">อาจารย์ผู้รับผิดชอบรายวิชา</th>
                                                     <th width="">จัดการ</th>
+
                                                 </tr>
                                             </thead>
 
@@ -88,18 +89,33 @@ $i = 0
                                                         <td><?php echo $row['Coursecode']; ?></td>
                                                         <td><?php echo $row['Thaisubjectname']; ?></td>
                                                         <td><?php echo $row['Englishsubjectname']; ?></td>
-                                                        <td><?php echo $row['credit']; ?></td>
                                                         <td><?php echo $row['Curriculumandcoursetype']; ?></td>
+                                                        <td><?php echo $row['credit']; ?></td>
                                                         <td><?php echo $row['nameteacher']; ?></td>
                                                         <td class="text-center">
+                                                            <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
+                                                            ||
+                                                            <a href="del_user.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.4</a>
+                                                            ||
+                                                            <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.5</a>
+                                                            ||<br>
+                                                            <a href="del_user.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.6</a>
+                                                            ||
                                                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                             ||
-                                                            <a href="del_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a></td>
+                                                            <a href="del_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a>
+                                                        </td>
+
+
+
+
+
+                                                        </td>
                                                     </tr>
                                                 <?php  } ?>
                                             </tbody>
                                         </table>
-                                        <a href="update.php" class="btn btn-sm btn-primary">เพิ่มข้อมูล</a>
+                                        <a href="course_add.php" class="btn btn-sm btn-primary">เพิ่มข้อมูล</a>
                                     </div>
 
                                 </div>
