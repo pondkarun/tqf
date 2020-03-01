@@ -83,14 +83,14 @@ $num = mysqli_num_rows($result1);
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="comcode">
+                                            <input type="text" class="form-control" name="institutionname">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="nameth">
+                                            <input type="text" class="form-control" name="campus">
                                         </div>
                                     </div>
                                     <br>
@@ -109,58 +109,58 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.รหัสและชื่อรายวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameth">
+                                                <input type="text" class="form-control" name="coursename">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">2.จำนวนหน่วยกิต</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="kit">
+                                                <input type="text" class="form-control" name="credit">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">3.หลักสูตรและประเภทรายวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="coursetype">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">4.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="responsibleteacher">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">5.ภาคการศึกษา/ชั้นปีที่่เรียน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="semester">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">6.รายวิชาที่่ต้องเรียนมาก่อน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="studiedfirst">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">7.รายวิชาที่ต้องเรียนพร้อมกัน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="studiedtogether">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">8.สถานที่่เรียน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="placeofstudy">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">9.วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชาครั้งล่าสุด</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="dateofmaking">
                                             </div>
                                         </div>
                                         <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
