@@ -76,7 +76,7 @@
                                         <div class="form-group row">
                                             <!-- <label class="col-sm-2 col-form-label">1.1</label> -->
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="comcode">
+                                                <input type="text" class="form-control" name="coursedescription">
                                             </div>
                                         </div>
                                         <h5>จำนวนชั่วโมงที่ใช้ต่อภาคการศึกษา</h5>
@@ -84,31 +84,31 @@
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">บรรยาย</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameth">
+                                                <input type="text" class="form-control" name="discourse">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">สอนเสริม</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="nameeg">
+                                                <input type="text" class="form-control" name="supplementary">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">การฝึกปฏิบัติ/งานภาคสนามการฝึกงาน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="kit">
+                                                <input type="text" class="form-control" name="fieldwork">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">การศึกษาด้วยตัวเอง</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="course">
+                                                <input type="text" class="form-control" name="selfstudy">
                                             </div>
                                         </div>
                                         <h5>จำนวนชั่วโมงต่อสัปดาห์ที่อาจารย์ให้คำปรึกษาและแนะนำทางวิชาการแก่นักศึกษาเป็นรายบุคคล</h5>
-                                        <input type="text" class="form-control" name="course">
+                                        <input type="text" class="form-control" name="numberweek">
 
                                 </div>
                                 <center><a href="mko3_4.php"> <button class="btn btn-sm btn-primary">หมวดที่4</button> </center>

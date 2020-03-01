@@ -77,38 +77,38 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">1.1</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="comcode">
+                                                    <input type="text" class="form-control" name="courseObjectives1">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">1.2</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="nameth">
+                                                    <input type="text" class="form-control" name="courseObjectives2">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">1.3</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="nameeg">
+                                                    <input type="text" class="form-control" name="courseObjectives3">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">1.4</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="kit">
+                                                    <input type="text" class="form-control" name="courseObjectives4">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">1.5</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="course">
+                                                    <input type="text" class="form-control" name="courseObjectives5">
                                                 </div>
                                             </div>
                                             <h5>วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา</h5>
-                                            <input type="text" class="form-control" name="course" placeholder="วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา">
+                                            <input type="text" class="form-control" name="coursedevelopment	" placeholder="วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา">
 
                                 </div>
                                 <center><a href="mko3_3.php"> <button class="btn btn-sm btn-primary">หมวดที่3</button> </center>
