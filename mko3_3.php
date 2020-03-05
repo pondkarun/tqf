@@ -111,7 +111,9 @@
                                         <input type="text" class="form-control" name="numberweek">
 
                                 </div>
-                                <center><a href="mko3_4.php"> <button class="btn btn-sm btn-primary">หมวดที่4</button> </center>
+                                <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+
                             </div>
                             <br>
 
