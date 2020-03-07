@@ -8,7 +8,7 @@
 include('include/condb.php');
 
 
-$check = "SELECT Coursecode FROM `dbcourse_add` WHERE Coursecode = '$_POST[Coursecode]'";
+$check = "SELECT coursename FROM `db_mko3_1` WHERE coursename = '$_POST[coursename]'";
 $result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
 $num = mysqli_num_rows($result1);
 
@@ -21,34 +21,35 @@ if ($num > 0) {
     echo "</script>";
 } else { {
 
-        $sql = "INSERT INTO dbcourse_add
+        $sql = "INSERT INTO db_mko3_1
         (
-       
-            Coursecode,
-            Thaisubjectname,
-            Englishsubjectname,
-            credit, 
-            year,
+            institutionname,
+            campus,
+            coursename,
+            credit,
+            coursetype,
+            responsibleteacher,
             semester,
-            Curriculumandcoursetype,
-            nameteacher
-          
+            studiedfirst,
+            studiedtogether,
+            placeofstudy,
+            dateofmaking
   
         )
         VALUES
         (
         
-        '$_POST[Coursecode]',
-        '$_POST[Thaisubjectname]',
-        '$_POST[Englishsubjectname]',
-        '$_POST[credit]', 
-        '$_POST[year]',
+        '$_POST[institutionname]',
+        '$_POST[campus]',
+        '$_POST[coursename]',
+        '$_POST[credit]',
+        '$_POST[coursetype]',
+        '$_POST[responsibleteacher]'
         '$_POST[semester]',
-        '$_POST[Curriculumandcoursetype]',
-        '$_POST[nameteacher]'
-       
-        
-  
+        '$_POST[studiedfirst]',
+        '$_POST[studiedtogether]',
+        '$_POST[placeofstudy]',
+        '$_POST[dateofmaking]'
         )";
 
         $result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());

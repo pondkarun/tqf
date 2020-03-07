@@ -97,10 +97,19 @@ $row = mysqli_fetch_array($result);
                                                 <label for="">หลักสูตรและประเภทรายวิชา</label>
                                                 <input type="text" name="Curriculumandcoursetype" class="form-control form-control-user" placeholder="หลักสูตรและประเภทรายวิชา" value="<?php echo $row['Curriculumandcoursetype']; ?>">
                                             </div>
-                                            <div class="col-md-12 col-lg-6">
+                                            <div class="col-md-12 col-lg-2">
                                                 <label for="">อาจารย์ผู้รับผิดชอบรายวิชา</label>
                                                 <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" value="<?php echo $row['nameteacher']; ?>">
                                             </div>
+                                            <form action="course_adddb.php" method="POST">
+                                                <div class="col-md-12 col-lg-2">
+                                                    <label for="">ปีการศึกษา</label>
+                                                    <input type="text" name="year" class="form-control form-control-user" placeholder="ปีการศึกษา" value="<?php echo $row['year']; ?>">
+                                                </div>
+                                                <div class="col-md-12 col-lg-2">
+                                                    <label for="">ภาคเรียน</label>
+                                                    <input type="text" name="semester" class="form-control form-control-user" placeholder="ภาคเรียน" value="<?php echo $row['semester']; ?>">
+                                                </div>
 
                                         </div>
                                         <div class="col-12 text-center pt-5">
@@ -117,6 +126,7 @@ $row = mysqli_fetch_array($result);
                                             </button>
 
                                         </div>
+                                    </form>
                                     </form>
                                 </div>
                             </div>

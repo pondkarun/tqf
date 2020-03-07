@@ -77,6 +77,8 @@ $i = 0
                                                     <th width="">หลักสูตรและประเภทรายวิชา</th>
                                                     <th width="">หน่วยกิต</th>
                                                     <th width="">อาจารย์ผู้รับผิดชอบรายวิชา</th>
+                                                    <th width="">ปีการศึกษา</th>
+                                                    <th width="">ภาคเรียน</th>
                                                     <th width="">จัดการ</th>
 
                                                 </tr>
@@ -92,6 +94,8 @@ $i = 0
                                                         <td><?php echo $row['Curriculumandcoursetype']; ?></td>
                                                         <td><?php echo $row['credit']; ?></td>
                                                         <td><?php echo $row['nameteacher']; ?></td>
+                                                        <td><?php echo $row['year']; ?></td>
+                                                        <td><?php echo $row['semester']; ?></td>
                                                         <td class="text-center">
                                                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
                                                             ||

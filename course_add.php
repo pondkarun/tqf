@@ -90,6 +90,14 @@ $row = mysqli_fetch_array($result);
                                                 <label for="">หน่วยกิต</label>
                                                 <input type="text" name="credit" class="form-control form-control-user" placeholder="หน่วยกิต" ?>
                                             </div>
+                                            <div class="col-md-12 col-lg-2">
+                                                <label for="">ปีการศึกษา</label>
+                                                <input type="text" name="year" class="form-control form-control-user" placeholder="ปีการศึกษา">
+                                            </div>
+                                            <div class="col-md-12 col-lg-2">
+                                                <label for="">ภาคเรียน</label>
+                                                <input type="text" name="semester" class="form-control form-control-user" placeholder="ภาคเรียน">
+                                            </div>
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">หลักสูตรและประเภทรายวิชา</label>
                                                 <input type="text" name="Curriculumandcoursetype" class="form-control form-control-user" placeholder="หลักสูตรและประเภทรายวิชา" ?>

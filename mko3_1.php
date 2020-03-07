@@ -78,32 +78,32 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
+                                    <form action="mko3_1db.php" method="POST">
 
-
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="institutionname">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="institutionname">
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="campus">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="campus">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <table align="center" width="500">
-                                        <tr>
-                                            <td>
-                                                <h1 class="h3 mb-0 text-gray-800">หมวดที่ 1 ข้อมูลโดยทั่วไป</h1>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                        <br>
+                                        <br>
+                                        <table align="center" width="500">
+                                            <tr>
+                                                <td>
+                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 1 ข้อมูลโดยทั่วไป</h1>
+                                                </td>
+                                            </tr>
+                                        </table>
 
-                                    <form action="mko3_2.php">
+
 
 
                                         <div class="form-group row">
@@ -163,9 +163,16 @@ $num = mysqli_num_rows($result1);
                                                 <input type="text" class="form-control" name="dateofmaking">
                                             </div>
                                         </div>
-                                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                        <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                        <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                            บันทึก
 
+                                        </button>
+                                        <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                            ยกเลิก
+
+                                        </button>
                                     </form>
 
                                 </div>

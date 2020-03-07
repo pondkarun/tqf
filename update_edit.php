@@ -11,6 +11,8 @@ $Englishsubjectname = $_POST['Englishsubjectname'];
 $credit = $_POST['credit'];
 $Curriculumandcoursetype = $_POST['Curriculumandcoursetype'];
 $nameteacher = $_POST['nameteacher'];
+$year = $_POST['year'];
+$semester = $_POST['semester'];
 
 
 include('include/condb.php');
@@ -21,7 +23,9 @@ $sql = "UPDATE `dbcourse_add` SET
         `Englishsubjectname` = '$Englishsubjectname',
         `credit` = '$credit',
         `Curriculumandcoursetype` = '$Curriculumandcoursetype',
-        `nameteacher` = '$nameteacher'
+        `nameteacher` = '$nameteacher',
+        `year` = '$year',
+        `semester` = '$semester'
         WHERE id = '$id' ";
 $result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
 
