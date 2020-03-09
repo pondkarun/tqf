@@ -83,14 +83,14 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="institutionname" placeholder="มหาวิทยาลัยราชภัฏจันทรเกษม" ?>
+                                                <input type="text" class="form-control" name="institutionname" placeholder="มหาวิทยาลัยราชภัฏจันทรเกษม " ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="campus" placeholder="คณะวิทยาการจัดการ" ?>
+                                                <input type="text" class="form-control" name="campus" placeholder="คณะวิทยาการจัดการ " ?>
                                             </div>
                                         </div>
                                         <br>
@@ -109,7 +109,7 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.รหัสและชื่อรายวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="BUSS4801 การเตรียมฝึกประสบการณ์วิชาชีพทางบริหารธุรกิจ   " ?>
+                                                <input type="text" class="form-control" name="coursename" placeholder="BUSS4801 	การเตรียมฝึกประสบการณ์วิชาชีพทางบริหารธุรกิจ  " ?>
                                             </div>
                                         </div>
 
@@ -130,7 +130,7 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">4.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="	ผศ.ภัทรมน กล้าอาษา" ?>
+                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษา/คณะวิทยาการจัดการ/อาจารย์ผู้สอน/นางสาวดวงพร คงพิกุล " ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -139,41 +139,25 @@ $num = mysqli_num_rows($result1);
                                                 <input type="text" class="form-control" name="semester" placeholder="2 / ชั้นปีที่ 3 " ?>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">6.รายวิชาที่่ต้องเรียนมาก่อน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="studiedfirst" placeholder="ไม่มี " ?>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">7.รายวิชาที่ต้องเรียนพร้อมกัน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="studiedtogether" placeholder="ไม่มี " ?>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">8.สถานที่่เรียน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="placeofstudy" placeholder="อาคาร 9 มหาวิทยาลัยราชภัฏจันทรเกษม " ?>
-                                            </div>
-                                        </div>
+
+
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">9.วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชาครั้งล่าสุด</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="dateofmaking" placeholder="ปรับปรุงลาสุด 1 สิงหาคม 2562   " ?>
+                                                <input type="text" class="form-control" name="dateofmaking" placeholder="ปีการศึกษา 2562 " ?>
                                             </div>
                                         </div>
-                                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                        <!-- <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
                                             <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
-                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
-                                                บันทึก
+                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary "> -->
+                                        บันทึก
 
-                                            </button>
-                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+                                        </button>
+                                        <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
 
-                                                ยกเลิก
+                                            ยกเลิก
 
-                                            </button>
+                                        </button>
                                     </form>
 
                                 </div>
