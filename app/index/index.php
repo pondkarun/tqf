@@ -49,7 +49,7 @@
 				<ul class="main-menu">
 					<li class="active"><a href="index.php">หน้าแรก</a></li>
 					<li><a href="../../listUser.php">รายวิชา</a></li>
-					<li><a href="../../courseteacher.php">รายวิชาที่เปิดสอน</a></li>
+
 					<li><a href="../../mko3_1.php">มคอ.</a></li>
 					<li><a href="../../contact.html">พิมพ์รายงาน</a></li>
 
