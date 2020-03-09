@@ -73,64 +73,611 @@
 
                                     <!-- <form action="mko3_2.php"> -->
 
+                                    <h5>แผนการสอน</h5>
+
+                                    <h6>สัปดาห์ที่1</h6>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">แผนการสอน</label>
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="coursename">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">2.จำนวนหน่วยกิต</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="credit">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 1 ความรู้เบื้องต้นเกี่ยวกับโปรแกรมทางธุรกิจ" ?>
                                         </div>
                                     </div>
 
+
+
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">3.หลักสูตรและประเภทรายวิชา</label>
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="coursetype">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">4.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="responsibleteacher">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">5.ภาคการศึกษา/ชั้นปีที่่เรียน</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="semester">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
                                         </div>
                                     </div>
+
+                                    <h6>สัปดาห์ที่2</h6>
+
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">6.รายวิชาที่่ต้องเรียนมาก่อน</label>
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="studiedfirst">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 2 ความรู้เบื้องระบบเลขฐาน" ?>
                                         </div>
                                     </div>
+
+
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">7.รายวิชาที่ต้องเรียนพร้อมกัน</label>
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="studiedtogether">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">8.สถานที่่เรียน</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="placeofstudy">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">9.วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชาครั้งล่าสุด</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="dateofmaking">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
                                         </div>
                                     </div>
+
+                                    <h6>สัปดาห์ที่3</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 2 ความรู้เบื้องระบบเลขฐาน(ต่อ)" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่4</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 3 หลักการวิเคราะห์และออกแบบโปรแกรม" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่5</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 4 ขั้นตอนวิธีการเขียนโปรแกรม" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่6</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 4 ขั้นตอนวิธีการเขียนโปรแกรม (ต่อ)" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <h6>สัปดาห์ที่7</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 5 ภาษาสำหรับคอมพิวเตอร์" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <center>
+                                        <h5>สอบ</h5>
+                                    </center>
+                                    <h6>สัปดาห์ที่9</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 6 ตัวแปรและชนิดข้อมูลภาษาPython" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่10</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 7 การแสดงและรับข้อมูลภาษาPython" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่11</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 7 การแสดงและรับข้อมูลภาษาPython (ต่อ)" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่12</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 8 การดำเนินการทางคณิตศาสตร์ในภาษาPython" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่13</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 8 การดำเนินการทางคณิตศาสตร์ในภาษาPython (ต่อ)" ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่14</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 9 การควบคุ้มทิศทางการทำงานโปรแกรม Python " ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+                                    <h6>สัปดาห์ที่15</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 9 การควบคุ้มทิศทางการทำงานโปรแกรม Python (ต่อ) " ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่16</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 10 การใช้ฟังก์ชัน Python " ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+
+                                    <h6>สัปดาห์ที่17</h6>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="บทที่ 10 การใช้ฟังก์ชัน Python (ต่อ) " ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผู้สอน</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
+                                        </div>
+                                    </div>
+                                    <h5>2. แผนการประเมินผลการเรียนรู้</h5>
+                                    <h6>กิจกรรมที่1</h6>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผลการเรียนรู้*</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="1.2,1.7,2.1,2.2,2.5,2.7,3.3,4.1,4.4 " ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">วิธีการประเมิน</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="จิตพิสัย (การเข้าชั้นเรียนการแต่งกายกาละเทศะการทำงานร่วมกัน และความรับผิดชอบ)" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">สัปดาห์ที่ประเมิน</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ตลอดภาคการศึกษา" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">สัดส่วนของการประเมิน</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="10%" ?>
+                                        </div>
+                                    </div>
+
+                                    <h5>กิจกรรมที่2</h5>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผลการเรียนรู้*</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="1.2,1.7,2.1,2.2,2.5,2.7,3.3,4.1,4.4,5.1.5.2,5.4 " ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">วิธีการประเมิน</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="คะแนนเก็บจากแบบฝึกหัดท้ายบท/คะแนนเก็บจากการฝึกปฏิบัติ" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">สัปดาห์ที่ประเมิน</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ตลอดภาคการศึกษา" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">สัดส่วนของการประเมิน</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="15% 15% " ?>
+                                        </div>
+                                    </div>
+
+                                    <h5>กิจกรรมที่3</h5>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">ผลการเรียนรู้*</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="2.1,2.2,2.5,2.7,3.3,,5.1.5.2,5.4 " ?>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">วิธีการประเมิน</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สอบกลางภาตเรียน/สอบปลายภาตเรียน/สอบปฏิบัติภาตเรียน" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">สัปดาห์ที่ประเมิน</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8/18/17" ?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">สัดส่วนของการประเมิน</label>
+                                        <div class="col-sm-1">
+                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="15%/15%/20" ?>
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <h5>*ระบุบผลการเรียนรู้หัวข้อย่อยตามแผนมราแสดงการกระจายความรับผืดชอบต่อผลการเรียนรู้</h5>
+                                    </center>
+
+
+
+
+
+
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
