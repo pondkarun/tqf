@@ -63,37 +63,30 @@
 
                                     <!-- เนื้อหา -->
                                     <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
-                                        <table align="center" width="800">
+                                        <table align="center" width="500">
                                             <tr>
                                                 <td>
-                                                    <h6 class="h3 mb-0 text-gray-800">หมวดที่ 6 ทรัพยากรประกรอบการเรียนการสอน</h6>
+                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 2 จุดมุ่งหมายและวัตถุประสงค์ </h1>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <br>
 
                                         <form>
 
                                             <div class="form-group row">
-                                                <label class="col-sm-4 col-form-label">1.เอกสารและตำราหลัก</label>
-                                                <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ณัฐพล ธนเขวงสกุล (2562) เอกสารประกอบการสอนวิชาการเขียนโปรแกรมเบื้องต้นทางธุรกิจ.กรุงเทพ" ?>
+                                                <label class="col-sm-2 col-form-label">1. จุดมุ่งหมายของรายวิชา </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="courseObjectives1 " placeholder="1.เพื่อเตรียมความพร้อมให้กับนักศึกษาในด้านความรู้ทักษะในสาขาวิชาและบุคลิกภาพก่อนออกฝึกประสบการณ์ในสถานประกอบการจริง" ?>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
-                                                <label class="col-sm-4 col-form-label">2.เอกสารแลพข้อมูลสำคัญ</label>
-                                                <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="เอกชัย เจริญนิตย์ (2551) เอกสารประกอบการสอนวิชาหลักการเขียนโปรแกรม. พิมพ์ครั้งที่2" ?>
+                                                <label class="col-sm-2 col-form-label">2. วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="courseObjectives2" placeholder="1.เพื่อเตรียมความพร้อมให้กับอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาและนักศึกษาเข้าใจถึงจุดมุ่งหมายของการ
+เตรียมฝึกประสบการณ์วิชาชีพและผลการเรียนรู้ที่คาดหวังที่ชัดเจนและอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาสามารถมอบหมายงาน ติดตาม และประเมินผลงานของนักศึกษาได้อย่างถูกต้องเหมาะสมและนักศึกษาสามารถบรรลุเรียนรู้ตามที่กำหนดได้ " ?>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <label class="col-sm-4 col-form-label">เอกสารและข้อมูลแนะนำ</label>
-                                                <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="มี/ไม่มี" ?>
-                                                </div>
-                                            </div>
-
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
