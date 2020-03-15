@@ -156,14 +156,7 @@
                                                 <input type="checkbox" name="gender" value="Male">5.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาจากรายงาน</input>
                                                 <br>
                                                 <input type="checkbox" name="gender" value="Male">5.3.2.ประเมินผลจากบันทึกสรุปผล</input>
-                                    </form> <?php
-                                            if (isset($_POST['gender'])) {
-                                                echo $_POST['gender']; // Displays value of checked checkbox.
-                                            }
-                                            ?>
-                                    </td>
-                                    </tr>
-                                    </table> <br>
+                                 
 
 
 
