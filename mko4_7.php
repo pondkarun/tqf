@@ -66,7 +66,7 @@
                                         <table align="center" width="500">
                                             <tr>
                                                 <td>
-                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 2 จุดมุ่งหมายและวัตถุประสงค์ </h1>
+                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 7 การประเมินและปรับปรุงการดำนินการของการฝึกประสบการณ์ภาคสนาม </h1>
                                                 </td>
                                             </tr>
                                         </table>
@@ -74,19 +74,23 @@
                                         <form>
 
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">1. จุดมุ่งหมายของรายวิชา </label>
+                                                <label class="col-sm-2 col-form-label">1. กระบวนการประเมินของการฝึกประสบการณ์ภาคสนามจากผู้เกี่ยวข้อง</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="courseObjectives1 " placeholder="1.เพื่อเตรียมความพร้อมให้กับนักศึกษาในด้านความรู้ทักษะในสาขาวิชาและบุคลิกภาพก่อนออกฝึกประสบการณ์ในสถานประกอบการจริง" ?>
+                                                    <input type="text" class="form-control" name="courseObjectives1 " placeholder="1.นักศึกษาตอบแบบสอบถามการปฏิบัติงานของศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาในด้านต่างๆ " ?>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">2. วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา </label>
+                                                <label class="col-sm-2 col-form-label">2. กระบวนการทบทวนผลการประเมินและการวางแผนปรับปรุง </label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="courseObjectives2" placeholder="1.เพื่อเตรียมความพร้อมให้กับอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาและนักศึกษาเข้าใจถึงจุดมุ่งหมายของการ
-เตรียมฝึกประสบการณ์วิชาชีพและผลการเรียนรู้ที่คาดหวังที่ชัดเจนและอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาสามารถมอบหมายงาน ติดตาม และประเมินผลงานของนักศึกษาได้อย่างถูกต้องเหมาะสมและนักศึกษาสามารถบรรลุเรียนรู้ตามที่กำหนดได้ " ?>
+                                                    <input type="text" class="form-control" name="courseObjectives2" placeholder="1.อาจารย์ผู้รับผิดชอบประจำหลักสูตรประสานงานกับศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาประมวลผลงานของนักศึกษาทั้งหมด" ?>
                                                 </div>
                                             </div>
+
+
+
+
+
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>

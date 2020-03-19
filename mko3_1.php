@@ -11,9 +11,9 @@
 include('include/condb.php');
 
 
-$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
+/*$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
 $result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
-$num = mysqli_num_rows($result1);
+$num = mysqli_num_rows($result1);*/
 ?>
 
 <head>
@@ -78,7 +78,7 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="mko3_1db.php" method="POST">
+                                    <form action="mko3_1_save.php" method="POST">
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>

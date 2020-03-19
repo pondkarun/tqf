@@ -66,46 +66,76 @@
                                         <table align="center" width="500">
                                             <tr>
                                                 <td>
-                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 2 จุดมุ่งหมายและวัตถุประสงค์ </h1>
+                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 6 การประเมินนักศึกษา</h1>
                                                 </td>
                                             </tr>
                                         </table>
 
                                         <form>
+                                            <h5>1.หลักเกณฑ์การประเมิน</h5>
+
+                                            <label for="story"></label>
+
+                                            <textarea id="story" name="story" rows="5" cols="120">
+                                            ช่วงคะแนน 	 	 ค่าระดับคะแนน                
+                                         90 - 100                          A    
+                                         80 - 89  	 	          B+ 
+                                         70 - 79  	 	          B                
+                                         60 - 69  	 	          C+  
+                                         50 - 59  	 	          C                   	 	 	        
+                                         40 - 49  	                 D+ 
+                                         30 - 39  	 	          D 
+                                          0 - 29  	 	          F 
+                                        ขาดกิจกรรม 	 	        I  
+                                        ประพฤติผิดระเบียบ/สอบสวนระบุโทษ  F 
+                                       หมายเหตุ   :  เกณฑ์ผ่านการฝึกงานต้องได้ค่าระดับคะแนนไม่ต่ำกว่า C 
+</textarea>
 
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">1. จุดมุ่งหมายของรายวิชา </label>
+                                                <label class="col-sm-2 col-form-label">2.กระบวนการประเมินผลการปฏิบัติงานของนักศึกษา</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="courseObjectives1 " placeholder="1.เพื่อเตรียมความพร้อมให้กับนักศึกษาในด้านความรู้ทักษะในสาขาวิชาและบุคลิกภาพก่อนออกฝึกประสบการณ์ในสถานประกอบการจริง" ?>
+                                                    <input type="text" class="form-control" name="courseObjectives1 " placeholder="1.-	ประเมินโดยอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์  " ?>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">2. วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา </label>
+                                                <label class="col-sm-2 col-form-label">3.ความรับผิดชอบของอาจารย์ผู้รับผิดชอบประสบการณ์ภาคสนามต่อการประเมินนักศึกษา </label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="courseObjectives2" placeholder="1.เพื่อเตรียมความพร้อมให้กับอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาและนักศึกษาเข้าใจถึงจุดมุ่งหมายของการ
-เตรียมฝึกประสบการณ์วิชาชีพและผลการเรียนรู้ที่คาดหวังที่ชัดเจนและอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาสามารถมอบหมายงาน ติดตาม และประเมินผลงานของนักศึกษาได้อย่างถูกต้องเหมาะสมและนักศึกษาสามารถบรรลุเรียนรู้ตามที่กำหนดได้ " ?>
+                                                    <input type="text" class="form-control" name="courseObjectives2" placeholder="1.ประเมินผลงานงานของนักศึกษาระหว่างการเตรียมฝึกประสบการณ์ตามแบบฟอร์มประเมินของศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาโดยพิจารณาจากพฤติกรรมและผลงาน  " ?>
                                                 </div>
                                             </div>
+
+
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">4.การสรุปผลการประเมินที่แตกต่าง</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="courseObjectives2" placeholder="1.อาจารย์ผู้รับผิดชอบการเตรียมฝึกประสบการณ์และศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาร่วมประสานงานเพื่อตรวจสอบทำความเข้าใจในประเด็นการประเมินที่แตกต่างกันอย่างมีนัยสำคัญและกรณีจำเป็นจัดประชุมร่วมกันเพื่อพิจารณาหาข้อสรุป " ?>
+                                                </div>
+                                            </div>
+
+
 
                                 </div>
-                                <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
-
                             </div>
-                            <br>
-
-                            </form>
-
-
-                            </form>
 
                         </div>
+                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                            <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+
                     </div>
+                    <br>
+
+                    </form>
+
+
+                    </form>
+
                 </div>
             </div>
         </div>
-        <!-- /.container-fluid -->
+    </div>
+    </div>
+    <!-- /.container-fluid -->
 
     </div>
     <!-- End of Main Content -->

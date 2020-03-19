@@ -63,7 +63,7 @@ $num = mysqli_num_rows($result1);
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท3</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
                                 </td>
                             </tr>
                         </table>

@@ -48,7 +48,7 @@
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท3</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
                                 </td>
                             </tr>
                         </table>
@@ -156,7 +156,7 @@
                                                 <input type="checkbox" name="gender" value="Male">5.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาจากรายงาน</input>
                                                 <br>
                                                 <input type="checkbox" name="gender" value="Male">5.3.2.ประเมินผลจากบันทึกสรุปผล</input>
-                                 
+
 
 
 
