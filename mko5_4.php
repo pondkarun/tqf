@@ -80,63 +80,30 @@ $num = mysqli_num_rows($result1);
 
                                     <form action="mko3_1db.php" method="POST">
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="institutionname" placeholder="มหาวิทยาลัยราชภัฏจันทรเกษม " ?>
-                                            </div>
-                                        </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="campus" placeholder="คณะวิทยาการจัดการ " ?>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <br>
-                                        <table align="center" width="500">
-                                            <tr>
-                                                <td>
-                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 1 ข้อมูลโดยทั่วไป</h1>
-                                                </td>
-                                            </tr>
+                                        <center>
+                                            <h1 class="h3 mb-0 text-gray-800">หมวดที่ 4 ปัญหาและผลกระทบด้านดำเนินการ</h1>
+                                        </center>
+
+                                        </td>
+                                        </tr>
                                         </table>
 
 
 
-
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.รหัสและชื่อรายวิชา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="BUSS4801 	การเตรียมฝึกประสบการณ์วิชาชีพทางบริหารธุรกิจ  " ?>
+                                            <label class="col-sm-1 col-form-label">1.ประเด็นทรัพยากรประกรอบการเรียนและสิ่งอำนวยความสะดวก</label>
+                                            <div class="col-sm-11">
+                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ปัญหาในการใช้แหล่งทรัพยากรประกอบการเรียนการสอน (ถ้ามี)" ?>
+                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ผลกระทบ (ถ้ามี)" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">2.รายวิชาที่ต้องเรียนก่อนวิชานี้</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="แขนงวิชาการจัดการทรัพยากรมนุษย์  หลักสูตรบริหารธุรกิจบัณฑิต " ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">3.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " ?>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">4.ภาคการศึกษา/ชั้นปีที่่เรียนที่ฝึกประสบการณ์ภาคสนาม</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="2 / ชั้นปีที่ 3 " ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">5.สถานที่เรียน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="อาคาร" ?>
+                                            <label class="col-sm-1 col-form-label">2.ประเด็นด้านการบริหารและองค์กร</label>
+                                            <div class="col-sm-11">
+                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ปัญหาในการใช้แหล่งทรัพยากรประกอบการเรียนการสอน (ถ้ามี)" ?>
+                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ผลกระทบ (ถ้ามี)" ?>
                                             </div>
                                         </div>
 
