@@ -62,7 +62,7 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                    <form class="login100-form validate-form flex-sb flex-w" action="mko3_2_save.php" method="post">
                                         <table align="center" width="500">
                                             <tr>
                                                 <td>
@@ -108,7 +108,7 @@
                                                 </div>
                                             </div>
                                             <h5>วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา</h5>
-                                            <input type="text" class="form-control" name="coursedevelopment	" placeholder="วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา">
+                                            <input type="text" class="form-control" name="coursedevelopment" placeholder="วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา">
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
@@ -120,7 +120,7 @@
                             </form>
 
 
-                            </form>
+                          
 
                         </div>
                     </div>
