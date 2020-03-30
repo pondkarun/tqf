@@ -71,7 +71,7 @@
                                     </table>
                                     <br>
                                     <h5>คำอธิบายรายวิชา</h5>
-                                    <form>
+                                    <form action="mko3_3_save.php" method="post">
 
                                         <div class="form-group row">
                                             <!-- <label class="col-sm-2 col-form-label">1.1</label> -->
@@ -112,7 +112,7 @@
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                    <button type="submit" class="btn btn-sm btn-info">บันทึกข้อมูล</button></center>
 
                             </div>
                             <br>
