@@ -142,7 +142,7 @@ $num = mysqli_num_rows($result1);
 
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">9.วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชาครั้งล่าสุด</label>
+                                            <label class="col-sm-2 col-form-label">6.วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชาครั้งล่าสุด</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="dateofmaking" placeholder="ปีการศึกษา 2562 " ?>
                                             </div>

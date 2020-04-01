@@ -109,25 +109,36 @@
                                         </div>
                                         <h5>จำนวนชั่วโมงต่อสัปดาห์ที่อาจารย์ให้คำปรึกษาและแนะนำทางวิชาการแก่นักศึกษาเป็นรายบุคคล</h5>
                                         <input type="text" class="form-control" name="numberweek">
-
                                 </div>
-                                <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info">บันทึกข้อมูล</button></center>
-
                             </div>
-                            <br>
 
 
+                            <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                    บันทึก
 
+                                </button>
+                                <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
 
-                            </form>
+                                    ยกเลิก
 
+                                </button>
+                                </form>
                         </div>
+                        <br>
+
+
+
+
+                        </form>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.container-fluid -->
+    </div>
+    <!-- /.container-fluid -->
 
     </div>
     <!-- End of Main Content -->

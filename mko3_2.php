@@ -109,18 +109,24 @@
                                             </div>
                                             <h5>วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา</h5>
                                             <input type="text" class="form-control" name="coursedevelopment" placeholder="วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา">
-
                                 </div>
-                                <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
-
                             </div>
-                            <br>
-
-                            </form>
 
 
-                          
+                            <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                    บันทึก
+
+                                </button>
+                                <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                    ยกเลิก
+
+                                </button>
+                                </form>
+
+
 
                         </div>
                     </div>
