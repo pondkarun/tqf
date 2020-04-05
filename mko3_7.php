@@ -77,34 +77,34 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">1.กลยุทธ์การประเมินสิทธิผลของรายวิชาโดยนักศุกษา</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="การประเมินประสิทธิผลรายวิชานี้ ที่จัดทำโดยนักศึกษา ได้จัดกิจกรรม" ?>
+                                                    <input type="text" name="Coursecode1" class="form-control form-control-user" placeholder="การประเมินประสิทธิผลรายวิชานี้ ที่จัดทำโดยนักศึกษา ได้จัดกิจกรรม" ?>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">2.กลยุทธ์การประเมินการสอน</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ในการเก็บข้อมูลเพื่อประเมินการสอน ได้มีกลยุทธ์ ดังนี้" ?>
+                                                    <input type="text" name="Coursecode2" class="form-control form-control-user" placeholder="ในการเก็บข้อมูลเพื่อประเมินการสอน ได้มีกลยุทธ์ ดังนี้" ?>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">3.การปรับปรุงการสอน</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="หลังจากผลการประเมินการสอนในข้อ 2 จึงมีการปรับปรุงการสอนโดยจัดกิจกรรมในการระดมสมอง" ?>
+                                                    <input type="text" name="Coursecode3" class="form-control form-control-user" placeholder="หลังจากผลการประเมินการสอนในข้อ 2 จึงมีการปรับปรุงการสอนโดยจัดกิจกรรมในการระดมสมอง" ?>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">4.การทวนสอบมาตราฐานผลสัมถิทธิ์ของนักศึกษาในรายวิชา</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="การทวนสอบการเนื้อหาข้อสอบโดยคณะกรรมการแต่งตั้ง" ?>
+                                                    <input type="text" name="Coursecode4" class="form-control form-control-user" placeholder="การทวนสอบการเนื้อหาข้อสอบโดยคณะกรรมการแต่งตั้ง" ?>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">5.การดำเนินการทบทวนและการว่างแผนปรับปรุงประสิทธิผลของรายวิชา</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="จากผลการประเมิน และทวนสอบผลสัมฤทธิ์ประสิทธิผลรายวิชา" ?>
+                                                    <input type="text" name="Coursecode5" class="form-control form-control-user" placeholder="จากผลการประเมิน และทวนสอบผลสัมฤทธิ์ประสิทธิผลรายวิชา" ?>
                                                 </div>
                                             </div>
 

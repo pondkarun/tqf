@@ -95,7 +95,7 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.ปัญหาด้านการบริหารของสถาบันอุดมศึกษาและ/หรือสถานประกอบการ/สถานที่ฝึก</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="ปัญหา" ?>
+                                                <input type="text" class="form-control" name="c" placeholder="ปัญหา" ?>
                                             </div>
                                         </div>
 

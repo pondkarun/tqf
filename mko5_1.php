@@ -136,7 +136,7 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">5.สถานที่เรียน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="อาคาร" ?>
+                                                <input type="text" class="form-control" name="semester1" placeholder="อาคาร" ?>
                                             </div>
                                         </div>
 

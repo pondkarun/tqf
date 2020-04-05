@@ -137,7 +137,7 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">7.จำนวนนักศึกษาที่คงอยู่เมื่อสิ้นสุดภากการศึกษา</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="36" ?>
+                                                <input type="text" class="form-control" name="responsibleteacher1" placeholder="36" ?>
                                             </div>
                                         </div>
 
