@@ -16,6 +16,7 @@ if (isset($_POST['username'])) {
         $row = mysqli_fetch_array($result);
 
         $_SESSION["login_id"] = $row["id"];
+        $_SESSION["satatus"] = $row["satatus"];
         $_SESSION["login"] = "login";
 
 

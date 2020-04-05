@@ -97,6 +97,7 @@ $i = 0
                                                         <td><?php echo $row['year']; ?></td>
                                                         <td><?php echo $row['semester']; ?></td>
                                                         <td class="text-center">
+
                                                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
                                                             ||
 

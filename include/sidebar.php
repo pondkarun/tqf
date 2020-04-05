@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
@@ -22,11 +27,13 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>2</span></a>
     </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>3</span></a>
-    </li>
+    <?php if ($_SESSION["satatus"] == 'admin') { ?>
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>3</span></a>
+        </li>
+    <?php } ?>
     <li class="nav-item active">
         <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
