@@ -38,35 +38,35 @@
                                         <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
                                             <div class="form-group row">
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input class="form-control" type="text" name="name" required placeholder="First Name">
+                                                    <input class="form-control" type="text" name="name" required placeholder="ชื่อ">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <input class="form-control" type="text" name="sername" required placeholder="Last Name">
+                                                    <input class="form-control" type="text" name="sername" required placeholder="นามสกุล">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" name="username" required placeholder="Username">
+                                                <input class="form-control" type="text" name="username" required placeholder="ไอดีผู้ใช้">
                                                 <span class="focus-input100"></span>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input class="form-control" type="password" name="password" required placeholder="Password">
+                                                    <input class="form-control" type="password" name="password" required placeholder="พาสเวิร์ด">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <input class="form-control" type="password" name="password_con" required placeholder="Repeat Password">
+                                                    <input class="form-control" type="password" name="password_con" required placeholder="พาสเวิร์ด อีกครั้ง">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input class="form-control" type="text" name="faculty" required placeholder="faculty">
+                                                    <input class="form-control" type="text" name="faculty" required placeholder="คณะ">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input class="form-control" type="email" name="email" required placeholder="Email">
+                                                    <input class="form-control" type="email" name="email" required placeholder="อีเมล์">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                             </div>

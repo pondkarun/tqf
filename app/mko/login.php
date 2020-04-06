@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Login V5</title>
+	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -64,7 +64,7 @@
 
 
 					<div class="w-full text-center p-t-55">
-						<label for="textfield"><strong><a href="misspass.php">ลืมรหัสผ่าน</a></strong> | <strong><a href="../../register.php">สมัครสมาชิก</a></strong></label>
+						<strong><a href="../../register.php">สมัครสมาชิก</a></strong></label>
 					</div>
 					<div class="w-full text-center p-t-55">
 

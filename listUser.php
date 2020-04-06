@@ -100,8 +100,13 @@ $i = 0
 
                                                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
                                                             ||
+                                                            <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.4</a>
+                                                            ||
 
                                                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.5</a>
+                                                            ||
+
+                                                            <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.6</a>
                                                             ||<br>
 
                                                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
