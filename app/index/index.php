@@ -47,7 +47,7 @@
 			</div>
 			<div class="header-right">
 				<ul class="main-menu">
-					<li class="active"><a href="index.php">หน้าแรก11</a></li>
+					<li class="active"><a href="index.php">หน้าแรก</a></li>
 					<li><a href="../../listUser.php">รายวิชา</a></li>
 
 					<li><a href="../../mko3_1.php">มคอ.</a></li>
