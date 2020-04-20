@@ -37,7 +37,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -62,7 +62,7 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                    <form class="login100-form validate-form flex-sb flex-w" action="mko3_7_save.php" method="post">
                                         <table align="center" width="800">
                                             <tr>
                                                 <td>
@@ -111,29 +111,30 @@
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                    <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                    <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                        บันทึก
 
+                                    </button>
+                                    <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                        ยกเลิก
+
+                                    </button>
+                                    </form>
                             </div>
-                            <br>
-
-                            </form>
-
-
-                            </form>
-
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /.container-fluid -->
+
         </div>
-        <!-- /.container-fluid -->
+        <!-- End of Main Content -->
 
-    </div>
-    <!-- End of Main Content -->
+        <!-- Footer -->
 
-    <!-- Footer -->
-
-    <!-- End of Footer -->
+        <!-- End of Footer -->
 
     </div>
     <!-- End of Content Wrapper -->

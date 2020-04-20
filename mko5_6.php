@@ -11,9 +11,7 @@
 include('include/condb.php');
 
 
-$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
-$result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
-$num = mysqli_num_rows($result1);
+
 ?>
 
 <head>
@@ -24,7 +22,7 @@ $num = mysqli_num_rows($result1);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.5</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -52,7 +50,7 @@ $num = mysqli_num_rows($result1);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -63,7 +61,7 @@ $num = mysqli_num_rows($result1);
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท5</h1>
                                 </td>
                             </tr>
                         </table>
@@ -78,7 +76,7 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="mko3_1db.php" method="POST">
+                                    <form action="mko5_6_save.php" method="POST">
 
 
                                         <center>
@@ -95,37 +93,37 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">แผนการปรับปรุงที่เสนอในภาคการศึกษา/ปีการศึกษาที่ผ่านมา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="(มี ไม่มี)" ?>
+                                                <input type="text" class="form-control" name="io" placeholder="(มี ไม่มี)" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ผลการดำเนินงาน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="(มี ไม่มี)" ?>
+                                                <input type="text" class="form-control" name="io1" placeholder="(มี ไม่มี)" ?>
                                             </div>
                                         </div>
                                         <h5>ข้อเสนอแผนการปรับปรุงสำหรับภาคการศึกษา/ปีการศึกษาต่อไป</h5>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ข้อเสนอแผนการปรับปรุงสำหรับภาคการศึกษา/ปีการศึกษาต่อไป</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ข้อเสนอ" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="กำหนดเวลาที่แล้วเสร็จ" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ผู้รับผิดชอบ" ?>
+                                                <input type="text" class="form-control" name="io2" placeholder="ข้อเสนอ" ?>
+                                                <input type="text" class="form-control" name="io3" placeholder="กำหนดเวลาที่แล้วเสร็จ" ?>
+                                                <input type="text" class="form-control" name="io4" placeholder="ผู้รับผิดชอบ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">4.ข้อเสนอแนะของอาจารย์ผู้รับผิดชอบรายวิชา ต่ออาจารย์ผู้รับผิดชอบหลักสูตร</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="(มี ไม่มี)" ?>
+                                                <input type="text" class="form-control" name="io5" placeholder="(มี ไม่มี)" ?>
                                             </div>
                                         </div>
 
 
 
                                         <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก
 

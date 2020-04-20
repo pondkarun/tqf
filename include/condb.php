@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL); //ถ้าปิด ใส่ 0
-
+session_start();
 $localhost = "103.22.183.220";
 $username_db = "smomscic_tqf";
 $password_db = "FbuJBkSB71";

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.5</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -37,7 +37,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -48,7 +48,7 @@
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท3</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท5</h1>
                                 </td>
                             </tr>
                         </table>
@@ -77,28 +77,28 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่1" ?>
+                                                    <input type="text" name="week1" class="form-control form-control-user" placeholder="สัปดาห์ที่1" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplan1" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplann1" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
+                                                <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่สอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                 <div class="col-sm-11">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่1" ?>
+                                                    <input type="text" name="reason1" class="form-control form-control-user" placeholder="สัปดาห์ที่1" ?>
 
                                                 </div>
                                             </div>
@@ -107,28 +107,28 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่2" ?>
+                                                    <input type="text" name="week2" class="form-control form-control-user" placeholder="สัปดาห์ที่2" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplan2" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplann2" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                 <div class="col-sm-11">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่2" ?>
+                                                    <input type="text" name="reason2" class="form-control form-control-user" placeholder="สัปดาห์ที่2" ?>
 
                                                 </div>
                                             </div>
@@ -136,28 +136,28 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่3" ?>
+                                                    <input type="text" name="week3" class="form-control form-control-user" placeholder="สัปดาห์ที่3" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplan3" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplann3" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                 <div class="col-sm-11">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่3" ?>
+                                                    <input type="text" name="reason3" class="form-control form-control-user" placeholder="สัปดาห์ที่3" ?>
 
                                                 </div>
                                             </div>
@@ -165,28 +165,28 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่4" ?>
+                                                    <input type="text" name="week4" class="form-control form-control-user" placeholder="สัปดาห์ที่4" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplan4" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplann4" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                 <div class="col-sm-11">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่4" ?>
+                                                    <input type="text" name="reason4" class="form-control form-control-user" placeholder="สัปดาห์ที่4" ?>
 
                                                 </div>
                                             </div>
@@ -194,28 +194,28 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่5" ?>
+                                                    <input type="text" name="week5" class="form-control form-control-user" placeholder="สัปดาห์ที่5" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplan5" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplann5" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                 <div class="col-sm-11">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่5" ?>
+                                                    <input type="text" name="reason5" class="form-control form-control-user" placeholder="สัปดาห์ที่5" ?>
 
                                                 </div>
                                             </div>
@@ -223,28 +223,28 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่6" ?>
+                                                    <input type="text" name="week6" class="form-control form-control-user" placeholder="สัปดาห์ที่6" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplan6" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplann6" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                 <div class="col-sm-11">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่6" ?>
+                                                    <input type="text" name="reason6" class="form-control form-control-user" placeholder="สัปดาห์ที่6" ?>
 
                                                 </div>
                                             </div>
@@ -253,28 +253,28 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่7" ?>
+                                                    <input type="text" name="week7" class="form-control form-control-user" placeholder="สัปดาห์ที่7" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplan7" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                 <div class="col-sm-1">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                    <input type="text" name="hrplann7" class="form-control form-control-user" placeholder="8" ?>
 
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                 <div class="col-sm-11">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่7" ?>
+                                                    <input type="text" name="reason7" class="form-control form-control-user" placeholder="สัปดาห์ที่7" ?>
 
                                                 </div>
                                             </div>
@@ -283,28 +283,28 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่9" ?>
+                                                        <input type="text" name="week9" class="form-control form-control-user" placeholder="สัปดาห์ที่9" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan9" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann9" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่9" ?>
+                                                        <input type="text" name="reason9" class="form-control form-control-user" placeholder="สัปดาห์ที่9" ?>
 
                                                     </div>
                                                 </div>
@@ -314,28 +314,28 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่10" ?>
+                                                        <input type="text" name="week10" class="form-control form-control-user" placeholder="สัปดาห์ที่10" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan10" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann10" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่10" ?>
+                                                        <input type="text" name="reason10" class="form-control form-control-user" placeholder="สัปดาห์ที่10" ?>
 
                                                     </div>
                                                 </div>
@@ -345,28 +345,28 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่11" ?>
+                                                        <input type="text" name="week11" class="form-control form-control-user" placeholder="สัปดาห์ที่11" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan11" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann11" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่11" ?>
+                                                        <input type="text" name="reason11" class="form-control form-control-user" placeholder="สัปดาห์ที่11" ?>
 
                                                     </div>
                                                 </div>
@@ -375,28 +375,28 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่12" ?>
+                                                        <input type="text" name="week12" class="form-control form-control-user" placeholder="สัปดาห์ที่12" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan12" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann12" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่12" ?>
+                                                        <input type="text" name="reason12" class="form-control form-control-user" placeholder="สัปดาห์ที่12" ?>
 
                                                     </div>
                                                 </div>
@@ -405,59 +405,28 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่13" ?>
+                                                        <input type="text" name="week13" class="form-control form-control-user" placeholder="สัปดาห์ที่13" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan13" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann13" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่13" ?>
-
-                                                    </div>
-                                                </div>
-
-
-
-                                                <div class="form-group row">
-                                                    <label class="col-sm-14 col-form-labe">หัวข้อ</label>
-                                                    <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่14" ?>
-
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
-                                                    <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
-
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
-                                                    <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
-
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
-                                                    <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่14" ?>
+                                                        <input type="text" name="reason13" class="form-control form-control-user" placeholder="สัปดาห์ที่13" ?>
 
                                                     </div>
                                                 </div>
@@ -467,28 +436,59 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่15" ?>
+                                                        <input type="text" name="week14" class="form-control form-control-user" placeholder="สัปดาห์ที่14" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan14" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann14" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่15" ?>
+                                                        <input type="text" name="reason14" class="form-control form-control-user" placeholder="สัปดาห์ที่14" ?>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form-group row">
+                                                    <label class="col-sm-14 col-form-labe">หัวข้อ</label>
+                                                    <div class="col-sm-12">
+                                                        <input type="text" name="week15" class="form-control form-control-user" placeholder="สัปดาห์ที่15" ?>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
+                                                    <div class="col-sm-1">
+                                                        <input type="text" name="hrplan15" class="form-control form-control-user" placeholder="8" ?>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
+                                                    <div class="col-sm-1">
+                                                        <input type="text" name="hrplann15" class="form-control form-control-user" placeholder="8" ?>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
+                                                    <div class="col-sm-11">
+                                                        <input type="text" name="reason15" class="form-control form-control-user" placeholder="สัปดาห์ที่15" ?>
 
                                                     </div>
                                                 </div>
@@ -497,28 +497,28 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่16" ?>
+                                                        <input type="text" name="week16" class="form-control form-control-user" placeholder="สัปดาห์ที่16" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan16" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann16" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่16" ?>
+                                                        <input type="text" name="reason16" class="form-control form-control-user" placeholder="สัปดาห์ที่16" ?>
 
                                                     </div>
                                                 </div>
@@ -527,28 +527,28 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อ</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่17" ?>
+                                                        <input type="text" name="week17" class="form-control form-control-user" placeholder="สัปดาห์ที่17" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงตามแผนการสอน</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplan17" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-12 col-form-labe">จำนวนชั่วโมงได้สอนจริง</label>
                                                     <div class="col-sm-1">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="8" ?>
+                                                        <input type="text" name="hrplann17" class="form-control form-control-user" placeholder="8" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">ระบุเหตุุผลที่ก่ีสอนจริงต่างจากแผนไม่เกิน 25%</label>
                                                     <div class="col-sm-11">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="สัปดาห์ที่17" ?>
+                                                        <input type="text" name="reason17" class="form-control form-control-user" placeholder="สัปดาห์ที่17" ?>
 
                                                     </div>
                                                 </div>
@@ -557,14 +557,14 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">2. หัวข้อไม่ครอบคลุมตามแผน</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="-" ?>
+                                                        <input type="text" name="coon1" class="form-control form-control-user" placeholder="-" ?>
 
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">หัวข้อไม่ครอบคลุมตามแผนได้ทำการสอนครบถ้วนตามแผนแล้ว</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="-" ?>
+                                                        <input type="text" name="coon2" class="form-control form-control-user" placeholder="-" ?>
 
                                                     </div>
                                                 </div>
@@ -573,7 +573,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">นัยสำคัญของหัวข้อที่สอนไม่ครอบคลุมตามแผน</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="-" ?>
+                                                        <input type="text" name="coon3" class="form-control form-control-user" placeholder="-" ?>
 
                                                     </div>
                                                 </div>
@@ -582,7 +582,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-14 col-form-labe">แนวชดเชย</label>
                                                     <div class="col-sm-12">
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="-" ?>
+                                                        <input type="text" name="coon4" class="form-control form-control-user" placeholder="-" ?>
 
                                                     </div>
                                                 </div>
@@ -595,8 +595,8 @@
                                                             <div>
                                                                 <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
                                                                 <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ข้อที่1" ?>
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="radio1" value="true"> มี
+                                                                <input type="radio" name="radio1" value="false"> ไม่มี
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -608,8 +608,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="radio2" value="[yes]"> มี
+                                                                <input type="radio" name="radio2" value="[no]"> ไม่มี
+
 
 
                                                                 <div class="form-group row">
@@ -622,8 +623,10 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[yes]"> มี
+                                                                <input type="radio" name="[name]" value="[no]"> ไม่มี
+
+
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -635,8 +638,10 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[yes]"> มี
+                                                                <input type="radio" name="[name]" value="[no]"> ไม่มี
+
+
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -648,8 +653,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -661,8 +667,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
 
                                                                 <div class="form-group row">
@@ -675,8 +682,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -688,8 +696,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
 
                                                                 <div class="form-group row">
@@ -702,8 +711,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
 
                                                                 <div class="form-group row">
@@ -715,9 +725,9 @@
                                                                     </div>
                                                                 </div>
 
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
 
 
                                                                 <div class="form-group row">
@@ -730,8 +740,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -743,8 +754,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -756,8 +768,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -769,8 +782,9 @@
                                                                 </div>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
 
                                                                 <div class="col-sm-12">
@@ -782,8 +796,9 @@
                                                             </div>
 
 
-                                                            <input type="checkbox" name="gender" value="Male">มี</input>
-                                                            <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                            <input type="radio" name="[name]" value="[value]"> มี
+                                                            <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
                                                             <div class="col-sm-12">
                                                                 <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -794,8 +809,9 @@
                                                         </div>
 
 
-                                                        <input type="checkbox" name="gender" value="Male">มี</input>
-                                                        <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                        <input type="radio" name="[name]" value="[value]"> มี
+                                                        <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
 
                                                         <div class="col-sm-12">
@@ -806,8 +822,9 @@
                                                         </div>
                                                     </div>
 
-                                                    <input type="checkbox" name="gender" value="Male">มี</input>
-                                                    <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                    <input type="radio" name="[name]" value="[value]"> มี
+                                                    <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
                                                     <div class="col-sm-12">
                                                         <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
@@ -817,8 +834,9 @@
                                                     </div>
                                                 </div>
 
-                                                <input type="checkbox" name="gender" value="Male">มี</input>
-                                                <input type="checkbox" name="gender" value="Male">ไม่มี</input>
+                                                <input type="radio" name="[name]" value="[value]"> มี
+                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+
 
 
                                                 <div class="col-sm-12">
@@ -841,32 +859,36 @@
 
                                                 </div>
                                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                                    <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                                    <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                                        บันทึก
+
+                                                    </button>
+                                                    <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                                        ยกเลิก
+
+                                                    </button>
+                                        </form>
+
+                                    </form>
 
                                 </div>
-                                <br>
-
-                                </form>
-
-
-                                </form>
-
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- /.container-fluid -->
+
             </div>
-            <!-- /.container-fluid -->
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+
+            <!-- End of Footer -->
 
         </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
-
-        <!-- End of Footer -->
-
-    </div>
-    <!-- End of Content Wrapper -->
+        <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->

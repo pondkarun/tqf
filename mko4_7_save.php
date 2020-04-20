@@ -1,28 +1,32 @@
 <?php
 
 include('include/condb.php');
-
-        $sql = "INSERT INTO db_mko4_7
+// echo '<pre>';
+// print_r($_POST);
+// echo '</pre>';
+// exit;
+$sql = "INSERT INTO db_mko4_7
         (
-            courseObjectives1,
-            courseObjectives2
-            
-            
-
-            )
+            id_mko,
+            com,           
+            comm
+  
+        )
         VALUES
-        ('$_POST[courseObjectives1]',
-        ('$_POST[courseObjectives2]'
+        (
+        '$_POST[id_mko]', 
+        '$_POST[com]',             
+        '$_POST[comm]'
         )";
-        
-        
-            if ($result)
-            $result= $condb->query($sql); 
-            {
+
+$result = $condb->query($sql);
+
+
+if ($result) {
     echo "<script type='text/javascript'>";
     echo "alert('บันทึกข้อมูลสำเร็จ');";
-    echo "window.location='mko5_1.php';";
+    echo "window.location='mko5_1.php?id_mko=$_POST[id_mko]';";
     echo "</script>";
-} 
-
-?>
+} else {
+    echo $sql;
+}

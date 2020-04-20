@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.4</title>
+
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -37,7 +38,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -62,7 +63,7 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                    <form class="login100-form validate-form flex-sb flex-w" action="mko4_4_save.php" method="post">
                                         <table align="center" width="500">
                                             <tr>
                                                 <td>
@@ -91,24 +92,24 @@
                                                     </textarea>
                                         </center>
 
-                                        <h6>2.ความรู้</h6>
+                                        <h6>ความรู้</h6>
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">1.1</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives1" placeholder="การเรียนรู้ในศาสตร์ทางด้านคอมพิวเตอร์ภาษาอังกฤษบุคลิกภาพและการสื่อสาร" ?>
+                                                <input type="text" class="form-control" name="a" placeholder="การเรียนรู้ในศาสตร์ทางด้านคอมพิวเตอร์ภาษาอังกฤษบุคลิกภาพและการสื่อสาร" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">1.2</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives2" placeholder="การฝึกปฏิบัติงานในหน้าที่ต่างๆตามที่ได้รับมอบหมาย" ?>
+                                                <input type="text" class="form-control" name="aa" placeholder="การฝึกปฏิบัติงานในหน้าที่ต่างๆตามที่ได้รับมอบหมาย" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">1.3</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives3" placeholder="การฝึกเพื่อแก้ไขปัญหาที่เกิดขึ้นเฉพาะหน้าการเผชิญกับการทางานจริง" ?>
+                                                <input type="text" class="form-control" name="aaa" placeholder="การฝึกเพื่อแก้ไขปัญหาที่เกิดขึ้นเฉพาะหน้าการเผชิญกับการทางานจริง" ?>
                                             </div>
                                         </div>
 
@@ -118,96 +119,100 @@
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">1</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives2" placeholder="1.รายงานโครงงานจริยธรรมและจิตอาสากำหนดการส่ง1เดือนหลังจากการเข้าร่วมการอบรมบุคลิกภาพและการสื่อสารการติดตามผลอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์ประเมินผลงานจากรายงาน " ?>
+                                                <input type="text" class="form-control" name="b" placeholder="1.รายงานโครงงานจริยธรรมและจิตอาสากำหนดการส่ง1เดือนหลังจากการเข้าร่วมการอบรมบุคลิกภาพและการสื่อสารการติดตามผลอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์ประเมินผลงานจากรายงาน " ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">2</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives3" placeholder="2.รายงานการเข้าร่วมอบรมตามศาสตร์กำหนดการส่ง2อาทิตย์หลังจากการเข้าร่วมการอบรมความรู้ตามศาสตร์การติดตามผลอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์ ประเมินผลงานจากรายงาน " ?>
+                                                <input type="text" class="form-control" name="bb" placeholder="2.รายงานการเข้าร่วมอบรมตามศาสตร์กำหนดการส่ง2อาทิตย์หลังจากการเข้าร่วมการอบรมความรู้ตามศาสตร์การติดตามผลอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์ ประเมินผลงานจากรายงาน " ?>
                                             </div>
                                         </div>
-                                        <h5>4.หน้าที่และความรับผิดชอบของอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์</h5>
+                                        <h5>หน้าที่และความรับผิดชอบของอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์</h5>
 
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">1</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives2" placeholder="ให้คำปรึกษาในการทำกิจกรรมต่างๆของการเตรียมฝึกประสบการณ์วิชาชีพแก่นักศึกษา" ?>
+                                                <input type="text" class="form-control" name="bbb" placeholder="ให้คำปรึกษาในการทำกิจกรรมต่างๆของการเตรียมฝึกประสบการณ์วิชาชีพแก่นักศึกษา" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">2</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives3" placeholder="ให้คำปรึกษาในการเลือกสถานที่ฝึกงานแก่นักศึกษา" ?>
+                                                <input type="text" class="form-control" name="c" placeholder="ให้คำปรึกษาในการเลือกสถานที่ฝึกงานแก่นักศึกษา" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-5 col-form-label">3</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="courseObjectives3" placeholder="ประเมินผลการงานของนักศึกษา" ?>
+                                                <input type="text" class="form-control" name="cc" placeholder="ประเมินผลการงานของนักศึกษา" ?>
                                             </div>
                                         </div>
 
-                                        <h5>5.การเตรียมการในการแนะแนวและช่วยเหลือนักศึกษา</h5>
+                                        <h5>การเตรียมการในการแนะแนวและช่วยเหลือนักศึกษา</h5>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="courseObjectives1" placeholder="จัดปฐมนิเทศแนะนำการเตรียมฝึกประสบการณ์วิชาชีพให้กับนักศึกษา" ?>
+                                                <input type="text" class="form-control" name="ccc" placeholder="จัดปฐมนิเทศแนะนำการเตรียมฝึกประสบการณ์วิชาชีพให้กับนักศึกษา" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">2</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="courseObjectives1" placeholder="จัดอาจารย์ที่ปรึกษาการเตรียมฝึกประสบการณ์วิชาชีพให้กับนักศึกษา" ?>
+                                                <input type="text" class="form-control" name="d" placeholder="จัดอาจารย์ที่ปรึกษาการเตรียมฝึกประสบการณ์วิชาชีพให้กับนักศึกษา" ?>
                                             </div>
                                         </div>
-                                        <h5>6.สิ่งอำนวยความสะดวกและการสนับสนุนที่ต้องการจากสถานที่ที่จัดประสบการณ์ภาคสนาม</h5>
+                                        <h5>สิ่งอำนวยความสะดวกและการสนับสนุนที่ต้องการจากสถานที่ที่จัดประสบการณ์ภาคสนาม</h5>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="courseObjectives1" placeholder="สถานที่จัดการปฐมนิเทศอบรมบุคลิกภาพและการสื่อสารอบรมความรู้ตามศาสตร์และปัจฉิมนิเทศ" ?>
+                                                <input type="text" class="form-control" name="dd" placeholder="สถานที่จัดการปฐมนิเทศอบรมบุคลิกภาพและการสื่อสารอบรมความรู้ตามศาสตร์และปัจฉิมนิเทศ" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">2</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="courseObjectives1" placeholder="คู่มือการเตรียมฝึกประสบการณ์วิชาชีพ" ?>
+                                                <input type="text" class="form-control" name="ddd" placeholder="คู่มือการเตรียมฝึกประสบการณ์วิชาชีพ" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">3</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="courseObjectives1" placeholder="วัสดุอุปกรณ์สนับสนุนต่างๆ" ?>
+                                                <input type="text" class="form-control" name="e" placeholder="วัสดุอุปกรณ์สนับสนุนต่างๆ" ?>
                                             </div>
                                         </div>
 
                                         <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                                บันทึก
+
+                                            </button>
+                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                                ยกเลิก
+
+                                            </button>
+                                    </form>
+
+                                    </form>
 
                                 </div>
-                                <br>
-
-                                </form>
-
-
-                                </form>
-
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- /.container-fluid -->
+
             </div>
-            <!-- /.container-fluid -->
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+
+            <!-- End of Footer -->
 
         </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
-
-        <!-- End of Footer -->
-
-    </div>
-    <!-- End of Content Wrapper -->
+        <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->

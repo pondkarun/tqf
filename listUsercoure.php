@@ -1,7 +1,7 @@
 <?php
 include('include/condb.php');
 include('include/chklogin.php');
-$query = "SELECT * FROM dbcourse_add where 1 ";
+$query = "SELECT * FROM dbcourseteacher where 1 ";
 $result = mysqli_query($condb, $query);
 $i = 0;
 
@@ -82,17 +82,11 @@ $i = 0;
                                                     <th width="">#</th>
                                                     <th width="">รหัสวิชา</th>
                                                     <th width="">ชื่อวิชาภาษาไทย</th>
-                                                    <th width="">ชื่อวิชาภาษาอังกฤษ</th>
                                                     <th width="">หลักสูตรและประเภทรายวิชา</th>
                                                     <th width="">หน่วยกิต</th>
-                                                    <th width="">อาจารย์ผู้รับผิดชอบรายวิชา</th>
-                                                    <th width="">ปีการศึกษา</th>
-                                                    <th width="">ภาคเรียน</th>
-                                                    <th width="">ห้องเรียน</th>
-                                                    <th width="">วันเวลาสอน</th>
-                                                    <th width="">กลุ่มเรียน</th>
-                                                    <th width="">จัดการ</th>
-
+                                                    <?php if ($_SESSION['satatus'] == 'admin') { ?>
+                                                        <th width="">จัดการ</th>
+                                                    <?php } ?>
                                                 </tr>
                                             </thead>
 
@@ -100,38 +94,23 @@ $i = 0;
                                                 <?php while ($row = mysqli_fetch_array($result)) { ?>
                                                     <tr>
                                                         <td class="text-center"><?php echo ++$i; ?></td>
-                                                        <td><?php echo $row['Coursecode']; ?></td>
-                                                        <td><?php echo $row['Thaisubjectname']; ?></td>
-                                                        <td><?php echo $row['Englishsubjectname']; ?></td>
-                                                        <td><?php echo $row['Curriculumandcoursetype']; ?></td>
-                                                        <td><?php echo $row['credit']; ?></td>
-                                                        <td><?php echo $row['nameteacher']; ?></td>
-                                                        <td><?php echo $row['year']; ?></td>
-                                                        <td><?php echo $row['semester']; ?></td>
-                                                        <td><?php echo $row['classroom']; ?></td>
-                                                        <td><?php echo $row['examdate']; ?></td>
-                                                        <td><?php echo $row['group_class']; ?></td>
+                                                        <td><?php echo $row['course']; ?></td>
+                                                        <td><?php echo $row['namesub']; ?></td>
+                                                        <td><?php echo $row['courseObjectives']; ?></td>
+                                                        <td><?php echo $row['cradit']; ?></td>
 
 
-                                                        <td class="text-center">
-                                                            <?php if ($_SESSION['satatus'] == 'user') { ?>
-                                                                <a href="mko3_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
+                                                        <?php if ($_SESSION['satatus'] == 'admin') { ?>
+                                                            <td class="text-center">
+
+
+                                                                <a href="coursecoure_update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
                                                                 ||
-                                                                <a href="mko4_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.4</a>
-                                                                ||
+                                                                <a href="coursecoure_del.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a>
 
-                                                                <a href="mko5_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.5</a>
-                                                                ||
-                                                                <a href="mko6_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.6</a>
-                                                            <?php } ?>
-                                                            <?php if ($_SESSION['satatus'] == 'admin') { ?>
-                                                                <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
-                                                                ||
-                                                                <a href="del_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a>
-                                                            <?php } ?>
-                                                        </td>
+                                                            </td>
 
-
+                                                        <?php } ?>
 
 
 
@@ -141,7 +120,7 @@ $i = 0;
                                             </tbody>
                                         </table>
                                         <?php if ($_SESSION['satatus'] == 'admin') { ?>
-                                            <a href="course_add.php" class="btn btn-sm btn-primary">เพิ่มข้อมูล</a>
+                                            <a href="coursecoure_add.php" class="btn btn-sm btn-primary">เพิ่มข้อมูล</a>
                                         <?php } ?>
                                     </div>
 

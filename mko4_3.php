@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.4</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -27,7 +27,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php include("include/sidebar.php"); ?>
+
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -62,7 +62,7 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                    <form class="login100-form validate-form flex-sb flex-w" action="mko4_3_save.php" method="post">
                                         <table align="center" width="500">
                                             <tr>
                                                 <td>
@@ -73,89 +73,89 @@
                                         <h5>1.คุณธรรมจริยธรรม </h5>
                                         <h6>1.1 คุณธรรม จริยธรรม ที่ต้องพัฒนา <h6>
 
-                                                <input type="checkbox" name="gender" value="Male">1.1.1.มีความซื่อสัตย์สุจริต</input>
+                                                <input type="checkbox" name="gender1" value="Male">1.1.1.มีความซื่อสัตย์สุจริต</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">1.1.2.มีวินัยตรงต่อเวลา</input>
+                                                <input type="checkbox" name="gender2" value="Male">1.1.2.มีวินัยตรงต่อเวลา</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">1.1.3.เคารพกฎระเบียบและข้อบังคับต่างๆ</input>
+                                                <input type="checkbox" name="gender3" value="Male">1.1.3.เคารพกฎระเบียบและข้อบังคับต่างๆ</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">1.1.4.มีความรับผิดชอบ</input>
+                                                <input type="checkbox" name="gender4" value="Male">1.1.4.มีความรับผิดชอบ</input>
                                                 <br>
 
                                                 <h5>1.2 กระบวนการหรือกิจกรรมที่ใช้พัฒนาการเรียนรู้ </h5>
-                                                <input type="checkbox" name="gender" value="Male">1.2.1.การปฐมนิเทศ</input>
+                                                <input type="checkbox" name="gender5" value="Male">1.2.1.การปฐมนิเทศ</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">1.2.2.การอบรมบุคลิกภาพและการสื่อสาร</input>
+                                                <input type="checkbox" name="gender6" value="Male">1.2.2.การอบรมบุคลิกภาพและการสื่อสาร</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">1.2.3.การอบรมความรู้ตามศาสตร์</input>
+                                                <input type="checkbox" name="gender7" value="Male">1.2.3.การอบรมความรู้ตามศาสตร์</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">1.2.4.การมอบหมายโครงงานด้านคุณธรรมจริยธรรมการปัจฉิมนิเทศ</input>
+                                                <input type="checkbox" name="gender8" value="Male">1.2.4.การมอบหมายโครงงานด้านคุณธรรมจริยธรรมการปัจฉิมนิเทศ</input>
 
                                                 <h5>1.3 วิธีการประเมินผลการเรียนรู้ </h5>
 
-                                                <input type="checkbox" name="gender" value="Male">1.3.1.อาจารย์นิเทศก์/อาจารย์ที่ปรึกษาประเมินผลงานจาโครงงานจริยธรรมและจิตอาสา</input>
+                                                <input type="checkbox" name="gender9" value="Male">1.3.1.อาจารย์นิเทศก์/อาจารย์ที่ปรึกษาประเมินผลงานจาโครงงานจริยธรรมและจิตอาสา</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">1.3.2.ประเมินผลการจากเข้าร่วมกิจกรรมปฐมนิเทศอบรมบุคลิกภาพและการสื่อสาร อบรมตามศาสตร์และปัจฉิมนิเทศ </input>
+                                                <input type="checkbox" name="gender10" value="Male">1.3.2.ประเมินผลการจากเข้าร่วมกิจกรรมปฐมนิเทศอบรมบุคลิกภาพและการสื่อสาร อบรมตามศาสตร์และปัจฉิมนิเทศ </input>
                                                 <br>
 
                                                 <h5>2.ความรู้ </h5>
                                                 <h6>2.1ความรู้ที่ต้องได้รับ </h6>
-                                                <input type="checkbox" name="gender" value="Male">2.1.1.มีความรู้ในศาสตร์ของตนเอง</input>
+                                                <input type="checkbox" name="gender11" value="Male">2.1.1.มีความรู้ในศาสตร์ของตนเอง</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">2.1.2.มีความรู้ด้านบุคลิกภาพและการสื่อสาร</input>
+                                                <input type="checkbox" name="gender12" value="Male">2.1.2.มีความรู้ด้านบุคลิกภาพและการสื่อสาร</input>
 
                                                 <h5>2.2กระบวนการหรือกิจกรรมที่ใช้พัฒนาการเรียนรู้</h5>
-                                                <input type="checkbox" name="gender" value="Male">2.2.1.อาจารย์นิเทศก์/อาจารย์ที่ปรึกษามอบหมายงานโครงงานจริยธรรมและจิตอาสาให้นักศึกษาหลักสูตรจัดอบรมความรู้ตามศาสตร์ให้กับนักศึกษา </input>
+                                                <input type="checkbox" name="gender13" value="Male">2.2.1.อาจารย์นิเทศก์/อาจารย์ที่ปรึกษามอบหมายงานโครงงานจริยธรรมและจิตอาสาให้นักศึกษาหลักสูตรจัดอบรมความรู้ตามศาสตร์ให้กับนักศึกษา </input>
 
                                                 <h5>2.3 วิธีการประเมินผลการเรียนรู้ </h5>
-                                                <input type="checkbox" name="gender" value="Male">2.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาโครงงานจริยธรรมและจิตอาสา</input>
+                                                <input type="checkbox" name="gender14" value="Male">2.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาโครงงานจริยธรรมและจิตอาสา</input>
 
 
                                                 <h5>3.ทักษะทางปัญญา </h5>
                                                 <h6>3.1ทักษะทางปัญญาที่ต้องพัฒนา</h6>
-                                                <input type="checkbox" name="gender" value="Male">3.1.1.สามารถคิดวิเคราะห์และสรุปผลความรู้ทางทฤษฎีที่เรียนมาให้สอดคล้องกับการปฏิบัติงานจริงได้</input>
+                                                <input type="checkbox" name="gender15" value="Male">3.1.1.สามารถคิดวิเคราะห์และสรุปผลความรู้ทางทฤษฎีที่เรียนมาให้สอดคล้องกับการปฏิบัติงานจริงได้</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">3.2.2.สามารถแสดงแนวคิดในการนำความรู้ทางทฤษฏีมาพัฒนาหรือปรับปรุงงานให้เหมาะสมสามารถวิเคราะห์ปัญหาและเสนอแนะวิธีการแก้ไขได้</input>
+                                                <input type="checkbox" name="gender16" value="Male">3.2.2.สามารถแสดงแนวคิดในการนำความรู้ทางทฤษฏีมาพัฒนาหรือปรับปรุงงานให้เหมาะสมสามารถวิเคราะห์ปัญหาและเสนอแนะวิธีการแก้ไขได้</input>
                                                 <br>
 
 
                                                 <h5>3.2 กระบวนการหรือกิจกรรมที่ใช้พัฒนาการเรียนรู้ </h5>
-                                                <input type="checkbox" name="gender" value="Male">3.2.1.การจัดอบรมความรู้ตามศาสตร์</input>
+                                                <input type="checkbox" name="gender17" value="Male">3.2.1.การจัดอบรมความรู้ตามศาสตร์</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">3.2.1.การมอบหมายงาน</input>
+                                                <input type="checkbox" name="gender18" value="Male">3.2.1.การมอบหมายงาน</input>
                                                 <br>
 
                                                 <h5>3.3วิธีการประเมินผลการเรียนรู้</h5>
-                                                <input type="checkbox" name="gender" value="Male">3.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาโครงงานจริยธรรมและจิตอาสา</input>
+                                                <input type="checkbox" name="gender19" value="Male">3.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาโครงงานจริยธรรมและจิตอาสา</input>
 
 
                                                 <h5>4.ทักษะความสัมพันธ์ระหว่างบุคคลและความรับผิดชอบ</h5>
                                                 <h6>4.1ทักษะความสัมพันธ์ระหว่างบุคคลและความรับผิดชอบที่ต้องพัฒนา</h6>
-                                                <input type="checkbox" name="gender" value="Male">4.1.1.รับผิดชอบงานที่ได้รับมอบหมาย</input>
+                                                <input type="checkbox" name="gender20" value="Male">4.1.1.รับผิดชอบงานที่ได้รับมอบหมาย</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">4.1.1.พัฒนาตนเองโดยการเรียนรู้สิ่งใหม่ๆอย่างสมำเสมอ</input>
+                                                <input type="checkbox" name="gender21" value="Male">4.1.1.พัฒนาตนเองโดยการเรียนรู้สิ่งใหม่ๆอย่างสมำเสมอ</input>
 
                                                 <h5>4.2 กระบวนการหรือกิจกรรมที่ใช้พัฒนาการเรียนรู้ </h5>
-                                                <input type="checkbox" name="gender" value="Male">4.2.1.การปฏิสัมพันธ์กับบุคคลในระดับต่างๆ</input>
+                                                <input type="checkbox" name="gender22" value="Male">4.2.1.การปฏิสัมพันธ์กับบุคคลในระดับต่างๆ</input>
 
                                                 <h5>4.3วิธีการประเมินผลการเรียนรู้</h5>
-                                                <input type="checkbox" name="gender" value="Male">4.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาโครงงานจริยธรรมและจิตอาสาๆ</input>
+                                                <input type="checkbox" name="gender23" value="Male">4.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาโครงงานจริยธรรมและจิตอาสาๆ</input>
 
 
                                                 <h5>5.ทักษะการวิเคราะห์เชิงตัวเลขการสื่อสารและการใช้เทคโนโลยีสารสนเทศ</h5>
-                                                <input type="checkbox" name="gender" value="Male">5.1.1ทักษะการวิเคราะห์เชิงตัวเลขการสื่อสารและการใช้เทคโนโลยีสารสนเทศที่ต้องพัฒนาสามารถใช้ความรู้ทางด้านคอมพิวเตอร์อันนไปสู่การตัดสินใจที่ถูกต้องเหมาะสมมีความสามารถในการนำเสนอความคิดเห็นทั้งเชิงสังคมและวิชาการให้แก่บุคคลหรือกลุ่มบุคคลทั้งการนำเสนอด้วยปากเปล่าและการเขียนรายงานได้อย่างเหมาะสมและมีประสิทธิภาพ
+                                                <input type="checkbox" name="gender24" value="Male">5.1.1ทักษะการวิเคราะห์เชิงตัวเลขการสื่อสารและการใช้เทคโนโลยีสารสนเทศที่ต้องพัฒนาสามารถใช้ความรู้ทางด้านคอมพิวเตอร์อันนไปสู่การตัดสินใจที่ถูกต้องเหมาะสมมีความสามารถในการนำเสนอความคิดเห็นทั้งเชิงสังคมและวิชาการให้แก่บุคคลหรือกลุ่มบุคคลทั้งการนำเสนอด้วยปากเปล่าและการเขียนรายงานได้อย่างเหมาะสมและมีประสิทธิภาพ
                                                 </input>
 
                                                 <h5>5.2กระบวนการหรือกิจกรรมที่ใช้พัฒนาการเรียนรู้</h5>
-                                                <input type="checkbox" name="gender" value="Male">5.2.1.กำหนดให้ส่งโครงงานที่ได้รับมอบหมายจากอาจารย์นิเทศก์/อาจารย์ที่ปรึกษา</input>
+                                                <input type="checkbox" name="gender25" value="Male">5.2.1.กำหนดให้ส่งโครงงานที่ได้รับมอบหมายจากอาจารย์นิเทศก์/อาจารย์ที่ปรึกษา</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">5.2.2.กำหนดให้เขียนบันทึกสรุปผลจากการเข้าร่วมอบรมตามศาสตร์</input>
+                                                <input type="checkbox" name="gender26" value="Male">5.2.2.กำหนดให้เขียนบันทึกสรุปผลจากการเข้าร่วมอบรมตามศาสตร์</input>
 
 
                                                 <h5>5.3วิธีการประเมินผลการเรียนรู้ </h5>
-                                                <input type="checkbox" name="gender" value="Male">5.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาจากรายงาน</input>
+                                                <input type="checkbox" name="gender27" value="Male">5.3.1.ประเมินผลโดยอาจารย์นิเทศก์/อาจารย์ที่ปรึกษาจากรายงาน</input>
                                                 <br>
-                                                <input type="checkbox" name="gender" value="Male">5.3.2.ประเมินผลจากบันทึกสรุปผล</input>
+                                                <input type="checkbox" name="gender28" value="Male">5.3.2.ประเมินผลจากบันทึกสรุปผล</input>
 
 
 
@@ -163,29 +163,33 @@
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                    <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                    <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                        บันทึก
+
+                                    </button>
+                                    <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                        ยกเลิก
+
+                                    </button>
+                                    </form>
+
+                                    </form>
 
                             </div>
-                            <br>
-
-                            </form>
-
-
-                            </form>
-
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /.container-fluid -->
+
         </div>
-        <!-- /.container-fluid -->
+        <!-- End of Main Content -->
 
-    </div>
-    <!-- End of Main Content -->
+        <!-- Footer -->
 
-    <!-- Footer -->
-
-    <!-- End of Footer -->
+        <!-- End of Footer -->
 
     </div>
     <!-- End of Content Wrapper -->

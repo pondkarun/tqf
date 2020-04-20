@@ -1,17 +1,28 @@
 <?php
 include('include/condb.php');
 include('include/chklogin.php');
-$query = "SELECT * FROM dbcourse_add where 1 ";
+$query = "SELECT 
+* ,
+
+
+(
+SELECT COUNT(a.id)  FROM dbcourse_add AS  a 
+INNER JOIN db_mko3_1 AS mk1 ON a.id = mk1.id_mko
+INNER JOIN db_mko3_2 AS mk2 ON a.id = mk2.id_mko
+INNER JOIN db_mko3_3 AS mk3 ON a.id = mk3.id_mko
+INNER JOIN db_mko3_4 AS mk4 ON a.id = mk4.id_mko
+INNER JOIN db_mko3_5 AS mk5 ON a.id = mk5.id_mko
+INNER JOIN db_mko3_6 AS mk6 ON a.id = mk6.id_mko
+INNER JOIN db_mko3_7 AS mk7 ON a.id = mk7.id_mko
+ WHERE a.id = aa.id
+) AS COUNT_MKO3
+
+
+
+
+FROM dbcourse_add AS  aa";
 $result = mysqli_query($condb, $query);
-$i = 0;
-
-
-// echo '<pre>';
-// print_r($_SESSION);
-// echo '</pre>';
-// exit;
-
-
+$i = 0
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +35,7 @@ $i = 0;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>รายวิชาที่เปิดสอน</title>
+    <title>รายวิชา</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -60,7 +71,7 @@ $i = 0;
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">รายวิชาที่เปิดสอน</h1>
+                        <h1 class="h3 mb-0 text-gray-800">รายวิชา</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -88,10 +99,10 @@ $i = 0;
                                                     <th width="">อาจารย์ผู้รับผิดชอบรายวิชา</th>
                                                     <th width="">ปีการศึกษา</th>
                                                     <th width="">ภาคเรียน</th>
-                                                    <th width="">ห้องเรียน</th>
-                                                    <th width="">วันเวลาสอน</th>
-                                                    <th width="">กลุ่มเรียน</th>
-                                                    <th width="">จัดการ</th>
+                                                    <th width="">ส่งมคอ. 3</th>
+                                                    <th width="">ส่งมคอ. 4</th>
+                                                    <th width="">ส่งมคอ. 5</th>
+                                                    <th width="">ส่งมคอ. 6</th>
 
                                                 </tr>
                                             </thead>
@@ -108,41 +119,16 @@ $i = 0;
                                                         <td><?php echo $row['nameteacher']; ?></td>
                                                         <td><?php echo $row['year']; ?></td>
                                                         <td><?php echo $row['semester']; ?></td>
-                                                        <td><?php echo $row['classroom']; ?></td>
-                                                        <td><?php echo $row['examdate']; ?></td>
-                                                        <td><?php echo $row['group_class']; ?></td>
+                                                        <td class="text-center"><?php echo $COUNT_MKO3 = ($row['COUNT_MKO3'] > 0) ? 'ส่งแล้ว' : 'ยังไม่ส่ง'; ?></td>
+                                                        <td class="text-center">ยังไม่ส่ง</td>
+                                                        <td class="text-center">ยังไม่ส่ง</td>
+                                                        <td class="text-center">ยังไม่ส่ง</td>
 
-
-                                                        <td class="text-center">
-                                                            <?php if ($_SESSION['satatus'] == 'user') { ?>
-                                                                <a href="mko3_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
-                                                                ||
-                                                                <a href="mko4_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.4</a>
-                                                                ||
-
-                                                                <a href="mko5_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.5</a>
-                                                                ||
-                                                                <a href="mko6_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.6</a>
-                                                            <?php } ?>
-                                                            <?php if ($_SESSION['satatus'] == 'admin') { ?>
-                                                                <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>
-                                                                ||
-                                                                <a href="del_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Do you want to delete this record? !!!')" class="btn btn-sm btn-danger">ลบ</a>
-                                                            <?php } ?>
-                                                        </td>
-
-
-
-
-
-                                                        </td>
                                                     </tr>
                                                 <?php  } ?>
                                             </tbody>
                                         </table>
-                                        <?php if ($_SESSION['satatus'] == 'admin') { ?>
-                                            <a href="course_add.php" class="btn btn-sm btn-primary">เพิ่มข้อมูล</a>
-                                        <?php } ?>
+
                                     </div>
 
                                 </div>

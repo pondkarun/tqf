@@ -8,12 +8,10 @@
 // echo '</pre>';
 // exit;
 
-include('include/condb.php');
 
 
-$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
-$result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
-$num = mysqli_num_rows($result1);
+
+
 ?>
 
 <head>
@@ -24,7 +22,7 @@ $num = mysqli_num_rows($result1);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.6</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -52,7 +50,7 @@ $num = mysqli_num_rows($result1);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -63,7 +61,7 @@ $num = mysqli_num_rows($result1);
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท6</h1>
                                 </td>
                             </tr>
                         </table>
@@ -78,207 +76,197 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="mko3_1db.php" method="POST">
+                                    <form action="mko6_3_save.php" method="POST">
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="institutionname" placeholder="มหาวิทยาลัยราชภัฏจันทรเกษม " ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">วิทยาเขต/คณะ/สาขา</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="campus" placeholder="คณะวิทยาการจัดการ " ?>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <br>
-                                        <table align="center" width="500">
-                                            <tr>
-                                                <td>
-                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 3 ผลการดำเนินการ</h1>
-
-                                                </td>
-                                            </tr>
-                                        </table>
-
-
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.จำนวนนักศึกษาที่ลงทะเบียนเรียน/ส่งไปฝึกประสบการณ์ภาคสนาม</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="coursename" placeholder="" ?>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">2. จำนวนนักศึกษาที่คงอยู่เมื่อสิ้นสุดการฝึกประสบการณ์ภาคสนาม</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="20" ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">3. จำนวนนักศึกษาที่ถอน (W)</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="10" ?>
-                                            </div>
-                                        </div>
-                                        <h5>การกระจายของระดับคะแนน (เกรด)</h5>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนA</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนB+</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนB</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนC+</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนC+</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนD+</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนD</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนF</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ไม่สมบูรณ์ (I)</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ผ่าน (P, S)</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ตก (U)</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ถอน (W)</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">5. ปัจจัยที่มีผลกระทบต่อผลการฝึกประสบการณ์ภาคสนาม (</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="(ถ้ามี)" ?>
-
-
-
-
-
-                                            </div>
-                                        </div>
-                                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
-                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
-                                                บันทึก
-
-                                            </button>
-                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
-
-                                                ยกเลิก
-
-                                            </button>
-                                    </form>
-                                    </button>
-                                    </form>
 
                                 </div>
                             </div>
+                            <br>
+                            <br>
+                            <table align="center" width="500">
+                                <tr>
+                                    <td>
+                                        <h1 class="h3 mb-0 text-gray-800">หมวดที่ 3 ผลการดำเนินการ</h1>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">1.จำนวนนักศึกษาที่ลงทะเบียนเรียน/ส่งไปฝึกประสบการณ์ภาคสนาม</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="numchildr" placeholder="" ?>
+
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">2. จำนวนนักศึกษาที่คงอยู่เมื่อสิ้นสุดการฝึกประสบการณ์ภาคสนาม</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="balancer" placeholder="20" ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">3. จำนวนนักศึกษาที่ถอน (W)</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="wdropf" placeholder="10" ?>
+                                </div>
+                            </div>
+                            <h5>การกระจายของระดับคะแนน (เกรด)</h5>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนA</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="aonec" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="aoneed" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนB+</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="bpluss" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="bos" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+
+
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนB</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="bba" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="bbbplus" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนC+</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="cplus" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="ccplusv" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนC</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="cav" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="conen" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนD+</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="dplusn" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="donem" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนD</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="ddm" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="ddoner" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ระดับคะแนนF</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="ooo" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="ttt" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ไม่สมบูรณ์ (I)</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="yyy" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="uuu" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ผ่าน (P, S)</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="cord" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="suca" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ตก (U)</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="dass" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="nahw" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">ถอน (W)</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="haw" placeholder="จำนวน" ?>
+                                    <input type="text" class="form-control" name="mmml" placeholder="คิดเป็นร้อยละ" ?>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">5. ปัจจัยที่มีผลกระทบต่อผลการฝึกประสบการณ์ภาคสนาม (</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="jack" placeholder="(ถ้ามี)" ?>
+
+
+
+
+
+                                </div>
+                            </div>
+                            <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                    บันทึก
+
+                                </button>
+                                <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                    ยกเลิก
+
+                                </button>
+                                </form>
+                                </button>
+                                </form>
+
                         </div>
                     </div>
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-
-            <!-- End of Footer -->
-
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+
+    <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->

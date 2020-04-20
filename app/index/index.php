@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -48,15 +49,19 @@
 			<div class="header-right">
 				<ul class="main-menu">
 					<li class="active"><a href="index.php">หน้าแรก</a></li>
-					<li><a href="../../listUser.php">รายวิชา</a></li>
-
-					<li><a href="../../mko3_1.php">มคอ.</a></li>
-					<li><a href="../../contact.html">พิมพ์รายงาน</a></li>
-
+					<?php if (@$_SESSION['login_id']) { ?>
+						<li><a href="../../listUser.php">รายวิชา</a></li>
+						<li><a href="../../listUser.php">รายวิชาที่เปิดสอน</a></li>
+						<li><a href="../../contact.php">สรุปรายงาน</a></li>
+					<?php } ?>
 				</ul>
 				<div class="header-btns">
-					<a href="../mko/login.php" class="site-btn sb-c2">Login</a>
-					<a href="../../register.php" class="site-btn sb-c3">Register</a>
+					<?php if (!@$_SESSION['login_id']) { ?>
+						<a href="../mko/login.php" class="site-btn sb-c2">Login</a>
+						<a href="../../register.php" class="site-btn sb-c3">Register</a>
+					<?php } else { ?>
+						<a href="../../logout.php" class="site-btn sb-c3">ออกจากระบบ</a>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

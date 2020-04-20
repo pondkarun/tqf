@@ -37,7 +37,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -114,7 +114,7 @@
 
 
                             <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                 <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                     บันทึก
 

@@ -37,7 +37,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -76,7 +76,7 @@
                                         <div class="form-group row">
                                             <!-- <label class="col-sm-2 col-form-label">1.1</label> -->
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="coursedescription">
+                                                <input type="text" class="form-control" name="jame1">
                                             </div>
                                         </div>
                                         <h5>จำนวนชั่วโมงที่ใช้ต่อภาคการศึกษา</h5>
@@ -84,37 +84,37 @@
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">บรรยาย</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="discourse">
+                                                <input type="text" class="form-control" name="jame2">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">สอนเสริม</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="supplementary">
+                                                <input type="text" class="form-control" name="jame3">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">การฝึกปฏิบัติ/งานภาคสนามการฝึกงาน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="fieldwork">
+                                                <input type="text" class="form-control" name="jame4">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">การศึกษาด้วยตัวเอง</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="selfstudy">
+                                                <input type="text" class="form-control" name="jame5">
                                             </div>
                                         </div>
                                         <h5>จำนวนชั่วโมงต่อสัปดาห์ที่อาจารย์ให้คำปรึกษาและแนะนำทางวิชาการแก่นักศึกษาเป็นรายบุคคล</h5>
-                                        <input type="text" class="form-control" name="numberweek">
+                                        <input type="text" class="form-control" name="jame6">
                                 </div>
                             </div>
 
 
                             <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                 <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                     บันทึก
 

@@ -62,7 +62,7 @@
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input class="form-control" type="text" name="faculty" required placeholder="คณะ">
+                                                    <input class="form-control" type="text" name="faculty" required placeholder="สาขา">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                                 <div class="col-sm-6 mb-3 mb-sm-0">

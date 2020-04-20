@@ -37,7 +37,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -60,19 +60,19 @@
                         <div class="col-xl-12 col-lg-12">
                             <div class="card shadow mb-4">
                                 <div class="card-body">
+                                    <form action="mko3_4_save.php" method="post">
+                                        <!-- เนื้อหา -->
+                                        <table align="center" width="500">
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <h1 class="h3 mb-0 text-gray-800">หมวดที่ 4 การพัฒนาการเรียนรู้ของนักศึกษา</h1>
+                                                    </center>
+                                                    <h5>คุณธรรม จริยธรรม
+                                                        <br>
+                                                        <label for="story">1.1คุณธรรม จริยธรรมที่ต้องพัฒนา</label>
 
-                                    <!-- เนื้อหา -->
-                                    <table align="center" width="500">
-                                        <tr>
-                                            <td>
-                                                <center>
-                                                    <h1 class="h3 mb-0 text-gray-800">หมวดที่ 4 การพัฒนาการเรียนรู้ของนักศึกษา</h1>
-                                                </center>
-                                                <h5>คุณธรรม จริยธรรม
-                                                    <br>
-                                                    <label for="story">1.1คุณธรรม จริยธรรมที่ต้องพัฒนา</label>
-
-                                                    <textarea id="story" name="story" rows="5" cols="120">
+                                                        <textarea id="story" name="story" rows="5" cols="120">
                                                     นักศึกษาต้องมีคุณธรรม จริยธรรมเพื่อให้สามารถดำเนินชีวิตร่วมกับผู้อื่นในสังคมอย่างราบรื่น และเป็น
                                                     ประโยชน์ต่อส่วนรวม นอกจากนั้นคอมพิวเตอร์เป็นอุปกรณ์ที่เกี่ยวข้องกับความมั่นคงของประเทศ ความปลอดภัยใน
                                                     ชีวิตประจำวัน ความสำเร็จทางธุรกิจ ผู้พัฒนาและ/หรือผู้ประยุกต์โปรแกรมจำเป็นต้องมีความรับผิดชอบต่อผลที่
@@ -80,43 +80,39 @@
                                                     เกี่ยวข้องกับสิ่งต่อไปนี้ทั้ง 7ข้อ เพื่อให้นักศึกษาสามารถพัฒนาคุณธรรม จริยธรรมอย่างน้อย 2ข้อตามที่ระบุไว้ในตาราง
                                                     การกระจายความรับผิดชอบต่อผลการเรียนรู้(Curriclum Mapping) ภายในเล่มมคอ. 2ของหลักสูตร
                                                     </textarea>
-                                                    <form action="#" method="post">
-                                                        <input type="checkbox" name="gender" value="Male">1.1.1.ตระหนักในคุณค่าและคุณธรรม จริยธรรม เสียสละ แลพซื่อสัตว์สุจริต</input>
+
+                                                        <input type="checkbox" name="gender1" value="true">1.1.1.ตระหนักในคุณค่าและคุณธรรม จริยธรรม เสียสละ แลพซื่อสัตว์สุจริต</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Female">1.1.2.มีวินัย ตรงต่อเวลา และความรับผิดชอบต่อตนเองและสังคม</input>
+                                                        <input type="checkbox" name="gender2" value="true">1.1.2.มีวินัย ตรงต่อเวลา และความรับผิดชอบต่อตนเองและสังคม</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">1.1.3.มีภาวะความเป็นผู้นำและผู้ตาม สามารถทำงานเป็นทีมและสามารถแก้ไขขัดแย้งและ
+                                                        <input type="checkbox" name="gender3" value="true">1.1.3.มีภาวะความเป็นผู้นำและผู้ตาม สามารถทำงานเป็นทีมและสามารถแก้ไขขัดแย้งและ
                                                         ลำดับความสำคัญ</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Female">1.1.4.เครพสิทธิแลพรับฟังความคิดเห็นของผู้อื่นรวมทั้งเคารพในคุณค่าและศักดิ์ศรี
+                                                        <input type="checkbox" name="gender4" value="true">1.1.4.เครพสิทธิแลพรับฟังความคิดเห็นของผู้อื่นรวมทั้งเคารพในคุณค่าและศักดิ์ศรี
                                                         ความเป็นมนุษย์</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">1.1.5.เคารพกฏระเบียบและขอบังคับต่างๆ ขององค์กรและสังคม </input>
+                                                        <input type="checkbox" name="gender5" value="true">1.1.5.เคารพกฏระเบียบและขอบังคับต่างๆ ขององค์กรและสังคม </input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">1.1.6.สามารถวิเคราะห์ผลกระทบจากการ ใช้คอมพิวเตอร์ต่อบุคคล องค์กรและสังคม</input>
+                                                        <input type="checkbox" name="gender6" value="true">1.1.6.สามารถวิเคราะห์ผลกระทบจากการ ใช้คอมพิวเตอร์ต่อบุคคล องค์กรและสังคม</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">1.1.7.มีจรรยาบรรณทางวิชาการและวิชาชีพ</input>
+                                                        <input type="checkbox" name="gender7" value="true">1.1.7.มีจรรยาบรรณทางวิชาการและวิชาชีพ</input>
                                                         <br>
-                                                        <input type="submit" name="submit" value="Submit" />
-                                                    </form> <?php
-                                                            if (isset($_POST['gender'])) {
-                                                                echo $_POST['gender']; // Displays value of checked checkbox.
-                                                            }
-                                                            ?>
-                                            </td>
-                                        </tr>
-                                    </table> <br>
-
-                                    <table align="center" width="500">
-                                        <tr>
-                                            <td>
 
 
-                                                <h5>2.ความรู้
-                                                    <br>
-                                                    <label for="story">2.1ความรู้ที่ต้องได้รับ</label>
+                                                </td>
+                                            </tr>
+                                        </table> <br>
 
-                                                    <textarea id="story" name="story" rows="5" cols="120">
+                                        <table align="center" width="500">
+                                            <tr>
+                                                <td>
+
+
+                                                    <h5>2.ความรู้
+                                                        <br>
+                                                        <label for="story">2.1ความรู้ที่ต้องได้รับ</label>
+
+                                                        <textarea id="story" name="story" rows="5" cols="120">
                      นักศึกษาต้องมีความรู้เกี่ยวกับสาขาวิชาที่ศึกษาในแขนงวิชาคอมพิวเตอร์ธุรกิจ มีคุณธรรม จริยธรรม และความรับผิดชอบต่อตนเองและ
                     สังคม ความรู้เกี่ยวกับสาขาวิชาที่ศึกษานั้นต้องเป็นสิ่งที่นักศึกษาต้องรู้ เพื่อใช้ประกอบอาชีพและช่วยพัฒนาสังคม ดังนั้น
                     มาตรฐานความรู้ต้องครอบคลุมวิ่งต่อไปนี้ทั้ง 8ข้อ เพื่อให้นักศึกษามีตวามรู้ความเข้าใจเกี่ยวกับรายวิชาหลักการเขียน
@@ -125,77 +121,63 @@
 
                                      </textarea>
 
-                                                    <input type="checkbox" name="gender" value="Male">2.1.1.มีความรู้ความเข้าใจเกี่ยวกับหลักการและทฤษฎีที่สำคัญในเนื้อหาวิชาที่ศึกษา</input>
-                                                    <br>
-                                                    <input type="checkbox" name="gender" value="Female">2.1.2.สามารถวิเคราะห์ปัญหา เข้าใจและอธิบายความต้องการทางคอมพิวเตอร์รวมทั้งประยุกต์ความรู้ ทักษะและการ
-                                                    ใช้เครื่องมือที่เหมาะสมแก้ไขปัญหา</input>
-                                                    <br>
-                                                    <input type="checkbox" name="gender" value="Male">2.1.3.สามารถวิเคราะห์ออกแบบ ติดตั้งปรับปรุงและ/หรือประเมินระบบองค์ประกอบต่างๆ ของระบบคอมพิวเตอร์
-                                                    ให้ได้ตรงตามข้อกำหนด</input>
-                                                    < br>
-                                                        <input type="checkbox" name="gender" value="Female">2.1.4.สามารถติดตามความก้าวหน้าทางวิชาการ และวิวัฒนาการคอมพิวเตอร์ร่วมทั้งการนำไปประยุกต์
-                                                        ความเป็นมนุษย์</input>
+                                                        <input type="checkbox" name="gender8" value="true">2.1.1.มีความรู้ความเข้าใจเกี่ยวกับหลักการและทฤษฎีที่สำคัญในเนื้อหาวิชาที่ศึกษา</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">2.1.5.รู้เข้าใจและสนใจพัฒนาความรู้ความ ความชำนาญทางคอมพิวเตอร์อย่างต่อเนื่อง </input>
+                                                        <input type="checkbox" name="gender9" value="true">2.1.2.สามารถวิเคราะห์ปัญหา เข้าใจและอธิบายความต้องการทางคอมพิวเตอร์รวมทั้งประยุกต์ความรู้ ทักษะและการ
+                                                        ใช้เครื่องมือที่เหมาะสมแก้ไขปัญหา</input>
                                                         <br>
-                                                        <input type="checkbox" name="gender" value="Male">2.1.6.มีความรู้ในแนวทางกว้างของสาขาวิชาที่ต้องศึกษาเพื่อให้เล็งเห็นการเปลี่ยนแปลง และเข้าใจผลกระทบของเทค
-                                                        โนโลยีใหม่ๆ ที่เกี่ยวข้อง</input>
-                                                        <br>
-                                                        <input type="checkbox" name="gender" value="Male">2.1.7.มีประสบการณ์ในการพัฒนาและ/หรือประยุกต์ซอฟต์แวร์ที่ใช้งานได้จิง</input>
-                                                        <br>
-                                                        <input type="checkbox" name="gender" value="Male">2.1.8.สามารถบรูณาการความรู้ในสาขาวิชาที่ศึกษากับความรู้ในศาสตร์อื่นๆ ที่เกี่ยวข้อง</input>
-                                                        <br>
-                                                        <input type="submit" name="submit" value="Submit" />
-                                                        </center>
-                                                        </form> <?php
-                                                                if (isset($_POST['gender'])) {
-                                                                    echo $_POST['gender']; // Displays value of checked checkbox.
-                                                                }
-                                                                ?>
-                                                        <br>
+                                                        <input type="checkbox" name="gender10" value="true">2.1.3.สามารถวิเคราะห์ออกแบบ ติดตั้งปรับปรุงและ/หรือประเมินระบบองค์ประกอบต่างๆ ของระบบคอมพิวเตอร์
+                                                        ให้ได้ตรงตามข้อกำหนด</input>
+                                                        < br>
+                                                            <input type="checkbox" name="gender11" value="true">2.1.4.สามารถติดตามความก้าวหน้าทางวิชาการ และวิวัฒนาการคอมพิวเตอร์ร่วมทั้งการนำไปประยุกต์
+                                                            ความเป็นมนุษย์</input>
+                                                            <br>
+                                                            <input type="checkbox" name="gender12" value="true">2.1.5.รู้เข้าใจและสนใจพัฒนาความรู้ความ ความชำนาญทางคอมพิวเตอร์อย่างต่อเนื่อง </input>
+                                                            <br>
+                                                            <input type="checkbox" name="gender13" value="true">2.1.6.มีความรู้ในแนวทางกว้างของสาขาวิชาที่ต้องศึกษาเพื่อให้เล็งเห็นการเปลี่ยนแปลง และเข้าใจผลกระทบของเทค
+                                                            โนโลยีใหม่ๆ ที่เกี่ยวข้อง</input>
+                                                            <br>
+                                                            <input type="checkbox" name="gender14" value="true">2.1.7.มีประสบการณ์ในการพัฒนาและ/หรือประยุกต์ซอฟต์แวร์ที่ใช้งานได้จิง</input>
+                                                            <br>
+                                                            <input type="checkbox" name="gender15" value="true">2.1.8.สามารถบรูณาการความรู้ในสาขาวิชาที่ศึกษากับความรู้ในศาสตร์อื่นๆ ที่เกี่ยวข้อง</input>
+                                                            <br>
 
 
-                                                        <h5>2.2 วิธีการสอบ</h5>
-                                                        <input type="checkbox" name="gender" value="Male">2.2.1.การทำงานร่วมกันและอภิปายร่วมกันภายในห้องเรียน โดยการมอบหมายให้นักศึกษาทำแบบฝึกหัดและแบบฝึกปฏิบัติที่เกี่ยวข้องกับการเขียนโปรแกรมทางธุรกิจ</input>
-                                                        <br>
-                                                        <input type="checkbox" name="gender" value="Female">2.2.2.สอนแบบสาธิตควบคู่่กับการยกตัวอย่างในลักษณะของกรณีศึกษา</input>
-                                                        <br>
-                                                        <input type="checkbox" name="gender" value="Male">2.2.3.ฝึกทำการวิเคราะห์ และแก้โจทย์ปัญหาทางคอมพิวเตอร์</input>
-                                                        <br>
-                                                        <input type="checkbox" name="gender" value="Female">2.2.4.ฝึกทำการคำนวณท้างด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ</input>
-                                                        <br>
-                                                        <input type="checkbox" name="gender" value="Male">2.2.5.ฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา python เบื้องต้น </input>
-                                                        <br>
 
-                                                        </center>
-                                                        </form> <?php
-                                                                if (isset($_POST['gender'])) {
-                                                                    echo $_POST['gender']; // Displays value of checked checkbox.
-                                                                }
-                                                                ?>
-                                                        <h5>2.3 วิธีการประเมินผล
-                                                            <input type="checkbox" name="gender" value="Male">2.3.1.ประเมินการทำแบบฝึกหัดแบบฝึกปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
-                                                            <br>
-                                                            <input type="checkbox" name="gender" value="Female">2.3.2.ประเมินจากการคำรวณทางด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ </input>
-                                                            <br>
-                                                            <input type="checkbox" name="gender" value="Male">2.3.3.ประเมินจากฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา python เบื้องต้น</input>
-                                                            <br>
-                                                            <input type="checkbox" name="gender" value="Female">2.3.4.ประเมินจากการสอบกลางภาค และการสอบปลายภาค</input>
-                                                            <br>
-                                                            <input type="checkbox" name="gender" value="Male">2.3.5.ประเมินจากจิตพิสัยแลพงานที่มอบหมายต่าง ๆ </input>
-                                                            <br></h5>
 
-                                                        </center>
-                                                        </form> <?php
-                                                                if (isset($_POST['gender'])) {
-                                                                    echo $_POST['gender']; // Displays value of checked checkbox.
-                                                                }
-                                                                ?>
-                                                        <h5>ทักษะทางปัญญา
+                                                            <h5>2.2 วิธีการสอบ</h5>
+                                                            <input type="checkbox" name="gender16" value="true">2.2.1.การทำงานร่วมกันและอภิปายร่วมกันภายในห้องเรียน โดยการมอบหมายให้นักศึกษาทำแบบฝึกหัดและแบบฝึกปฏิบัติที่เกี่ยวข้องกับการเขียนโปรแกรมทางธุรกิจ</input>
                                                             <br>
-                                                            <label for="story">3.1ทักษะทางปัญญาที่ต้องพัฒนา</label>
+                                                            <input type="checkbox" name="gender17" value="true">2.2.2.สอนแบบสาธิตควบคู่่กับการยกตัวอย่างในลักษณะของกรณีศึกษา</input>
+                                                            <br>
+                                                            <input type="checkbox" name="gender18" value="true">2.2.3.ฝึกทำการวิเคราะห์ และแก้โจทย์ปัญหาทางคอมพิวเตอร์</input>
+                                                            <br>
+                                                            <input type="checkbox" name="gender19" value="true">2.2.4.ฝึกทำการคำนวณท้างด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ</input>
+                                                            <br>
+                                                            <input type="checkbox" name="gender20" value="true">2.2.5.ฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา python เบื้องต้น </input>
+                                                            <br>
 
-                                                            <textarea id="story" name="story" rows="5" cols="120">
+                                                            </center>
+
+                                                            <h5>2.3 วิธีการประเมินผล
+                                                                <input type="checkbox" name="gender21" value="true">2.3.1.ประเมินการทำแบบฝึกหัดแบบฝึกปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
+                                                                <br>
+                                                                <input type="checkbox" name="gender22" value="true">2.3.2.ประเมินจากการคำรวณทางด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ </input>
+                                                                <br>
+                                                                <input type="checkbox" name="gender23" value="true">2.3.3.ประเมินจากฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา python เบื้องต้น</input>
+                                                                <br>
+                                                                <input type="checkbox" name="gender24" value="true">2.3.4.ประเมินจากการสอบกลางภาค และการสอบปลายภาค</input>
+                                                                <br>
+                                                                <input type="checkbox" name="gender25" value="true">2.3.5.ประเมินจากจิตพิสัยแลพงานที่มอบหมายต่าง ๆ </input>
+                                                                <br></h5>
+
+                                                            </center>
+
+                                                            <h5>ทักษะทางปัญญา
+                                                                <br>
+                                                                <label for="story">3.1ทักษะทางปัญญาที่ต้องพัฒนา</label>
+
+                                                                <textarea id="story" name="story" rows="5" cols="120">
                             นักศึกษาต้องสามารถพัฒนาตนเองและประกอบวิชาชีพได้โดยพึ่งตนเองได้เมือจบการศึกษาแล้ว ดังนั้น
                         นักศึกษาจำเป็นจ้องได้รับการพัฒนาทักษะทางปัญญาไปพร้อมกับคุณธรรม จริยธรรม และความรู้เกี่ยวกับสาขาวิชาที่เรียน
                         ศึกษาในขณะที่สอนนักศึกษา อาจารย์ต้องเน้นให้นักศึกษาคิดหาเหตุผล เข้าใจที่มาและสาเหตุของปีญหา วิธีการแก้ไข
@@ -204,54 +186,54 @@
                         คอมเบื้องต้นทางธุรกิจ อย่างน้อย 1จ้อตามที่ระบุไว้ในตารางการกระจายความรับผิดชอบต่อผลการเรียนรู้ (Curriclum 
                         Mapping) ภายในเล่มมคอ. 2 ของหลักศูตร
                                                     </textarea>
-                                                            <form action="#" method="post">
-                                                                <input type="checkbox" name="gender" value="Male">3.1.1 สามารถรวบรวม ศึกษา วิเคราะห์ สรุปประเด็นปัญหาและความต้องการ</input>
+
+                                                                <input type="checkbox" name="gender26" value="true">3.1.1 สามารถรวบรวม ศึกษา วิเคราะห์ สรุปประเด็นปัญหาและความต้องการ</input>
 
 
                                                                 <h5>3.2.3 วิธีการสอน</h5>
 
 
-                                                                <input type="checkbox" name="gender" value="Male">3.2.1.การทำงานร่วมกัน (Collborative Learning) และอภิปรายร่วมกันภายในห้องเรียนโดยการมอบหมายให้นักศึกษาทำแบบฝึกหัด
+                                                                <input type="checkbox" name="gender27" value="true">3.2.1.การทำงานร่วมกัน (Collborative Learning) และอภิปรายร่วมกันภายในห้องเรียนโดยการมอบหมายให้นักศึกษาทำแบบฝึกหัด
                                                                 และปฏิบัติที่เกี่ยวข้องกับการเขียนโปรแกรมทางธุรกิจ</input>
                                                                 <br>
-                                                                <input type="checkbox" name="gender" value="Female">3.2.2.สอนแบบสาธิตควบคู่่กับการยกตัวอย่างในลักษณะของกรณีศึกษา</input>
+                                                                <input type="checkbox" name="gender28" value="true">3.2.2.สอนแบบสาธิตควบคู่่กับการยกตัวอย่างในลักษณะของกรณีศึกษา</input>
                                                                 <br>
                                                                 <h5>3.2.3 ทักษะทางปัญญา</h5>
                                                                 <h5>
-                                                                    <input type="checkbox" name="gender" value="Female">1.คิดอย่างมีวิจารณญญาณและเป็นระบบ</input>
+                                                                    <input type="checkbox" name="gender29" value="true">1.คิดอย่างมีวิจารณญญาณและเป็นระบบ</input>
                                                                     <br>
-                                                                    <input type="checkbox" name="gender" value="Female">2.สามารถสืบค้น ตีความ และประเมินสารสนเทศ เพื่อใช้ในการแก้ปัญหาอย่างสร้างสรรค์</input>
+                                                                    <input type="checkbox" name="gender30" value="true">2.สามารถสืบค้น ตีความ และประเมินสารสนเทศ เพื่อใช้ในการแก้ปัญหาอย่างสร้างสรรค์</input>
                                                                     <br>
-                                                                    <input type="checkbox" name="gender" value="Female">3.สามารถรวบรวม ศึกษา วิเคราะห์ สรุปประเด็นปัญหาและความต้องการ</input>
+                                                                    <input type="checkbox" name="gender31" value="true">3.สามารถรวบรวม ศึกษา วิเคราะห์ สรุปประเด็นปัญหาและความต้องการ</input>
                                                                     <br>
-                                                                    <input type="checkbox" name="gender" value="Female">4.สามารถประยุกต์ความรู้และทักษะในการแก้ปัญหาทางคอมพิวเตอร์ได้อย่างเหมาะสม</input>
+                                                                    <input type="checkbox" name="gender32" value="true">4.สามารถประยุกต์ความรู้และทักษะในการแก้ปัญหาทางคอมพิวเตอร์ได้อย่างเหมาะสม</input>
                                                                     <br>
                                                                     <h5>3.2.4 ทักษะความสัมพันธ์ระหว่างบุคคลและความรับผิดชอบ</h5>
                                                                     <h5>
-                                                                        <input type="checkbox" name="gender" value="Female">1.สามารถสื่อสารทั้งภาษาไทยและภาษาต่างประเทศกับกลุ่มคนหลากหลายได้อย่างมีประสิทธิภาพ</input>
+                                                                        <input type="checkbox" name="gender33" value="true">1.สามารถสื่อสารทั้งภาษาไทยและภาษาต่างประเทศกับกลุ่มคนหลากหลายได้อย่างมีประสิทธิภาพ</input>
                                                                         <br>
-                                                                        <input type="checkbox" name="gender" value="Female">2.สามารถใช้ความช่วยเหลือและอำนวยความสะดวกแก่การแก้ปัญหาสถานะการณ์ต่างๆ ในกลุ่ม
+                                                                        <input type="checkbox" name="gender34" value="true">2.สามารถใช้ความช่วยเหลือและอำนวยความสะดวกแก่การแก้ปัญหาสถานะการณ์ต่างๆ ในกลุ่ม
                                                                         ทั้งในบทบาทของผู้นำ หรือในบทบาทของผู้ร่วมทีมงาน</input>
                                                                         <br>
-                                                                        <input type="checkbox" name="gender" value="Female">3.สามารถใช้ความรู้ในศาสตร์มาชี้นำสังคมในประเด็นที่เหมาะสม</input>
+                                                                        <input type="checkbox" name="gender35" value="true">3.สามารถใช้ความรู้ในศาสตร์มาชี้นำสังคมในประเด็นที่เหมาะสม</input>
                                                                         <br>
-                                                                        <input type="checkbox" name="gender" value="Female">4.มีความรับผิดชอบในการกระทำของตนเองและรับผิดชอบของงานในกลุ่ม</input>
+                                                                        <input type="checkbox" name="gender36" value="true">4.มีความรับผิดชอบในการกระทำของตนเองและรับผิดชอบของงานในกลุ่ม</input>
                                                                         <br>
-                                                                        <input type="checkbox" name="gender" value="Female">5.สามารถเป็นผู้ริเริ่มแสดงประเด็นในการแก้ไขสถานการณ์ทั้งส่วนตัวและส่วนรวมพร้อมทั้งแสดงจุดยืน
+                                                                        <input type="checkbox" name="gender37" value="true">5.สามารถเป็นผู้ริเริ่มแสดงประเด็นในการแก้ไขสถานการณ์ทั้งส่วนตัวและส่วนรวมพร้อมทั้งแสดงจุดยืน
                                                                         อย่างพอเหมาะ ทั้งตนเองและของกลุ่ม</input>
                                                                         <br>
-                                                                        <input type="checkbox" name="gender" value="Female">6.มีความรับผิดชอบการพัฒนาการเรียนรู้ของตนเองและทางวิชาชีพอย่างต่อเนื่อง</input>
+                                                                        <input type="checkbox" name="gender38" value="true">6.มีความรับผิดชอบการพัฒนาการเรียนรู้ของตนเองและทางวิชาชีพอย่างต่อเนื่อง</input>
                                                                         <br>
                                                                         <h5>3.2.5 ทักษะการวิเคราะห์เชิงตัวเลข การสื่่อสารและการใช้เทคโนโลยีสารสนเทศ</h5>
                                                                         <h5>
-                                                                            <input type="checkbox" name="gender" value="Female">1.มีทักษะในการใช้เครืองมือที่จำเป็นที่มรอยู่ในปัจจุบันต่อการทำงานที่เกี่ยวกับคอมพิวเตอร์</input>
+                                                                            <input type="checkbox" name="gender39" value="true">1.มีทักษะในการใช้เครืองมือที่จำเป็นที่มรอยู่ในปัจจุบันต่อการทำงานที่เกี่ยวกับคอมพิวเตอร์</input>
                                                                             <br>
-                                                                            <input type="checkbox" name="gender" value="Female">2.สามารถแนะนำประเด็นการแก้ไขปีญหา โดยใช้สารสนเทศทางคณิตศาสตร์หรือการแสดง
+                                                                            <input type="checkbox" name="gender40" value="true">2.สามารถแนะนำประเด็นการแก้ไขปีญหา โดยใช้สารสนเทศทางคณิตศาสตร์หรือการแสดง
                                                                             สถิติประยุกต์ต่อปีญหาที่เกี่ยวข้องอย่างสร้างสรรค์</input>
                                                                             <br>
-                                                                            <input type="checkbox" name="gender" value="Female">3.สามารถสื่อสารอย่างมีประสิทธิภาพทั้งปากเปล่าและการเขียน เลือกใช้รูปแบบของสื่อสารนำเสนออย่างเหมาะสม</input>
+                                                                            <input type="checkbox" name="gender41" value="true">3.สามารถสื่อสารอย่างมีประสิทธิภาพทั้งปากเปล่าและการเขียน เลือกใช้รูปแบบของสื่อสารนำเสนออย่างเหมาะสม</input>
                                                                             <br>
-                                                                            <input type="checkbox" name="gender" value="Female">4.สามารถใช้สามารถสนเทศและเทคโนโลยีสื่อสารอย่างเหมาะสม</input>
+                                                                            <input type="checkbox" name="gender42" value="true">4.สามารถใช้สามารถสนเทศและเทคโนโลยีสื่อสารอย่างเหมาะสม</input>
 
 
 
@@ -259,15 +241,15 @@
 
 
                                                                             <h5>
-                                                                                <input type="checkbox" name="gender" value="Male">2.3.1.ประเมินการทำแบบฝึกหัดแบบฝึกปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
+                                                                                <input type="checkbox" name="gender43" value="true">2.3.1.ประเมินการทำแบบฝึกหัดแบบฝึกปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
                                                                                 <br>
-                                                                                <input type="checkbox" name="gender" value="Female">2.3.2.ประเมินจากการคำรวณทางด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ </input>
+                                                                                <input type="checkbox" name="gender44" value="true">2.3.2.ประเมินจากการคำรวณทางด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ </input>
                                                                                 <br>
-                                                                                <input type="checkbox" name="gender" value="Male">2.3.3.ประเมินจากฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา python เบื้องต้น</input>
+                                                                                <input type="checkbox" name="gender45" value="true">2.3.3.ประเมินจากฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา python เบื้องต้น</input>
                                                                                 <br>
-                                                                                <input type="checkbox" name="gender" value="Female">2.3.4.ประเมินจากการสอบกลางภาค และการสอบปลายภาค</input>
+                                                                                <input type="checkbox" name="gender46" value="true">2.3.4.ประเมินจากการสอบกลางภาค และการสอบปลายภาค</input>
                                                                                 <br>
-                                                                                <input type="checkbox" name="gender" value="Male">2.3.5.ประเมินจากจิตพิสัยแลพงานที่มอบหมายต่าง ๆ </input>
+                                                                                <input type="checkbox" name="gender47" value="true">2.3.5.ประเมินจากจิตพิสัยแลพงานที่มอบหมายต่าง ๆ </input>
                                                                             </h5>
                                                                             <h5>4.ทักษะความสัมพันธ์ ระหว่างบุคคลและความรับผิดชอบ</h5>
                                                                             <br>
@@ -283,65 +265,59 @@
                                                     </textarea>
                                                                             <br>
                                                                             <h5>
-                                                                                <input type="checkbox" name="gender" value="Male">4.1.1. สามารถสื่อสารทั้งภาษาไทยและภาษาต่างประเทศกับกลุ่มคนหลากหลายได้อย่างมีประสิทธิภาพ</input>
+                                                                                <input type="checkbox" name="gender48" value="true">4.1.1. สามารถสื่อสารทั้งภาษาไทยและภาษาต่างประเทศกับกลุ่มคนหลากหลายได้อย่างมีประสิทธิภาพ</input>
                                                                                 <br>
-                                                                                <input type="checkbox" name="gender" value="Female">4.1.2. มีความรับผิดชอบในการกระทำของตนเองและรับผิดชอบของงานในกลุ่ม </input>
+                                                                                <input type="checkbox" name="gender49" value="true">4.1.2. มีความรับผิดชอบในการกระทำของตนเองและรับผิดชอบของงานในกลุ่ม </input>
 
 
                                                                                 <h5>4.2วิธีการสอน</h5>
                                                                                 <h5>
-                                                                                    <input type="checkbox" name="gender" value="Male">4.2.1 การทำงานร่วมกัน(Collborative Learning)และอภิปรายร่วมกันภายในห้องเรียนโดยการมอบหมายให้นักศึกษาทำแบบฝึกหัด
+                                                                                    <input type="checkbox" name="gender50" value="true">4.2.1 การทำงานร่วมกัน(Collborative Learning)และอภิปรายร่วมกันภายในห้องเรียนโดยการมอบหมายให้นักศึกษาทำแบบฝึกหัด
                                                                                     และปฏิบัติที่เกี่ยวข้องกับการเขียนโปรแกรมทางธุรกิจ</input>
                                                                                     <br>
-                                                                                    <input type="checkbox" name="gender" value="Female">4.2.2. สอนแบบสาธิตควบคู่่กับการยกตัวอย่างในลักษณะของกรณีศึกษา </input>
+                                                                                    <input type="checkbox" name="gender51" value="true">4.2.2. สอนแบบสาธิตควบคู่่กับการยกตัวอย่างในลักษณะของกรณีศึกษา </input>
                                                                                     <br>
-                                                                                    <input type="checkbox" name="gender" value="Female">4.2.3. ทำการบรรยายพร้อมยกตัวอย่างเกี่ยวกับประเด็นความรับผิดชอบในการทำงานของตนเองและตวามรับผิดชอบของงานกลุ่ม</input>
+                                                                                    <input type="checkbox" name="gender52" value="true">4.2.3. ทำการบรรยายพร้อมยกตัวอย่างเกี่ยวกับประเด็นความรับผิดชอบในการทำงานของตนเองและตวามรับผิดชอบของงานกลุ่ม</input>
 
                                                                                     <h5>
                                                                                         <h5>4.2วิธีการประเมินผล</h5>
                                                                                         <h5>
-                                                                                            <input type="checkbox" name="gender" value="Male">4.3.1 ประเมินการทำแบบฝึกหัดแบบ ฝึกปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
+                                                                                            <input type="checkbox" name="gender53" value="true">4.3.1 ประเมินการทำแบบฝึกหัดแบบ ฝึกปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
                                                                                             <br>
-                                                                                            <input type="checkbox" name="gender" value="Female">4.3.2.ประเมินจากฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา Python เบื้องต้น</input>
+                                                                                            <input type="checkbox" name="gender54" value="true">4.3.2.ประเมินจากฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา Python เบื้องต้น</input>
                                                                                             <br>
-                                                                                            <input type="checkbox" name="gender" value="Female">4.3.3.ประเมินจากจิตพิสัยแลพงานที่มอบหมายต่าง</input>
+                                                                                            <input type="checkbox" name="gender55" value="true">4.3.3.ประเมินจากจิตพิสัยแลพงานที่มอบหมายต่าง</input>
                                                                                             <h5>5ทักษะการวิเคราะห์เชิงตัวเลข การสื่่อสารและการใช้เทคโนโลยีสารสนเทศ</h5>
 
                                                                                             <h5>5.1ทักษะการวิเคราะห์เชองตัวเลข การสื่อสารและการใช้เทคโนโลยีสารสนเทศ</h5>
                                                                                             <h5>
-                                                                                                <input type="checkbox" name="gender" value="Male">5.1.1มีทักษะในการใช้เครื่องมือที่จำเป็นที่มรอยู่ในปัจจุบันต่อการทำงานที่เกี่ยวกับคอมพิวเตอร์</input>
+                                                                                                <input type="checkbox" name="gender56" value="true">5.1.1มีทักษะในการใช้เครื่องมือที่จำเป็นที่มรอยู่ในปัจจุบันต่อการทำงานที่เกี่ยวกับคอมพิวเตอร์</input>
                                                                                                 <br>
-                                                                                                <input type="checkbox" name="gender" value="Female">5.1.2.สามารถสืบค้น ตีความ และประเมินสารสนเทศ เพื่อใช้ในการแก้ปัญหาอย่างสร้างสรรค์</input>
+                                                                                                <input type="checkbox" name="gender57" value="true">5.1.2.สามารถสืบค้น ตีความ และประเมินสารสนเทศ เพื่อใช้ในการแก้ปัญหาอย่างสร้างสรรค์</input>
                                                                                                 <br>
-                                                                                                <input type="checkbox" name="gender" value="Female">5.1.3.สามารถประยุกต์ความรู้และทักษะในการแก้ปัญหาทางคอมพิวเตอร์ได้อย่างเหมาะสม</input>
+                                                                                                <input type="checkbox" name="gender58" value="true">5.1.3.สามารถประยุกต์ความรู้และทักษะในการแก้ปัญหาทางคอมพิวเตอร์ได้อย่างเหมาะสม</input>
 
 
                                                                                                 <h5>5.2วิธีการสอน</h5>
                                                                                                 <h5>
-                                                                                                    <input type="checkbox" name="gender" value="Male">5.2.1ฝึกทำการวิเคราะห์ และแก้โจทย์ปัญหาทางคอมพิวเตอร์</input>
+                                                                                                    <input type="checkbox" name="gender59" value="true">5.2.1ฝึกทำการวิเคราะห์ และแก้โจทย์ปัญหาทางคอมพิวเตอร์</input>
                                                                                                     <br>
-                                                                                                    <input type="checkbox" name="gender" value="Female">5.2.2.ฝึกทำการคำนวณท้างด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ</input>
+                                                                                                    <input type="checkbox" name="gender60" value="true">5.2.2.ฝึกทำการคำนวณท้างด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ</input>
                                                                                                     <br>
-                                                                                                    <input type="checkbox" name="gender" value="Female">5.2.3.ฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา Python เบื้องต้น</input>
+                                                                                                    <input type="checkbox" name="gender61" value="true">5.2.3.ฝึกปฏิบัติการเขียนโปรแกรมด้วยภาษา Python เบื้องต้น</input>
 
 
                                                                                                     <h5>5.2วิธีการประเมินผล</h5>
 
                                                                                                     <h5>
-                                                                                                        <input type="checkbox" name="gender" value="Male">5.3.1ประเมินการทำแบบฝึกหัด และปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
+                                                                                                        <input type="checkbox" name="gender62" value="true">5.3.1ประเมินการทำแบบฝึกหัด และปฏิบัติ รายงาน และนำเสนอหน้าชั้นเรียน</input>
                                                                                                         <br>
-                                                                                                        <input type="checkbox" name="gender" value="Female">5.3.2.ประเมินการคำนวณท้างด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ</input>
+                                                                                                        <input type="checkbox" name="gender63" value="true">5.3.2.ประเมินการคำนวณท้างด้านระบบเลขฐาน และด้านคณิตศาสตร์ร่วมกับตัวดำเนินการต่างๆ</input>
                                                                                                         <br>
-                                                                                                        <input type="checkbox" name="gender" value="Female">5.3.3.ประเมินปฏิบัติการเขียนโปรแกรมด้วยภาษา Python เบื้องต้น</input>
+                                                                                                        <input type="checkbox" name="gender64" value="true">5.3.3.ประเมินปฏิบัติการเขียนโปรแกรมด้วยภาษา Python เบื้องต้น</input>
                                                                                                         <br>
-                                                                                                        <input type="checkbox" name="gender" value="Female">5.3.4.ประเมินจากการสอบกลางภาค และการสอบปลายภาค</input>
+                                                                                                        <input type="checkbox" name="gener65" value="true">5.3.4.ประเมินจากการสอบกลางภาค และการสอบปลายภาค</input>
 
-
-                                                            </form> <?php
-                                                                    if (isset($_POST['gender'])) {
-                                                                        echo $_POST['gender']; // Displays value of checked checkbox.
-                                                                    }
-                                                                    ?>
 
 
 
@@ -352,29 +328,31 @@
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                    <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                    <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                        บันทึก
+
+                                    </button>
+                                    <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                        ยกเลิก
+
+                                    </button>
+                                    </form>
 
                             </div>
-                            <br>
-
-
-
-
-                            </form>
-
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /.container-fluid -->
+
         </div>
-        <!-- /.container-fluid -->
+        <!-- End of Main Content -->
 
-    </div>
-    <!-- End of Main Content -->
+        <!-- Footer -->
 
-    <!-- Footer -->
-
-    <!-- End of Footer -->
+        <!-- End of Footer -->
 
     </div>
     <!-- End of Content Wrapper -->

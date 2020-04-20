@@ -8,12 +8,7 @@
 // echo '</pre>';
 // exit;
 
-include('include/condb.php');
 
-
-$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
-$result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
-$num = mysqli_num_rows($result1);
 ?>
 
 <head>
@@ -24,7 +19,7 @@ $num = mysqli_num_rows($result1);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.6</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -52,7 +47,7 @@ $num = mysqli_num_rows($result1);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -63,7 +58,7 @@ $num = mysqli_num_rows($result1);
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท6</h1>
                                 </td>
                             </tr>
                         </table>
@@ -78,7 +73,7 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="mko3_1db.php" method="POST">
+                                    <form action="mko6_5_save.php" method="POST">
 
 
                                         <center>
@@ -96,21 +91,21 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">จุดอ่อน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="จุดอ่อน" ?>
+                                                <input type="text" class="form-control" name="bbbb" placeholder="จุดอ่อน" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">จุดแข็ง</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="จุดแข็ง" ?>
+                                                <input type="text" class="form-control" name="nnnn" placeholder="จุดแข็ง" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.2ความเห็นของอาจารย์ผู้รับผิดชอบ/อาจารย์ที่ปรึกษาการฝึกประสบการณ์ภาคสนาม </label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ความเห็นของอาจารย์ผู้รับผิดชอบ" ?>
+                                                <input type="text" class="form-control" name="cccc" placeholder="ความเห็นของอาจารย์ผู้รับผิดชอบ" ?>
                                             </div>
                                         </div>
                                         <h5>2.การประเมินการฝึกประสบการณ์ภาคสนามโดยสถานประกอบการหรือพนักงานพี่เลี้ยง</h5>
@@ -118,20 +113,20 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">2.1ข้อวิพากษ์ที่สำคัญจากผลการประเมิน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="ข้อวิพากษ์ที่สำคัญจากผลการประเมิน" ?>
+                                                <input type="text" class="form-control" name="ssss" placeholder="ข้อวิพากษ์ที่สำคัญจากผลการประเมิน" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">2.2ความเห็นของอาจารย์ผู้รับผิดชอบ/อาจารย์ที่ปรึกษาการฝึกประสบการณ์ภาคสนาม</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="ความเห็นของอาจารย์ผู้รับผิดชอบ" ?>
+                                                <input type="text" class="form-control" name="qqqq" placeholder="ความเห็นของอาจารย์ผู้รับผิดชอบ" ?>
                                             </div>
                                         </div>
 
 
 
-                                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko6_6.php">ไปหมวดที่6</button>
+                                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก
 

@@ -11,9 +11,7 @@
 include('include/condb.php');
 
 
-$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
-$result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
-$num = mysqli_num_rows($result1);
+
 ?>
 
 <head>
@@ -24,7 +22,7 @@ $num = mysqli_num_rows($result1);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.5</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -52,7 +50,7 @@ $num = mysqli_num_rows($result1);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -63,7 +61,7 @@ $num = mysqli_num_rows($result1);
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท5</h1>
                                 </td>
                             </tr>
                         </table>
@@ -78,7 +76,7 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="mko3_1db.php" method="POST">
+                                    <form action="mko5_3_save.php" method="POST">
 
 
                                         <center>
@@ -116,36 +114,36 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">4.จำนวนนักศึกษาคะแนนไม่สมบูรณ์</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="coursename" placeholder="36" ?>
+                                                <input type="text" class="form-control" name="responsibleteacher1" placeholder="36" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">5.จำนวนนักศึกษาเพิกถอน (W)</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="-" ?>
+                                                <input type="text" class="form-control" name="ll" placeholder="-" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">6.จำนวนนักศึกษาที่เข้าสอบจริง</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="36" ?>
+                                                <input type="text" class="form-control" name="nn" placeholder="36" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">7.จำนวนนักศึกษาที่คงอยู่เมื่อสิ้นสุดภากการศึกษา</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher1" placeholder="36" ?>
+                                                <input type="text" class="form-control" name="qw" placeholder="36" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนA</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram1" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram2" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -153,8 +151,8 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนB+</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram3" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram4" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
 
 
@@ -162,8 +160,8 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนB</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram5" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram6" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -171,16 +169,16 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนC+</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram7" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram8" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ระดับคะแนนC+</label>
+                                            <label class="col-sm-2 col-form-label">ระดับคะแนนC</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram9" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram10" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -189,24 +187,24 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนD+</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram11" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram12" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนD</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram13" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram14" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนF</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram15" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram16" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -214,8 +212,8 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนน(W)</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram17" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram18" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -223,16 +221,16 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">FM</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram19" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram20" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">I</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram21" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram22" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -242,23 +240,23 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ผ่าน (P, S)</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram23" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram24" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ไม่ผ่าน (U)</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" class="form-control" name="fram25" placeholder="จำนวน" ?>
+                                                <input type="text" class="form-control" name="fram26" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-10 col-form-label">9.ปัจจัยที่ทำให้ระดับคะแนนผิดปกติ</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ถ้ามี" ?>
+                                                <input type="text" class="form-control" name="awe" placeholder="ถ้ามี" ?>
                                             </div>
                                         </div>
 
@@ -268,16 +266,16 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-1 col-form-label">10.1.ความคลาดเคลื่อนด้านกำหนดเวลาการประเมิน</label>
                                             <div class="col-sm-11">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ความคลาดเคลื่น (มี) (ไม่มี)" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="เหตุุผล (มี) (ไม่มี)" ?>
+                                                <input type="text" class="form-control" name="awe1" placeholder="ความคลาดเคลื่น (มี) (ไม่มี)" ?>
+                                                <input type="text" class="form-control" name="awe2" placeholder="เหตุุผล (มี) (ไม่มี)" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-1 col-form-label">10.2.ความคลาดเคลื่อนด้านวิธีการประเมินผลการเรียนรู้ (ถ้ามี)</label>
                                             <div class="col-sm-11">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="ความคลาดเคลื่น (มี) (ไม่มี)" ?>
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="เหตุุผล (มี) (ไม่มี)" ?>
+                                                <input type="text" class="form-control" name="awe3" placeholder="ความคลาดเคลื่น (มี) (ไม่มี)" ?>
+                                                <input type="text" class="form-control" name="awe4" placeholder="เหตุุผล (มี) (ไม่มี)" ?>
                                             </div>
                                         </div>
 
@@ -288,21 +286,21 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-1 col-form-label">วิธีการทวนสอบ</label>
                                             <div class="col-sm-11">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="กรอก" ?>
+                                                <input type="text" class="form-control" name="awe5" placeholder="กรอก" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-1 col-form-label">สรุปผล</label>
                                             <div class="col-sm-11">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="กรอก" ?>
+                                                <input type="text" class="form-control" name="awe6" placeholder="กรอก" ?>
                                             </div>
                                         </div>
 
 
 
                                         <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก
 
@@ -313,7 +311,6 @@ $num = mysqli_num_rows($result1);
 
                                             </button>
                                     </form>
-                                    </button>
                                     </form>
 
                                 </div>

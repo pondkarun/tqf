@@ -7,13 +7,23 @@
 // print_r($_POST);
 // echo '</pre>';
 // exit;
-
 include('include/condb.php');
 
+if (!$_GET['id_mko']) {
+    echo "<script type='text/javascript'>";
+    echo "window.location='listUser.php';";
+    echo "</script>";
+    exit;
+}
 
-$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
-$result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
-$num = mysqli_num_rows($result1);
+$sql = "SELECT * FROM dbcourse_add WHERE id = $_GET[id_mko] ";
+$result = mysqli_query($condb, $sql);
+$row = mysqli_fetch_array($result);
+
+
+
+
+
 ?>
 
 <head>
@@ -24,7 +34,7 @@ $num = mysqli_num_rows($result1);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.5</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -52,7 +62,7 @@ $num = mysqli_num_rows($result1);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -63,7 +73,7 @@ $num = mysqli_num_rows($result1);
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท5</h1>
                                 </td>
                             </tr>
                         </table>
@@ -78,7 +88,7 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="mko3_1db.php" method="POST">
+                                    <form action="mko5_1_save.php" method="POST">
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ชื่อสถาบันอุดมศึกษา</label>
@@ -107,34 +117,48 @@ $num = mysqli_num_rows($result1);
 
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">1.รหัสและชื่อรายวิชา</label>
+                                            <label class="col-sm-2 col-form-label">1.รหัสวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="BUSS4801 	การเตรียมฝึกประสบการณ์วิชาชีพทางบริหารธุรกิจ  " ?>
+                                                <input type="text" class="form-control" name="coursename" placeholder="BUSS4801" value="<?php echo $row['Coursecode']; ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">2.รายวิชาที่ต้องเรียนก่อนวิชานี้</label>
+                                            <label class="col-sm-2 col-form-label">2.ชื่อรายวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="แขนงวิชาการจัดการทรัพยากรมนุษย์  หลักสูตรบริหารธุรกิจบัณฑิต " ?>
+                                                <input type="text" class="form-control" name="coursetype" placeholder="การเตรียมฝึกประสบการณ์วิชาชีพทางบริหารธุรกิจ" value="<?php echo $row['Thaisubjectname']; ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">3.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
+                                            <label class="col-sm-2 col-form-label">3.จำนวนหน่วยกิต</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " ?>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">4.ภาคการศึกษา/ชั้นปีที่่เรียนที่ฝึกประสบการณ์ภาคสนาม</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="2 / ชั้นปีที่ 3 " ?>
+                                                <input type="text" class="form-control" name="credit" placeholder="2 หน่วยกิต (0-0-90) " value="<?php echo $row['credit']; ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">5.สถานที่เรียน</label>
+                                            <label class="col-sm-2 col-form-label">4.รายวิชาที่ต้องเรียนก่อนวิชานี้</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="แขนงวิชาการจัดการทรัพยากรมนุษย์  หลักสูตรบริหารธุรกิจบัณฑิต " ?>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">5.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="semester" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " value="<?php echo $row['nameteacher']; ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">6.ภาคการศึกษา/ชั้นปีที่่เรียนที่ฝึกประสบการณ์ภาคสนาม</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="semester1" placeholder="2 / ชั้นปีที่ 3 " ?>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">7.สถานที่เรียน</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="semester1" placeholder="อาคาร" ?>
                                             </div>
@@ -143,7 +167,7 @@ $num = mysqli_num_rows($result1);
 
 
                                         <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก
 

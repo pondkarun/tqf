@@ -4,13 +4,13 @@ include('include/condb.php');  //ไฟล์เชื่อมต่อกั�
 include('include/chklogin.php');
 
 
+
 //2. query ข้อมูลจากตาราง: 
-$sql = "SELECT * FROM dbcourse_add WHERE id ";
+$sql = "SELECT * FROM dbcourseteacher WHERE id = $_GET[id] ";
 $result = mysqli_query($condb, $sql);
 $row = mysqli_fetch_array($result);
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +60,7 @@ $row = mysqli_fetch_array($result);
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">เพิ่มรายวิชาที่เปิดสอน</h1>
-                        <a href="course.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> เพิ่มรายวิชา</a>
+                        <!-- <a href="course.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> เพิ่มรายวิชา</a> -->
                     </div>
 
                     <div class="row">
@@ -71,66 +71,36 @@ $row = mysqli_fetch_array($result);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="course_adddb.php" method="POST">
+                                    <form action="coursecoure_updatedb.php" method="POST">
                                         <div class="form-group row">
+
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">รหัสวิชา</label>
-                                                <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="รหัสวิชา" ?>
+                                                <input type="text" name="course" class="form-control form-control-user" placeholder="รหัสวิชา" value="<?php echo $row['course']; ?>">
                                             </div>
+
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">ชื่อวิชาภาษาไทย</label>
-                                                <input type="text" name="Thaisubjectname" class="form-control form-control-user" placeholder="ชื่อวิชาภาษาไทย" ?>
+                                                <input type="text" name="namesub" class="form-control form-control-user" placeholder="ชื่อวิชาภาษาไทย" value="<?php echo $row['namesub']; ?>">
                                             </div>
-                                            <div class="col-md-12 col-lg-6">
-                                                <label for="">ชื่อวิชาภาษาอังกฤษ</label>
-                                                <input type="text" name="Englishsubjectname" class="form-control form-control-user" placeholder="ชื่อวิชาภาษาอังกฤษ" ?>
-                                            </div>
-                                            <div class="col-md-6 col-lg-2">
 
+                                            <div class="col-md-12 col-lg-6">
                                                 <label for="">หน่วยกิต</label>
-                                                <input type="text" name="credit" class="form-control form-control-user" placeholder="หน่วยกิต" ?>
+                                                <input type="text" name="cradit" class="form-control form-control-user" placeholder="หน่วยกิต" value="<?php echo $row['cradit']; ?>">
                                             </div>
-                                            <div class="col-md-12 col-lg-2">
-                                                <label for="">ปีการศึกษา</label>
-                                                <input type="text" name="year" class="form-control form-control-user" placeholder="ปีการศึกษา">
-                                            </div>
-                                            <div class="col-md-12 col-lg-2">
-                                                <label for="">ภาคเรียน</label>
-                                                <input type="text" name="semester" class="form-control form-control-user" placeholder="ภาคเรียน">
-                                            </div>
+
+
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">หลักสูตรและประเภทรายวิชา</label>
-                                                <input type="text" name="Curriculumandcoursetype" class="form-control form-control-user" placeholder="หลักสูตรและประเภทรายวิชา" ?>
+                                                <input type="text" name="courseObjectives" class="form-control form-control-user" placeholder="หลักสูตรและประเภทรายวิชา" value="<?php echo $row['courseObjectives']; ?>">
                                             </div>
-                                            <div class="col-md-12 col-lg-6">
-                                                <label for="">อาจารย์ผู้รับผิดชอบรายวิชา</label>
-                                                <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
-                                            </div>
-
-
-                                            <div class="col-md-12 col-lg-6">
-                                                <label for="">ห้องเรียน</label>
-                                                <input type="text" name="classroom" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
-                                            </div>
-
-
-                                            <div class="col-md-12 col-lg-6">
-                                                <label for="">วันเวลาสอน</label>
-                                                <input type="text" name="examdate" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
-                                            </div>
-
-                                            <div class="col-md-12 col-lg-6">
-                                                <label for="">กลุ่มเรียน</label>
-                                                <input type="text" name="group" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
-                                            </div>
-
 
                                         </div>
-
-                                        <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                        <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
                                         <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                             บันทึก
                                         </button>
+
                                     </form>
                                 </div>
                             </div>

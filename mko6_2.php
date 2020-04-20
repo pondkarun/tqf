@@ -8,12 +8,10 @@
 // echo '</pre>';
 // exit;
 
-include('include/condb.php');
 
 
-$check = "SELECT username FROM `users` WHERE  username = '$_POST[username]'";
-$result1 = mysqli_query($condb, $check) or die("Error in query: $sql" . mysqli_error());
-$num = mysqli_num_rows($result1);
+
+
 ?>
 
 <head>
@@ -24,7 +22,7 @@ $num = mysqli_num_rows($result1);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.6</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -52,7 +50,7 @@ $num = mysqli_num_rows($result1);
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("include/nav.php"); ?>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -63,7 +61,7 @@ $num = mysqli_num_rows($result1);
                         <table align="center" width="762">
                             <tr>
                                 <td>
-                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท4</h1>
+                                    <h1 class="h3 mb-0 text-gray-800">กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติประเภท6</h1>
                                 </td>
                             </tr>
                         </table>
@@ -78,7 +76,7 @@ $num = mysqli_num_rows($result1);
 
                                     <!-- เนื้อหา -->
 
-                                    <form action="mko3_1db.php" method="POST">
+                                    <form action="mko6_2_save.php" method="POST">
 
 
                                         <h1 class="h3 mb-0 text-gray-800">หมวดที่2การดำเนินการที่ต่างจากแผนการฝึกประสบการณ์ภาคสนาม</h1>
@@ -93,40 +91,40 @@ $num = mysqli_num_rows($result1);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.การเตรียมนักศึกษา </label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="(ถ้ามี)" ?>
+                                                <input type="text" class="form-control" name="mm" placeholder="(ถ้ามี)" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">2.การเตรียมอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursetype" placeholder="อาจารย์นิเทศก์" ?>
+                                                <input type="text" class="form-control" name="hh" placeholder="อาจารย์นิเทศก์" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">3.การเตรียมพนักงานพี่เลี้ยง(Field Supervisors)จากสถานประกอบการ</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="(ถ้ามี)" ?>
+                                                <input type="text" class="form-control" name="gg" placeholder="(ถ้ามี)" ?>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">4.การเปลี่ยนแปลงการจัดการในการฝึกประสบการณ์ภาคสนาม</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="การเปลี่ยนแปลงกิจกรรมและ/หรืองานที่มอบหมายให้นักศึกษา" ?>
+                                                <input type="text" class="form-control" name="oo" placeholder="การเปลี่ยนแปลงกิจกรรมและ/หรืองานที่มอบหมายให้นักศึกษา" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">4.การเปลี่ยนแปลงอื่นๆ </label>
+                                            <label class="col-sm-2 col-form-label">5.การเปลี่ยนแปลงอื่นๆ </label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="(ถ้ามี)" ?>
+                                                <input type="text" class="form-control" name="pp" placeholder="(ถ้ามี)" ?>
                                             </div>
                                         </div>
 
 
                                         <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก
 

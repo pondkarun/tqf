@@ -62,7 +62,7 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                    <form class="login100-form validate-form flex-sb flex-w" action="mko3_6_save.php" method="post">
                                         <table align="center" width="800">
                                             <tr>
                                                 <td>
@@ -77,49 +77,54 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">1.เอกสารและตำราหลัก</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ณัฐพล ธนเขวงสกุล (2562) เอกสารประกอบการสอนวิชาการเขียนโปรแกรมเบื้องต้นทางธุรกิจ.กรุงเทพ" ?>
+                                                    <input type="text" name="documents" class="form-control form-control-user" placeholder="ณัฐพล ธนเขวงสกุล (2562) เอกสารประกอบการสอนวิชาการเขียนโปรแกรมเบื้องต้นทางธุรกิจ.กรุงเทพ" ?>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">2.เอกสารแลพข้อมูลสำคัญ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="เอกชัย เจริญนิตย์ (2551) เอกสารประกอบการสอนวิชาหลักการเขียนโปรแกรม. พิมพ์ครั้งที่2" ?>
+                                                    <input type="text" name="documentsa" class="form-control form-control-user" placeholder="เอกชัย เจริญนิตย์ (2551) เอกสารประกอบการสอนวิชาหลักการเขียนโปรแกรม. พิมพ์ครั้งที่2" ?>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-4 col-form-label">เอกสารและข้อมูลแนะนำ</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="มี/ไม่มี" ?>
+                                                    <input type="text" name="documentsb" class="form-control form-control-user" placeholder="มี/ไม่มี" ?>
                                                 </div>
                                             </div>
 
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                    <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                    <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                        บันทึก
+
+                                    </button>
+                                    <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                        ยกเลิก
+
+                                    </button>
+                                    </form>
+
+
+                                    </form>
 
                             </div>
-                            <br>
-
-                            </form>
-
-
-                            </form>
-
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /.container-fluid -->
+
         </div>
-        <!-- /.container-fluid -->
+        <!-- End of Main Content -->
 
-    </div>
-    <!-- End of Main Content -->
+        <!-- Footer -->
 
-    <!-- Footer -->
-
-    <!-- End of Footer -->
+        <!-- End of Footer -->
 
     </div>
     <!-- End of Content Wrapper -->

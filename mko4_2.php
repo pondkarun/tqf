@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เอกสารหมายเลข มคอ.3</title>
+    <title>เอกสารหมายเลข มคอ.4</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -27,7 +27,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php include("include/sidebar.php"); ?>
+
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -62,7 +62,7 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                    <form class="login100-form validate-form flex-sb flex-w" action="mko4_2_save.php" method="post">
                                         <table align="center" width="500">
                                             <tr>
                                                 <td>
@@ -76,7 +76,7 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">1. จุดมุ่งหมายของรายวิชา </label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="courseObjectives1 " placeholder="1.เพื่อเตรียมความพร้อมให้กับนักศึกษาในด้านความรู้ทักษะในสาขาวิชาและบุคลิกภาพก่อนออกฝึกประสบการณ์ในสถานประกอบการจริง" ?>
+                                                    <input type="text" class="form-control" name="courseObjectives1" placeholder="1.เพื่อเตรียมความพร้อมให้กับนักศึกษาในด้านความรู้ทักษะในสาขาวิชาและบุคลิกภาพก่อนออกฝึกประสบการณ์ในสถานประกอบการจริง" ?>
                                                 </div>
                                             </div>
 
@@ -90,29 +90,31 @@
 
                                 </div>
                                 <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                                    <button type="submit" class="btn btn-sm btn-info" href="mko3_2.php">บันทึกข้อมูล</button></center>
+                                    <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                    <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                        บันทึก
+
+                                    </button>
+                                    <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                                        ยกเลิก
+
+                                    </button>
+                                    </form>
 
                             </div>
-                            <br>
-
-                            </form>
-
-
-                            </form>
-
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /.container-fluid -->
+
         </div>
-        <!-- /.container-fluid -->
+        <!-- End of Main Content -->
 
-    </div>
-    <!-- End of Main Content -->
+        <!-- Footer -->
 
-    <!-- Footer -->
-
-    <!-- End of Footer -->
+        <!-- End of Footer -->
 
     </div>
     <!-- End of Content Wrapper -->
