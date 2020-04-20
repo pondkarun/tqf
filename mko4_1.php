@@ -167,7 +167,7 @@ $num = mysqli_num_rows($result1);*/
                                                 <input type="text" class="form-control" name="dateofmaking" placeholder="ปีการศึกษา 2562 " ?>
                                             </div>
                                         </div>
-                                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                        <center>
                                             <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                             <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                 บันทึก

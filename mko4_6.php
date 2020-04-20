@@ -90,55 +90,55 @@
                                         ประพฤติผิดระเบียบ/สอบสวนระบุโทษ  F 
                                        หมายเหตุ   :  เกณฑ์ผ่านการฝึกงานต้องได้ค่าระดับคะแนนไม่ต่ำกว่า C 
 </textarea>
-
-                                            <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">2.กระบวนการประเมินผลการปฏิบัติงานของนักศึกษา</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="story" placeholder="1.-	ประเมินโดยอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์  " ?>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">3.ความรับผิดชอบของอาจารย์ผู้รับผิดชอบประสบการณ์ภาคสนามต่อการประเมินนักศึกษา </label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="courseObjectives1" placeholder="1.ประเมินผลงานงานของนักศึกษาระหว่างการเตรียมฝึกประสบการณ์ตามแบบฟอร์มประเมินของศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาโดยพิจารณาจากพฤติกรรมและผลงาน  " ?>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">4.การสรุปผลการประเมินที่แตกต่าง</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="courseObjectives2" placeholder="1.อาจารย์ผู้รับผิดชอบการเตรียมฝึกประสบการณ์และศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาร่วมประสานงานเพื่อตรวจสอบทำความเข้าใจในประเด็นการประเมินที่แตกต่างกันอย่างมีนัยสำคัญและกรณีจำเป็นจัดประชุมร่วมกันเพื่อพิจารณาหาข้อสรุป " ?>
-                                                </div>
-                                            </div>
-
-
-
                                 </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">2.กระบวนการประเมินผลการปฏิบัติงานของนักศึกษา</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="story" placeholder="1.-	ประเมินโดยอาจารย์ที่ปรึกษา/อาจารย์นิเทศก์  " ?>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">3.ความรับผิดชอบของอาจารย์ผู้รับผิดชอบประสบการณ์ภาคสนามต่อการประเมินนักศึกษา </label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="courseObjectives1" placeholder="1.ประเมินผลงานงานของนักศึกษาระหว่างการเตรียมฝึกประสบการณ์ตามแบบฟอร์มประเมินของศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาโดยพิจารณาจากพฤติกรรมและผลงาน  " ?>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">4.การสรุปผลการประเมินที่แตกต่าง</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="courseObjectives2" placeholder="1.อาจารย์ผู้รับผิดชอบการเตรียมฝึกประสบการณ์และศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษาร่วมประสานงานเพื่อตรวจสอบทำความเข้าใจในประเด็นการประเมินที่แตกต่างกันอย่างมีนัยสำคัญและกรณีจำเป็นจัดประชุมร่วมกันเพื่อพิจารณาหาข้อสรุป " ?>
+                                    </div>
+                                </div>
+
+
+
                             </div>
-
                         </div>
-                        <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
-                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
-                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
-                                บันทึก
-
-                            </button>
-                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
-
-                                ยกเลิก
-
-                            </button>
-                            </form>
-
-
-                            </form>
 
                     </div>
+                    <center>
+                        <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                        <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                            บันทึก
+
+                        </button>
+                        <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+
+                            ยกเลิก
+
+                        </button>
+                        </form>
+
+
+                        </form>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- /.container-fluid -->
 

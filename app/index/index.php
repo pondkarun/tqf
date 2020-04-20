@@ -50,7 +50,7 @@
 				<ul class="main-menu">
 					<li class="active"><a href="index.php">หน้าแรก</a></li>
 					<?php if (@$_SESSION['login_id']) { ?>
-						<li><a href="../../listUser.php">รายวิชา</a></li>
+						<li><a href="../../listUsercoure.php">รายวิชา</a></li>
 						<li><a href="../../listUser.php">รายวิชาที่เปิดสอน</a></li>
 						<li><a href="../../contact.php">สรุปรายงาน</a></li>
 					<?php } ?>

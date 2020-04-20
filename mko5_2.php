@@ -62,7 +62,7 @@
                                 <div class="card-body">
 
                                     <!-- เนื้อหา -->
-                                    <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                    <form class="login100-form validate-form flex-sb flex-w" action="mko5_2_save.php" method="post">
                                         <table align="center" width="800">
                                             <tr>
                                                 <td>
@@ -593,255 +593,233 @@
                                                     <div class="col-sm-12">
                                                         <div>
                                                             <div>
-                                                                <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
-                                                                <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ข้อที่1" ?>
+                                                                <input type="text" name="car1" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
+                                                                <input type="text" name="car2" class="form-control form-control-user" placeholder="ข้อที่1" ?>
                                                                 <input type="radio" name="radio1" value="true"> มี
                                                                 <input type="radio" name="radio1" value="false"> ไม่มี
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ข้อที่2" ?>
+                                                                        <input type="text" name="car3" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
+                                                                        <input type="text" name="car4" class="form-control form-control-user" placeholder="ข้อที่2" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="radio2" value="[yes]"> มี
-                                                                <input type="radio" name="radio2" value="[no]"> ไม่มี
+                                                                <input type="radio" name="radio2" value="true"> มี
+                                                                <input type="radio" name="radio2" value="false"> ไม่มี
 
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ข้อที่3" ?>
+                                                                        <input type="text" name="car5" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
+                                                                        <input type="text" name="car6" class="form-control form-control-user" placeholder="ข้อที่3" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="[name]" value="[yes]"> มี
-                                                                <input type="radio" name="[name]" value="[no]"> ไม่มี
+                                                                <input type="radio" name="radio3" value="true"> มี
+                                                                <input type="radio" name="radio3" value="false"> ไม่มี
 
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ข้อที่4" ?>
+                                                                        <input type="text" name="car7" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
+                                                                        <input type="text" name="car8" class="form-control form-control-user" placeholder="ข้อที่4" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="[name]" value="[yes]"> มี
-                                                                <input type="radio" name="[name]" value="[no]"> ไม่มี
+                                                                <input type="radio" name="radio4" value="true"> มี
+                                                                <input type="radio" name="radio4" value="false"> ไม่มี
 
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="คุณธรรม จริยธรรม" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ข้อที่3" ?>
+                                                                        <input type="text" name="car9" class="form-control form-control-user" placeholder="ความรู้" ?>
+                                                                        <input type="text" name="car10" class="form-control form-control-user" placeholder="1.การสอบวัดผล" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
-
-
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
-                                                                    <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ความรู้" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="1.การสอบวัดผล" ?>
-
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+                                                                <input type="radio" name="radio5" value="true"> มี
+                                                                <input type="radio" name="radio5" value="false"> ไม่มี
 
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ความรู้" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="2.จัดการเรียบการสอน" ?>
+                                                                        <input type="text" name="car11" class="form-control form-control-user" placeholder="ความรู้" ?>
+                                                                        <input type="text" name="car12" class="form-control form-control-user" placeholder="2.จัดการเรียบการสอน" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+                                                                <input type="radio" name="radio6" value="true"> มี
+                                                                <input type="radio" name="radio6" value="false"> ไม่มี
+
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
+                                                                    <div class="col-sm-12">
+                                                                        <input type="text" name="car13" class="form-control form-control-user" placeholder="ความรู้" ?>
+                                                                        <input type="text" name="car14" class="form-control form-control-user" placeholder="3.ทำการวิเคราห์" ?>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <input type="radio" name="radio7" value="true"> มี
+                                                                <input type="radio" name="radio7" value="false"> ไม่มี
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ความรู้" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="3.ทำการวิเคราห์" ?>
+                                                                        <input type="text" name="car15" class="form-control form-control-user" placeholder="ความรู้" ?>
+                                                                        <input type="text" name="car16" class="form-control form-control-user" placeholder="4.ทำการคำนวณ" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+                                                                <input type="radio" name="radio8" value="true"> มี
+                                                                <input type="radio" name="radio8" value="false"> ไม่มี
+
+
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
+                                                                    <div class="col-sm-12">
+                                                                        <input type="text" name="car17" class="form-control form-control-user" placeholder="ความรู้" ?>
+                                                                        <input type="text" name="car18" class="form-control form-control-user" placeholder="5.ฝึกปฏิบัติ้เขียน" ?>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <input type="radio" name="radio9" value="true"> มี
+                                                                <input type="radio" name="radio9" value="false"> ไม่มี
 
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ความรู้" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="4.ทำการคำนวณ" ?>
+                                                                        <input type="text" name="car19" class="form-control form-control-user" placeholder="ทักษะทางปัญญา" ?>
+                                                                        <input type="text" name="car20" class="form-control form-control-user" placeholder="1.การหมอบหมาย" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
-
+                                                                <input type="radio" name="radio10" value="true"> มี
+                                                                <input type="radio" name="radio10" value="false"> ไม่มี
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ความรู้" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="5.ฝึกปฏิบัติ้เขียน" ?>
+                                                                        <input type="text" name="car21" class="form-control form-control-user" placeholder="ทักษะทางปัญญา" ?>
+                                                                        <input type="text" name="car22" class="form-control form-control-user" placeholder="2.การหมอบหมาย" ?>
 
                                                                     </div>
                                                                 </div>
 
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
 
+                                                                <input type="radio" name="radio11" value="true"> มี
+                                                                <input type="radio" name="radio11" value="false"> ไม่มี
 
 
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะทางปัญญา" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="1.การหมอบหมาย" ?>
+                                                                        <input type="text" name="car23" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
+                                                                        <input type="text" name="car24" class="form-control form-control-user" placeholder="1.การนำเสนอ" ?>
 
                                                                     </div>
                                                                 </div>
 
 
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+                                                                <<input type="radio" name="radio12" value="true"> มี
+                                                                    <input type="radio" name="radio12" value="false"> ไม่มี
+
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" name="car25" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
+                                                                            <input type="text" name="car26" class="form-control form-control-user" placeholder="2.หมอบหมายทำงานรวมกัน" ?>
+
+                                                                        </div>
+                                                                    </div>
 
 
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
+                                                                    <input type="radio" name="radio13" value="true"> มี
+                                                                    <input type="radio" name="radio13" value="false"> ไม่มี
+
+
                                                                     <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะทางปัญญา" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="2.การหมอบหมาย" ?>
+                                                                        <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
+                                                                        <input type="text" name="car27" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
+                                                                        <input type="text" name="car28" class="form-control form-control-user" placeholder="3.จัดกิตกรรมกลุ่ม" ?>
 
                                                                     </div>
-                                                                </div>
-
-
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
-
-
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
-                                                                    <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="1.การนำเสนอ" ?>
-
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
-
-
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
-                                                                    <div class="col-sm-12">
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
-                                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="2.หมอบหมายทำงานรวมกัน" ?>
-
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
-
-
-
-                                                                <div class="col-sm-12">
-                                                                    <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
-                                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
-                                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="3.จัดกิตกรรมกลุ่ม" ?>
-
-                                                                </div>
                                                             </div>
 
 
-                                                            <input type="radio" name="[name]" value="[value]"> มี
-                                                            <input type="radio" name="[name]" value="[value]"> ไม่มี
-
-
+                                                            <input type="radio" name="radio14" value="true"> มี
+                                                            <input type="radio" name="radio14" value="false"> ไม่มี
                                                             <div class="col-sm-12">
                                                                 <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
-                                                                <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
-                                                                <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="4.การสิบค้นข้อมูล" ?>
+                                                                <input type="text" name="car29" class="form-control form-control-user" placeholder="ทักษะความสัมพันธ์ระหว่างบุคคลรับผิดชอบ" ?>
+                                                                <input type="text" name="car30" class="form-control form-control-user" placeholder="4.การสิบค้นข้อมูล" ?>
 
                                                             </div>
                                                         </div>
 
 
-                                                        <input type="radio" name="[name]" value="[value]"> มี
-                                                        <input type="radio" name="[name]" value="[value]"> ไม่มี
-
+                                                        <input type="radio" name="radio15" value="true"> มี
+                                                        <input type="radio" name="radio15" value="false"> ไม่มี
 
 
                                                         <div class="col-sm-12">
                                                             <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
-                                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะการวิเคราห์เชิงตัวเลขการสือสาร" ?>
-                                                            <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="1.หมอบหมายชิ้นงานโดยให้ใช้เครื่องมือ" ?>
+                                                            <input type="text" name="car31" class="form-control form-control-user" placeholder="ทักษะการวิเคราห์เชิงตัวเลขการสือสาร" ?>
+                                                            <input type="text" name="car32" class="form-control form-control-user" placeholder="1.หมอบหมายชิ้นงานโดยให้ใช้เครื่องมือ" ?>
 
                                                         </div>
                                                     </div>
 
-                                                    <input type="radio" name="[name]" value="[value]"> มี
-                                                    <input type="radio" name="[name]" value="[value]"> ไม่มี
+                                                    <input type="radio" name="radio16" value="true"> มี
+                                                    <input type="radio" name="radio16" value="false"> ไม่มี
 
 
                                                     <div class="col-sm-12">
                                                         <label class="col-sm-14 col-form-labe">ผลการเรียนรู้</label>
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="ทักษะการวิเคราห์เชิงตัวเลขการสือสาร" ?>
-                                                        <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="2.หมอบหมายชิ้นงานโดยให้ใช้เครื่องมือซอฟเวร์" ?>
+                                                        <input type="text" name="car33" class="form-control form-control-user" placeholder="ทักษะการวิเคราห์เชิงตัวเลขการสือสาร" ?>
+                                                        <input type="text" name="car34" class="form-control form-control-user" placeholder="2.หมอบหมายชิ้นงานโดยให้ใช้เครื่องมือซอฟเวร์" ?>
 
                                                     </div>
                                                 </div>
 
-                                                <input type="radio" name="[name]" value="[value]"> มี
-                                                <input type="radio" name="[name]" value="[value]"> ไม่มี
+                                                <input type="radio" name="radio17" value="true"> มี
+                                                <input type="radio" name="radio17" value="false"> ไม่มี
 
 
 
                                                 <div class="col-sm-12">
                                                     <label class="col-sm-14 col-form-labe">ข้อเสนอการดำเนินการเพื่อปรับปรุงวิธีสอน (ปัญหาที่เจอใน ข้อ 3)</label>
-                                                    <input type="text" name="Coursecode" class="form-control form-control-user" placeholder="เพื่อฝึกฝนให้กล้าแสดงออก" ?>
+                                                    <input type="text" name="porm" class="form-control form-control-user" placeholder="เพื่อฝึกฝนให้กล้าแสดงออก" ?>
 
 
 
@@ -858,7 +836,7 @@
 
 
                                                 </div>
-                                                <center> <button type="submit" class="btn btn-sm btn-primary" href="mko3_2.php">ไปหมวดที่2</button>
+                                                <center>
                                                     <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
                                                     <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
                                                         บันทึก
