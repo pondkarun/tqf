@@ -40,7 +40,7 @@
 	<header class="header-section">
 		<div class="container">
 			<a href="index.html" class="site-logo">
-				<img src="img/logo1.png" alt="logo">
+				<img src="img/logovvv.png" alt="logo">
 			</a>
 			<!-- Switch button -->
 			<div class="nav-switch">

@@ -110,7 +110,7 @@ $i = 0
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">รายวิชา</h1>
+                        <h1 class="h3 mb-0 text-gray-800">สถานะการส่ง</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -134,6 +134,7 @@ $i = 0
                                                     <th width="">อาจารย์ผู้รับผิดชอบรายวิชา</th>
                                                     <th width="">อาจารย์ที่ส่งเรื่อง</th>
                                                     <!-- <th width="">อาจารย์มคอ. 5</th> -->
+                                                    <th width="">กลุ่มเรียน</th>
                                                     <th width="">ปีการศึกษา</th>
                                                     <th width="">ภาคเรียน</th>
                                                     <th width="">ส่งมคอ. 3</th>
@@ -152,6 +153,7 @@ $i = 0
                                                         <td><?php echo $row['nameteacher']; ?></td>
                                                         <td><?php echo $row['usernameth']; ?></td>
                                                         <!-- <td><?php echo $row['semester']; ?></td> -->
+                                                        <td><?php echo $row['group_class']; ?></td>
                                                         <td><?php echo $row['year']; ?></td>
                                                         <td><?php echo $row['semester']; ?></td>
                                                         <td class="text-center">

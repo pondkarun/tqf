@@ -136,6 +136,7 @@ INNER JOIN users AS u ON aa.id_user = u.id
                                                     <th width="">รหัสวิชา</th>
 
                                                     <th width="">อาจารย์ที่ส่งเรื่อง</th>
+                                                    <th width="">กลุ่มเรียน</th>
                                                     <!-- <th width="">อาจารย์มคอ. 5</th> -->
                                                     <th width="">ปีการศึกษา</th>
                                                     <th width="">ภาคเรียน</th>
@@ -155,6 +156,7 @@ INNER JOIN users AS u ON aa.id_user = u.id
 
                                                         <td><?php echo $row['usernameth']; ?></td>
                                                         <!-- <td><?php echo $row['semester']; ?></td> -->
+                                                        <td><?php echo $row['group_class']; ?></td>
                                                         <td><?php echo $row['year']; ?></td>
                                                         <td><?php echo $row['semester']; ?></td>
                                                         <td class="text-center">
