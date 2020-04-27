@@ -28,8 +28,27 @@ $sql = "INSERT INTO db_mko6_1
         '$_POST[semester]'
         )";
 
-//$result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
-$result = $condb->query($sql);
+$result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
+$last_id = mysqli_insert_id($condb);
+
+
+
+for ($i = 0; $i < count($_POST["responsibleteacher"]); $i++) {;
+    $responsibleteacher = $_POST["responsibleteacher"][$i];
+    $sql = "INSERT INTO db_mko6_1_map_
+        (
+            id_db_mko6_1,
+            responsibleteacher
+        )
+        VALUES
+        (
+        '$last_id',
+        '$responsibleteacher'
+        )";
+
+    $result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
+}
+
 
 
 

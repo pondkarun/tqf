@@ -20,7 +20,7 @@ $row = mysqli_fetch_array($result);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blankeesee</title>
+    <title>แก้ไขรายวิชาที่เปิดสอน</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,7 +41,7 @@ $row = mysqli_fetch_array($result);
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php include('include/sidebar.php'); ?>
+
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -59,7 +59,7 @@ $row = mysqli_fetch_array($result);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
@@ -110,6 +110,22 @@ $row = mysqli_fetch_array($result);
                                                     <label for="">ภาคเรียน</label>
                                                     <input type="text" name="semester" class="form-control form-control-user" placeholder="ภาคเรียน" value="<?php echo $row['semester']; ?>">
                                                 </div>
+
+                                                <div class="col-md-12 col-lg-2">
+                                                    <label for="">ห้องเรียน</label>
+                                                    <input type="text" name="classroom" class="form-control form-control-user" placeholder="ภาคเรียน" value="<?php echo $row['classroom']; ?>">
+                                                </div>
+
+                                                <div class="col-md-12 col-lg-2">
+                                                    <label for="">วันเวลาสอน</label>
+                                                    <input type="text" name="examdate" class="form-control form-control-user" placeholder="วันจันทร์ 9:30-11:30" value="<?php echo $row['examdate']; ?>">
+                                                </div>
+
+                                                <div class="col-md-12 col-lg-2">
+                                                    <label for="">กลุ่มเรียน</label>
+                                                    <input type="text" name="group_class" class="form-control form-control-user" placeholder="201" value="<?php echo $row['group_class']; ?>">
+                                                </div>
+
 
                                         </div>
                                         <div class="col-12 text-center pt-5">

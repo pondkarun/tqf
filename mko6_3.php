@@ -98,7 +98,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">1.จำนวนนักศึกษาที่ลงทะเบียนเรียน/ส่งไปฝึกประสบการณ์ภาคสนาม</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="numchildr" placeholder="" ?>
+                                    <input type="text" id='numchildr' class="form-control" name="numchildr" placeholder="" ?>
 
 
                                 </div>
@@ -121,8 +121,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนA</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="aonec" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="aoneed" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="aonec" class="form-control" name="aonec" placeholder="จำนวน" ?>
+                                    <input type="text" id="aoneed" class="form-control" name="aoneed" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
@@ -130,8 +130,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนB+</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="bpluss" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="bos" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="bpluss" class="form-control" name="bpluss" placeholder="จำนวน" ?>
+                                    <input type="text" id="bos" class="form-control" name="bos" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
 
 
@@ -139,8 +139,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนB</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="bba" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="bbbplus" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="bba" class="form-control" name="bba" placeholder="จำนวน" ?>
+                                    <input type="text" id="bbbplus" class="form-control" name="bbbplus" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
@@ -148,16 +148,16 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนC+</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="cplus" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="ccplusv" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="cplus" class="form-control" name="cplus" placeholder="จำนวน" ?>
+                                    <input type="text" id="ccplusv" class="form-control" name="ccplusv" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนC</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="cav" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="conen" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="cav" class="form-control" name="cav" placeholder="จำนวน" ?>
+                                    <input type="text" id="conen" class="form-control" name="conen" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
@@ -166,24 +166,24 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนD+</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="dplusn" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="donem" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="dplusn" class="form-control" name="dplusn" placeholder="จำนวน" ?>
+                                    <input type="text" id="donem" class="form-control" name="donem" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนD</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="ddm" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="ddoner" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="ddm" class="form-control" name="ddm" placeholder="จำนวน" ?>
+                                    <input type="text" id="ddoner" class="form-control" name="ddoner" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ระดับคะแนนF</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="ooo" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="ttt" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="ooo" class="form-control" name="ooo" placeholder="จำนวน" ?>
+                                    <input type="text" id="ttt" class="form-control" name="ttt" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
@@ -191,8 +191,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ไม่สมบูรณ์ (I)</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="yyy" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="uuu" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="yyy" class="form-control" name="yyy" placeholder="จำนวน" ?>
+                                    <input type="text" id="uuu" class="form-control" name="uuu" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
@@ -200,16 +200,16 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ผ่าน (P, S)</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="cord" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="suca" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="cord" class="form-control" name="cord" placeholder="จำนวน" ?>
+                                    <input type="text" id="suca" class="form-control" name="suca" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ตก (U)</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="dass" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="nahw" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="dass" class="form-control" name="dass" placeholder="จำนวน" ?>
+                                    <input type="text" id="nahw" class="form-control" name="nahw" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
@@ -219,8 +219,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">ถอน (W)</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="haw" placeholder="จำนวน" ?>
-                                    <input type="text" class="form-control" name="mmml" placeholder="คิดเป็นร้อยละ" ?>
+                                    <input type="text" id="haw" class="form-control" name="haw" placeholder="จำนวน" ?>
+                                    <input type="text" id="mmml" class="form-control" name="mmml" placeholder="คิดเป็นร้อยละ" ?>
                                 </div>
                             </div>
 
@@ -310,6 +310,111 @@
     <script>
         $(document).ready(function() {
             $('#dataTable').DataTable();
+            // coursename
+            // fram1
+            // fram2
+            // let coursename = $('#coursename').val("300")
+            // console.log("coursename", coursename);
+
+            var coursename = document.getElementById("numchildr");
+
+            $("#aonec").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let aonec = document.getElementById("aonec");
+                let Intaonec = parseInt(aonec.value);
+                let totel = (Intaonec / IntSumCours) * 100
+                $('#aoneed').val(totel + "%")
+            });
+
+            $("#bpluss").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let bpluss = document.getElementById("bpluss");
+                let Intbpluss = parseInt(bpluss.value);
+                let totel = (Intbpluss / IntSumCours) * 100
+                $('#bos').val(totel + "%")
+            });
+
+            $("#bba").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let bba = document.getElementById("bba");
+                let Intbba = parseInt(bba.value);
+                let totel = (Intbba / IntSumCours) * 100
+                $('#bbbplus').val(totel + "%")
+            });
+
+            $("#cplus").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let cplus = document.getElementById("cplus");
+                let Intcplus = parseInt(cplus.value);
+                let totel = (Intcplus / IntSumCours) * 100
+                $('#ccplusv').val(totel + "%")
+            });
+
+            $("#cav").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let cav = document.getElementById("cav");
+                let Intcav = parseInt(cav.value);
+                let totel = (Intcav / IntSumCours) * 100
+                $('#conen').val(totel + "%")
+            });
+
+            $("#dplusn").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let dplusn = document.getElementById("dplusn");
+                let Intdplusn = parseInt(dplusn.value);
+                let totel = (Intdplusn / IntSumCours) * 100
+                $('#donem').val(totel + "%")
+            });
+
+            $("#ddm").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let ddm = document.getElementById("ddm");
+                let Intddm = parseInt(ddm.value);
+                let totel = (Intddm / IntSumCours) * 100
+                $('#ddoner').val(totel + "%")
+            });
+
+            $("#ooo").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let ooo = document.getElementById("ooo");
+                let Intooo = parseInt(ooo.value);
+                let totel = (Intooo / IntSumCours) * 100
+                $('#ttt').val(totel + "%")
+            });
+
+            $("#yyy").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let yyy = document.getElementById("yyy");
+                let Intyyy = parseInt(yyy.value);
+                let totel = (Intyyy / IntSumCours) * 100
+                $('#uuu').val(totel + "%")
+            });
+
+            $("#cord").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let cord = document.getElementById("cord");
+                let Intcord = parseInt(cord.value);
+                let totel = (Intcord / IntSumCours) * 100
+                $('#suca').val(totel + "%")
+            });
+
+            $("#dass").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let dass = document.getElementById("dass");
+                let Intdass = parseInt(dass.value);
+                let totel = (Intdass / IntSumCours) * 100
+                $('#nahw').val(totel + "%")
+            });
+
+            $("#haw").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let haw = document.getElementById("haw");
+                let Inthaw = parseInt(haw.value);
+                let totel = (Inthaw / IntSumCours) * 100
+                $('#mmml').val(totel + "%")
+            });
+
+
         });
     </script>
 </body>

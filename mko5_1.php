@@ -133,23 +133,29 @@ $row = mysqli_fetch_array($result);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">3.จำนวนหน่วยกิต</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="credit" placeholder="2 หน่วยกิต (0-0-90) " value="<?php echo $row['credit']; ?>">
+                                                <input type="text" class="form-control" name="cradit" placeholder="2 หน่วยกิต (0-0-90) " value="<?php echo $row['credit']; ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">4.รายวิชาที่ต้องเรียนก่อนวิชานี้</label>
+                                            <label class="col-sm-2 col-form-label">4.หลักสูตรและประเภทรายวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="responsibleteacher" placeholder="แขนงวิชาการจัดการทรัพยากรมนุษย์  หลักสูตรบริหารธุรกิจบัณฑิต " ?>
+                                                <input type="text" class="form-control" name="aii" placeholder="แขนงวิชาการจัดการทรัพยากรมนุษย์  หลักสูตรบริหารธุรกิจบัณฑิต " value="<?php echo $row['Curriculumandcoursetype']; ?>">
+                                            </div>
+                                        </div>
+                                        <div id="item_table">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">5.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name="semester[]" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " value="<?php echo $row['nameteacher']; ?>">
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <button type="button" name="add" class="btn btn-success btn-sm add">+</button>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">5.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " value="<?php echo $row['nameteacher']; ?>">
-                                            </div>
-                                        </div>
+
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">6.ภาคการศึกษา/ชั้นปีที่่เรียนที่ฝึกประสบการณ์ภาคสนาม</label>
                                             <div class="col-sm-10">
@@ -160,7 +166,7 @@ $row = mysqli_fetch_array($result);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">7.สถานที่เรียน</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester1" placeholder="อาคาร" ?>
+                                                <input type="text" class="form-control" name="asd" placeholder="อาคาร" ?>
                                             </div>
                                         </div>
 
@@ -240,6 +246,36 @@ $row = mysqli_fetch_array($result);
     <script>
         $(document).ready(function() {
             $('#dataTable').DataTable();
+        });
+
+        $(document).ready(function() {
+            let i = 1;
+            $(document).on('click', '.add', function() {
+                $('#item_table').append(data());
+                i = i + 1;
+            });
+
+            $(document).on('click', '.remove', function() {
+                $(this).closest(item_table2).remove();
+                i = i - 1;
+            });
+
+            function data() {
+                let html = `<div id="item_table2">
+                            <div class="form-group row" >
+                                <label class="col-sm-2 col-form-label">5.${i} อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="semester[]" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " value="<?php echo $row['nameteacher']; ?>">
+                                </div>
+                                <div class="col-md-1">
+                                    <button type="button" name="add" class="btn btn-success btn-sm add">+</button>
+                                    <button type="button" name="remove" class="btn btn-danger btn-sm remove">-</button>
+                                </div>
+                            </div>
+                        </div>`;
+                return html
+            }
+
         });
     </script>
 </body>

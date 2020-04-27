@@ -145,46 +145,52 @@ $row = mysqli_fetch_array($result);
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="responsibleteacher" placeholder="ศูนย์ฝึกประสบการณ์วิชาชีพและสหกิจศึกษา/คณะวิทยาการจัดการ/อาจารย์ผู้สอน/นางสาวดวงพร คงพิกุล" value="<?php echo $row['nameteacher']; ?>">
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">6.ภาคการศึกษา/ชั้นปีที่่เรียนที่ฝึกประสบการณ์ภาคสนาม</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="semester" placeholder="2 / ชั้นปีที่ 3 " ?>
+
+                                            <div class="col-md-1">
+                                                <button type="button" name="add" class="btn btn-success btn-sm add">+</button>
                                             </div>
+
                                         </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">6.ภาคการศึกษา/ชั้นปีที่่เรียนที่ฝึกประสบการณ์ภาคสนาม</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="semester" placeholder="2 / ชั้นปีที่ 3 " ?>
+                                    </div>
+                                </div>
 
 
-                                        <center>
-                                            <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
-                                            <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
-                                                บันทึก
+                                <center>
+                                    <input type="hidden" name="id_mko" value="<?php echo $_GET["id_mko"]; ?>">
+                                    <button type="submit" name="save" class="col-sm-2  btn btn-primary ">
+                                        บันทึก
 
-                                            </button>
-                                            <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
+                                    </button>
+                                    <button type="submit" name="cancel" class="col-sm-2  btn btn-danger">
 
-                                                ยกเลิก
+                                        ยกเลิก
 
-                                            </button>
+                                    </button>
                                     </form>
                                     </button>
                                     </form>
 
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-
-            <!-- End of Footer -->
+            <!-- /.container-fluid -->
 
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->
@@ -228,6 +234,36 @@ $row = mysqli_fetch_array($result);
     <script>
         $(document).ready(function() {
             $('#dataTable').DataTable();
+        });
+
+        $(document).ready(function() {
+            let i = 1;
+            $(document).on('click', '.add', function() {
+                $('#item_table').append(data());
+                i = i + 1;
+            });
+
+            $(document).on('click', '.remove', function() {
+                $(this).closest(item_table2).remove();
+                i = i - 1;
+            });
+
+            function data() {
+                let html = `<div id="item_table2">
+                            <div class="form-group row" >
+                                <label class="col-sm-2 col-form-label">5.${i} อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="semester[]" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " value="<?php echo $row['nameteacher']; ?>">
+                                </div>
+                                <div class="col-md-1">
+                                    <button type="button" name="add" class="btn btn-success btn-sm add">+</button>
+                                    <button type="button" name="remove" class="btn btn-danger btn-sm remove">-</button>
+                                </div>
+                            </div>
+                        </div>`;
+                return html
+            }
+
         });
     </script>
 </body>

@@ -1,7 +1,7 @@
-<?php
-include('include/condb.php');
-include('include/chklogin.php');
-$query = "SELECT 
+<<?php
+    include('include/condb.php');
+    include('include/chklogin.php');
+    $query = "SELECT 
 * ,
 (
 SELECT COUNT(a.id)  FROM dbcourse_add AS  a 
@@ -60,70 +60,73 @@ INNER JOIN users AS u ON aa.id_user = u.id
 -- LEFT JOIN db_mko5_1 AS mk5 ON  aa.id = mk5.id_mko
 -- LEFT JOIN db_mko5_1_map_t AS   mk5m ON  mk5m.id_db_mko5_1 =  mk5.id
 ";
-$result = mysqli_query($condb, $query);
-$i = 0
-?>
-<!DOCTYPE html>
-<html lang="en">
+    $result = mysqli_query($condb, $query);
+    $i = 0
+    ?> <!DOCTYPE html>
+    <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>รายวิชา</title>
+        <title>repotnamet</title>
 
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <!-- Custom fonts for this template-->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-</head>
+        <!-- Custom styles for this template-->
+        <link href="css/sb-admin-2.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    </head>
 
-<body id="page-top">
+    <body id="page-top">
 
-    <!-- Page Wrapper -->
-    <div id="wrapper">
+        <!-- Page Wrapper -->
+        <div id="wrapper">
 
-        <!-- Sidebar -->
+            <!-- Sidebar -->
 
-        <!-- End of Sidebar -->
+            <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
 
-            <!-- Main Content -->
-            <div id="content">
+                <!-- Main Content -->
+                <div id="content">
 
-                <!-- Topbar -->
+                    <!-- Topbar -->
 
-                <!-- End of Topbar -->
+                    <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
+                    <!-- Begin Page Content -->
+                    <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">รายวิชา</h1>
-                        <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <!-- Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0 text-gray-800">repotnamet</h1>
+                            <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
-                    </div>
+                        </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-                        <!-- Content Column -->
-                        <div class="col-lg-12 mb-4">
-                            <a href="index.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>หน้าแรก</a>
-                            <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
-                                <div>
-                                    <div class="card-body">
+                        <!-- Content Row -->
+                        <div class="row">
+                            <!-- Content Column -->
+                            <div class="col-lg-12 mb-4">
+                                <a href="index.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>หน้าแรก</a>
+                                <!-- Project Card Example -->
+                                <div class="card shadow mb-4">
+                                    <div>
+                                        <div class="card-body">
+                                            <input onclick="javascript:window.print()" type="button" value="คลิ๊กเพื่อ Print หน้านี้" name="print2">
+                                        </div>
+
+
 
                                         <table class="table table-bordered" id="dataTable" width="" cellspacing="0">
                                             <thead>
@@ -131,7 +134,7 @@ $i = 0
                                                 <tr class="text-center">
                                                     <th width="">#</th>
                                                     <th width="">รหัสวิชา</th>
-                                                    <th width="">อาจารย์ผู้รับผิดชอบรายวิชา</th>
+
                                                     <th width="">อาจารย์ที่ส่งเรื่อง</th>
                                                     <!-- <th width="">อาจารย์มคอ. 5</th> -->
                                                     <th width="">ปีการศึกษา</th>
@@ -149,7 +152,7 @@ $i = 0
                                                     <tr>
                                                         <td class="text-center"><?php echo ++$i; ?></td>
                                                         <td><?php echo $row['Coursecode']; ?></td>
-                                                        <td><?php echo $row['nameteacher']; ?></td>
+
                                                         <td><?php echo $row['usernameth']; ?></td>
                                                         <!-- <td><?php echo $row['semester']; ?></td> -->
                                                         <td><?php echo $row['year']; ?></td>
@@ -262,6 +265,6 @@ $i = 0
                 $('#dataTable').DataTable();
             });
         </script>
-</body>
+    </body>
 
-</html>
+    </html>

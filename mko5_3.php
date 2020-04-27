@@ -93,7 +93,7 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.จำนวนนักศึกษาที่ลงทะเบียนเรียน</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="coursename" placeholder="36" ?>
+                                                <input type="text" id='coursename' class="form-control" name="coursename" placeholder="36" ?>
                                             </div>
                                         </div>
 
@@ -142,17 +142,16 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนA</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram1" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram2" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram1" class="form-control" name="fram1" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram2" class="form-control" name="fram2" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
-
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนB+</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram3" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram4" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram3" class="form-control" name="fram3" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram4" class="form-control" name="fram4" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
 
 
@@ -160,8 +159,8 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนB</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram5" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram6" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram5" class="form-control" name="fram5" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram6" class="form-control" name="fram6" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -169,16 +168,16 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนC+</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram7" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram8" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram7" class="form-control" name="fram7" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram8" class="form-control" name="fram8" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนC</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram9" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram10" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram9" class="form-control" name="fram9" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram10" class="form-control" name="fram10" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -187,24 +186,24 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนD+</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram11" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram12" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram11" class="form-control" name="fram11" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram12" class="form-control" name="fram12" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนD</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram13" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram14" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram13" class="form-control" name="fram13" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram14" class="form-control" name="fram14" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนนF</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram15" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram16" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram15" class="form-control" name="fram15" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram16" class="form-control" name="fram16" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -212,8 +211,8 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ระดับคะแนน(W)</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram17" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram18" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram17" class="form-control" name="fram17" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram18" class="form-control" name="fram18" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -221,16 +220,16 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">FM</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram19" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram20" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram19" class="form-control" name="fram19" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram20" class="form-control" name="fram20" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">I</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram21" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram22" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram21" class="form-control" name="fram21" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram22" class="form-control" name="fram22" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -240,16 +239,16 @@ include('include/condb.php');
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ผ่าน (P, S)</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram23" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram24" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram23" class="form-control" name="fram23" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram24" class="form-control" name="fram24" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">ไม่ผ่าน (U)</label>
                                             <div class="col-sm-1">
-                                                <input type="text" class="form-control" name="fram25" placeholder="จำนวน" ?>
-                                                <input type="text" class="form-control" name="fram26" placeholder="คิดเป็นร้อยละ" ?>
+                                                <input type="text" id="fram25" class="form-control" name="fram25" placeholder="จำนวน" ?>
+                                                <input type="text" id="fram26" class="form-control" name="fram26" placeholder="คิดเป็นร้อยละ" ?>
                                             </div>
                                         </div>
 
@@ -372,6 +371,118 @@ include('include/condb.php');
     <script>
         $(document).ready(function() {
             $('#dataTable').DataTable();
+            // coursename
+            // fram1
+            // fram2
+            // let coursename = $('#coursename').val("300")
+            // console.log("coursename", coursename);
+
+            var coursename = document.getElementById("coursename");
+
+            $("#fram1").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram1 = document.getElementById("fram1");
+                let IntFram1 = parseInt(fram1.value);
+                let totel = (IntFram1 / IntSumCours) * 100
+                $('#fram2').val(totel + "%")
+            });
+
+            $("#fram3").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram3 = document.getElementById("fram3");
+                let IntFram3 = parseInt(fram3.value);
+                let totel = (IntFram3 / IntSumCours) * 100
+                $('#fram4').val(totel + "%")
+            });
+
+            $("#fram5").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram5 = document.getElementById("fram5");
+                let IntFram5 = parseInt(fram5.value);
+                let totel = (IntFram5 / IntSumCours) * 100
+                $('#fram6').val(totel + "%")
+            });
+
+            $("#fram7").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram7 = document.getElementById("fram7");
+                let IntFram7 = parseInt(fram7.value);
+                let totel = (IntFram7 / IntSumCours) * 100
+                $('#fram8').val(totel + "%")
+            });
+
+            $("#fram9").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram9 = document.getElementById("fram9");
+                let IntFram9 = parseInt(fram9.value);
+                let totel = (IntFram9 / IntSumCours) * 100
+                $('#fram10').val(totel + "%")
+            });
+
+            $("#fram11").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram11 = document.getElementById("fram11");
+                let IntFram11 = parseInt(fram11.value);
+                let totel = (IntFram11 / IntSumCours) * 100
+                $('#fram12').val(totel + "%")
+            });
+
+            $("#fram13").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram13 = document.getElementById("fram13");
+                let IntFram13 = parseInt(fram13.value);
+                let totel = (IntFram13 / IntSumCours) * 100
+                $('#fram14').val(totel + "%")
+            });
+
+            $("#fram15").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram15 = document.getElementById("fram15");
+                let IntFram15 = parseInt(fram15.value);
+                let totel = (IntFram15 / IntSumCours) * 100
+                $('#fram16').val(totel + "%")
+            });
+
+            $("#fram17").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram17 = document.getElementById("fram17");
+                let IntFram17 = parseInt(fram17.value);
+                let totel = (IntFram17 / IntSumCours) * 100
+                $('#fram18').val(totel + "%")
+            });
+
+            $("#fram19").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram19 = document.getElementById("fram19");
+                let IntFram19 = parseInt(fram19.value);
+                let totel = (IntFram19 / IntSumCours) * 100
+                $('#fram20').val(totel + "%")
+            });
+
+            $("#fram21").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram21 = document.getElementById("fram21");
+                let IntFram21 = parseInt(fram21.value);
+                let totel = (IntFram21 / IntSumCours) * 100
+                $('#fram22').val(totel + "%")
+            });
+
+            $("#fram23").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram23 = document.getElementById("fram23");
+                let IntFram23 = parseInt(fram23.value);
+                let totel = (IntFram23 / IntSumCours) * 100
+                $('#fram24').val(totel + "%")
+            });
+
+            $("#fram25").keyup(function() {
+                var IntSumCours = parseInt(coursename.value);
+                let fram25 = document.getElementById("fram25");
+                let IntFram25 = parseInt(fram25.value);
+                let totel = (IntFram25 / IntSumCours) * 100
+                $('#fram26').val(totel + "%")
+            });
+
         });
     </script>
 </body>

@@ -2,6 +2,12 @@
 
 include('include/condb.php');
 
+// echo '<pre>';
+// print_r($_POST);
+// echo '</pre>';
+
+
+// exit;
 $sql = "INSERT INTO db_mko5_1
         (
             id_mko,
@@ -10,10 +16,9 @@ $sql = "INSERT INTO db_mko5_1
             coursename,
             cradit,
             coursetype,
-            responsibleteacher,
-            semester,
             semester1,            
-            asd
+            asd,
+            aii
   
         )
         VALUES
@@ -24,14 +29,31 @@ $sql = "INSERT INTO db_mko5_1
         '$_POST[coursename]',
         '$_POST[cradit]',
         '$_POST[coursetype]',
-        '$_POST[responsibleteacher]',
-        '$_POST[semester]',
         '$_POST[semester1]',
-        '$_POST[asd]'
+        '$_POST[asd]',
+        '$_POST[aii]'
         )";
 
-//$result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
-$result = $condb->query($sql);
+$result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
+$last_id = mysqli_insert_id($condb);
+
+
+
+for ($i = 0; $i < count($_POST["semester"]); $i++) {;
+    $semester = $_POST["semester"][$i];
+    $sql = "INSERT INTO db_mko5_1_map_t
+        (
+            id_db_mko5_1,
+            semester
+        )
+        VALUES
+        (
+        '$last_id',
+        '$semester'
+        )";
+
+    $result = mysqli_query($condb, $sql) or die("Error in query: $sql" . mysqli_error());
+}
 
 
 

@@ -104,24 +104,25 @@ $row = mysqli_fetch_array($result);
                                             </div>
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">อาจารย์ผู้รับผิดชอบรายวิชา</label>
-                                                <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
+                                                <!-- <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?> -->
+                                                <textarea name="nameteacher" class="form-control" cols=" 30" rows="10"></textarea>
                                             </div>
 
 
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">ห้องเรียน</label>
-                                                <input type="text" name="classroom" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
+                                                <input type="text" name="classroom" class="form-control form-control-user" placeholder="925" ?>
                                             </div>
 
 
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">วันเวลาสอน</label>
-                                                <input type="text" name="examdate" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
+                                                <input type="text" name="examdate" class="form-control form-control-user" placeholder="14/03/253" ?>
                                             </div>
 
                                             <div class="col-md-12 col-lg-6">
                                                 <label for="">กลุ่มเรียน</label>
-                                                <input type="text" name="group" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?>
+                                                <input type="text" name="group" class="form-control form-control-user" placeholder="201" ?>
                                             </div>
 
 

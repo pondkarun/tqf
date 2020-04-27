@@ -72,7 +72,7 @@ if ($result) {
     echo "</script>";
 } else {
     echo "<script type='text/javascript'>";
-    //echo "alert('Error!');";
+    // echo "alert('Error!');";
     echo "window.location='listUser.php';";
     echo "</script>";
 }

@@ -64,7 +64,7 @@ $i = 0;
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
-
+                    <a href="index.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>หน้าแรก</a>
                     <!-- Content Row -->
                     <div class="row">
                         <!-- Content Column -->
@@ -114,15 +114,25 @@ $i = 0;
 
 
                                                         <td class="text-center">
-                                                            <?php if ($_SESSION['satatus'] == 'user') { ?>
-                                                                <a href="mko3_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
-                                                                ||
-                                                                <a href="mko4_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.4</a>
-                                                                ||
+                                                            <?php if ($_SESSION['satatus'] != 'admin') { ?>
 
-                                                                <a href="mko5_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.5</a>
-                                                                ||
-                                                                <a href="mko6_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.6</a>
+
+                                                                <?php if ($_SESSION['satatus'] == 'user') { ?>
+                                                                    <a href="mko3_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.3</a>
+
+                                                                    <a href="mko5_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.5</a>
+                                                                <?php } ?>
+
+                                                                <?php if ($_SESSION['satatus'] == 'staff') { ?>
+                                                                    <a href="mko4_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.4</a>
+
+                                                                    <a href="mko6_1.php?id_mko=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">ส่ง มคอ.6</a>
+                                                                <?php } ?>
+
+
+
+
+
                                                             <?php } ?>
                                                             <?php if ($_SESSION['satatus'] == 'admin') { ?>
                                                                 <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">แก้ไข</a>

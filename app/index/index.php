@@ -52,19 +52,28 @@
 					<?php if (@$_SESSION['login_id']) { ?>
 						<li><a href="../../listUsercoure.php">รายวิชา</a></li>
 						<li><a href="../../listUser.php">รายวิชาที่เปิดสอน</a></li>
-						<li><a href="../../contact.php">สรุปรายงาน</a></li>
+						<?php if (@$_SESSION['satatus'] == 'admin') { ?>
+							<li><a href="../../contact.php">สถานะการส่ง</a></li>
+						<?php } ?>
+						<?php if (@$_SESSION['satatus'] == 'admin') { ?>
+							<li><a href="../../repotnamet.php">Printreport</a></li>
+						<?php } ?>
 					<?php } ?>
 				</ul>
 				<div class="header-btns">
-					<?php if (!@$_SESSION['login_id']) { ?>
-						<a href="../mko/login.php" class="site-btn sb-c2">Login</a>
-						<a href="../../register.php" class="site-btn sb-c3">Register</a>
-					<?php } else { ?>
-						<a href="../../logout.php" class="site-btn sb-c3">ออกจากระบบ</a>
-					<?php } ?>
+					<div>
+
+
+
+						<?php if (!@$_SESSION['login_id']) { ?>
+							<a href="../mko/login.php" class="site-btn sb-c2">Login</a>
+							<a href="../../register.php" class="site-btn sb-c3">Register</a>
+						<?php } else { ?>
+							<a href="../../logout.php" class="site-btn sb-c3">ออกจากระบบ</a>
+						<?php } ?>
+
+					</div>
 				</div>
-			</div>
-		</div>
 	</header>
 	<!-- Header section end -->
 
@@ -76,7 +85,7 @@
 				<div class="container">
 					<h2>กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติ</h2>
 					<div class="clearfix"></div>
-					<a href="coures.html" class="site-btn sb-c1">ไปยังมคอ</a>
+					<!-- <a href="coures.html" class="site-btn sb-c1">ไปยังมคอ</a> -->
 				</div>
 			</div>
 

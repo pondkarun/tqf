@@ -1,4 +1,8 @@
 <?php
+// echo '<pre>';
+// print_r($_POST);
+// echo '</pre>';
+// exit;
 
 include('include/condb.php');
 
@@ -65,10 +69,6 @@ $sql = "INSERT INTO db_mko5_2
             hrplan16,
             hrplann16,
             reason16,
-            week17,
-            hrplan17,
-            hrplann17,
-            reason17,
             coon1,
             coon2,
             coon3,
@@ -181,10 +181,6 @@ $sql = "INSERT INTO db_mko5_2
         ('$_POST[hrplan16]',
         ('$_POST[hrplann16]',
         ('$_POST[reason16]',
-        ('$_POST[week17]',
-        ('$_POST[hrplan17]',
-        ('$_POST[hrplann17]',
-        ('$_POST[reason17]',
         ('$_POST[coon1]',
         ('$_POST[coon2]',
         ('$_POST[coon3]',
