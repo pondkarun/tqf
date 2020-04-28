@@ -2,10 +2,16 @@
 include('include/condb.php');
 include('include/chklogin.php');
 $query = "SELECT * FROM dbcourse_add where 1 ";
+
+
+if ($_SESSION['satatus'] == 'staff')
+    $query .= " AND id in (18 , 19)";
+else
+    $query .= " AND id not in (18 , 19)";
+
+
 $result = mysqli_query($condb, $query);
 $i = 0;
-
-
 // echo '<pre>';
 // print_r($_SESSION);
 // echo '</pre>';

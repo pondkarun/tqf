@@ -161,7 +161,7 @@ $i = 0
                                                             if ($row['COUNT_MKO3'] > 0)
                                                                 echo 'ส่งแล้ว';
                                                             else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ3&name=<?php echo $row['usernameth']; ?>">ยังไม่ส่ง</a>
+                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ3&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
                                                             <?php } ?>
                                                         </td>
                                                         <td class="text-center">
@@ -169,7 +169,7 @@ $i = 0
                                                             if ($row['COUNT_MKO4'] > 0)
                                                                 echo 'ส่งแล้ว';
                                                             else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ4&name=<?php echo $row['usernameth']; ?>">ยังไม่ส่ง</a>
+                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ4&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
                                                             <?php } ?>
                                                         </td>
                                                         <td class="text-center">
@@ -177,7 +177,7 @@ $i = 0
                                                             if ($row['COUNT_MKO5'] > 0)
                                                                 echo 'ส่งแล้ว';
                                                             else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ5&name=<?php echo $row['usernameth']; ?>">ยังไม่ส่ง</a>
+                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ5&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
                                                             <?php } ?>
                                                         </td>
                                                         <td class="text-center">
@@ -185,7 +185,7 @@ $i = 0
                                                             if ($row['COUNT_MKO6'] > 0)
                                                                 echo 'ส่งแล้ว';
                                                             else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ6&name=<?php echo $row['usernameth']; ?>">ยังไม่ส่ง</a>
+                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ6&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
                                                             <?php } ?>
                                                         </td>
 
