@@ -73,7 +73,7 @@ $row = mysqli_fetch_array($result);
                                 </td>
                             </tr>
                         </table>
-                        <a href="course.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>บันทึกข้อมูล</a>
+
                     </div>
 
                     <div class="row">
@@ -115,7 +115,7 @@ $row = mysqli_fetch_array($result);
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">1.รหัสวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="coursename" placeholder="BUSS4801   " value="<?php echo $row['Coursecode']; ?>">
+                                                <input type="text" class="form-control" name="coursename" placeholder="BUSS4801 " value="<?php echo $row['Coursecode']; ?>">
                                             </div>
                                         </div>
 
