@@ -52,9 +52,9 @@
 					<?php if (@$_SESSION['login_id']) { ?>
 						<li><a href="../../listUsercoure.php">รายวิชา</a></li>
 						<li><a href="../../listUser.php">รายวิชาที่เปิดสอน</a></li>
-						<?php if (@$_SESSION['satatus'] == 'admin') { ?>
-							<li><a href="../../contact.php">สถานะการส่ง</a></li>
-						<?php } ?>
+
+						<li><a href="../../contact.php">สถานะการส่ง</a></li>
+
 						<?php if (@$_SESSION['satatus'] == 'admin') { ?>
 							<li><a href="../../repotnamet.php">Printreport</a></li>
 						<?php } ?>

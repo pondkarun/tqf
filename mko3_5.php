@@ -545,36 +545,7 @@
                                             </div>
                                         </div>
 
-                                        <h6>สัปดาห์ที่17</h6>
 
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">หัวข้อ/รายละเอียด</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" name="Coursecode17_1" class="form-control form-control-user" placeholder="บทที่ 10 การใช้ฟังก์ชัน Python (ต่อ) " ?>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">กิจกรรมเรียนการสอนและสื่อที่ใช้</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" name="Coursecode17_2" class="form-control form-control-user" placeholder="วิธีการสอน/และสื่่อ" ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">จำนวน ชั่วโมง</label>
-                                            <div class="col-sm-1">
-                                                <input type="text" name="Coursecode17_3" class="form-control form-control-user" placeholder="8" ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">ผู้สอน</label>
-                                            <div class="col-sm-3">
-                                                <input type="text" name="Coursecode17_4" class="form-control form-control-user" placeholder="ดร.ณัฐพล ธนเขวงสกุล" ?>
-                                            </div>
-                                        </div>
                                         <h5>2. แผนการประเมินผลการเรียนรู้</h5>
                                         <h6>กิจกรรมที่1</h6>
 
