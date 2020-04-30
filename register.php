@@ -53,11 +53,11 @@
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input class="form-control" type="password" name="password" required placeholder="พาสเวิร์ด">
+                                                    <input class="form-control" type="password" name="password" required placeholder="รหัสผ่าน">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <input class="form-control" type="password" name="password_con" required placeholder="พาสเวิร์ด อีกครั้ง">
+                                                    <input class="form-control" type="password" name="password_con" required placeholder="รหัสผ่านอีกครั้ง">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                             </div>
