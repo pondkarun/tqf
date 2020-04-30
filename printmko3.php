@@ -14,7 +14,7 @@
         <h1 class="text-center">รายงาน</h1>
         <div class="row text-center">
             <div class="col-6">
-                <p>เรื่อง : fsdfsdfsdfsdf</p>
+                <p>เรื่อง : รายงานมคอ3</p>
             </div>
             <div class="col-6">
                 <p>วันที่ : 10/02/63</p>

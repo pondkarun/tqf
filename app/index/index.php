@@ -66,10 +66,12 @@
 
 
 						<?php if (!@$_SESSION['login_id']) { ?>
-							<a href="../mko/login.php" class="site-btn sb-c2">Login</a>
-							<a href="../../register.php" class="site-btn sb-c3">Register</a>
+							<a href="../mko/login.php" class="site-btn sb-c2">ล็อคอิน</a>
+							<a href="../../register.php" class="site-btn sb-c3">สมัครสมาชิก</a>
+
 						<?php } else { ?>
 							<a href="../../logout.php" class="site-btn sb-c3">ออกจากระบบ</a>
+							<a href="../../register.php" class="site-btn sb-c1">แก้ไขข้อมูลส่วนตัว</a>
 						<?php } ?>
 
 					</div>

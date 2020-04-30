@@ -34,7 +34,7 @@
                                 <div class="col-lg-12">
                                     <div class="p-5">
                                         <div class="text-center">
-                                            <h1 class="h4 text-gray-900 mb-4">สมัครสมาชิก!</h1>
+                                            <h1 class="h4 text-gray-900 mb-4">สมัครสมาชิก</h1>
                                         </div>
                                         <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
                                             <div class="form-group row">
@@ -72,7 +72,7 @@
                                                 </div>
                                             </div>
 
-                                            <input type="submit" name="submit" value="Register" class="btn btn-primary btn-user btn-block">
+                                            <input type="submit" name="submit" value="สมัครสมาชิก" class="btn btn-primary btn-user btn-block">
                                     </div>
                                 </div>
                             </div>

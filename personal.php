@@ -47,7 +47,7 @@ $query = "SELECT * FROM tb_member ORDER BY member_id asc" or die("Error:" . mysq
                                 <div class="col-lg-12">
                                     <div class="p-5">
                                         <div class="text-center">
-                                            <h1 class="h4 text-gray-900 mb-4">แก้ไขข้อมูลส่วนตัว!</h1>
+                                            <h1 class="h4 text-gray-900 mb-4">แก้ไขข้อมูลส่วนตัว</h1>
                                         </div>
                                         <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
                                             <div class="form-group row">
@@ -59,11 +59,19 @@ $query = "SELECT * FROM tb_member ORDER BY member_id asc" or die("Error:" . mysq
                                                     <input class="form-control" type="text" name="sername" required placeholder="นามสกุล">
                                                     <span class="focus-input100"></span>
                                                 </div>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="text" name="sername" required placeholder="สาขา">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="text" name="sername" required placeholder="tokenline">
+                                                    <span class="focus-input100"></span>
+                                                </div>
 
 
 
 
-                                                <input type="submit" name="submit" value="Register" class="btn btn-primary btn-user btn-block">
+                                                <input type="submit" name="submit" value="บันทึก" class="btn btn-primary btn-user btn-block">
                                             </div>
                                     </div>
                                 </div>
