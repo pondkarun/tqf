@@ -71,7 +71,7 @@
 
 						<?php } else { ?>
 							<a href="../../logout.php" class="site-btn sb-c3">ออกจากระบบ</a>
-							<a href="../../register.php" class="site-btn sb-c1">แก้ไขข้อมูลส่วนตัว</a>
+							<a href="../../personal.php" class="site-btn sb-c1">แก้ไขข้อมูลส่วนตัว</a>
 						<?php } ?>
 
 					</div>
