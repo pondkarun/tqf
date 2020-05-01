@@ -44,7 +44,7 @@ for ($i = 0; $i < count($_POST["semester"]); $i++) {;
     $sql = "INSERT INTO db_mko5_1_map_t
         (
             id_db_mko5_1,
-            semester
+            responsibleteacher
         )
         VALUES
         (

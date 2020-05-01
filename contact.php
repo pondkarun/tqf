@@ -158,34 +158,50 @@ $i = 0
                                                         <td><?php echo $row['semester']; ?></td>
                                                         <td class="text-center">
                                                             <?php
-                                                            if ($row['COUNT_MKO3'] > 0)
-                                                                echo 'ส่งแล้ว';
-                                                            else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ3&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                            if ($row['COUNT_MKO3'] > 0) { ?>
+                                                                <span style="color:green">ส่งแล้ว</span>
+                                                            <?php } else { ?>
+                                                                <?php if ($_SESSION['satatus'] == 'admin') { ?>
+                                                                    <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ3&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                                <?php } else { ?>
+                                                                    <span style="color:red">ยังไม่ส่ง</span>
+                                                                <?php } ?>
                                                             <?php } ?>
                                                         </td>
                                                         <td class="text-center">
                                                             <?php
-                                                            if ($row['COUNT_MKO4'] > 0)
-                                                                echo 'ส่งแล้ว';
-                                                            else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ4&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                            if ($row['COUNT_MKO4'] > 0) { ?>
+                                                                <span style="color:green">ส่งแล้ว</span>
+                                                            <?php } else { ?>
+                                                                <?php if ($_SESSION['satatus'] == 'admin') { ?>
+                                                                    <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ4&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                                <?php } else { ?>
+                                                                    <span style="color:red">ยังไม่ส่ง</span>
+                                                                <?php } ?>
                                                             <?php } ?>
                                                         </td>
                                                         <td class="text-center">
                                                             <?php
-                                                            if ($row['COUNT_MKO5'] > 0)
-                                                                echo 'ส่งแล้ว';
-                                                            else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ5&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                            if ($row['COUNT_MKO5'] > 0) { ?>
+                                                                <span style="color:green">ส่งแล้ว</span>
+                                                            <?php } else { ?>
+                                                                <?php if ($_SESSION['satatus'] == 'admin') { ?>
+                                                                    <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ5&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                                <?php } else { ?>
+                                                                    <span style="color:red">ยังไม่ส่ง</span>
+                                                                <?php } ?>
                                                             <?php } ?>
                                                         </td>
                                                         <td class="text-center">
                                                             <?php
-                                                            if ($row['COUNT_MKO6'] > 0)
-                                                                echo 'ส่งแล้ว';
-                                                            else { ?>
-                                                                <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ6&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                            if ($row['COUNT_MKO6'] > 0) { ?>
+                                                                <span style="color:green">ส่งแล้ว</span>
+                                                            <?php } else { ?>
+                                                                <?php if ($_SESSION['satatus'] == 'admin') { ?>
+                                                                    <a href="line.php?Coursecode=<?php echo $row['Coursecode']; ?>&mko=มคอ6&name=<?php echo $row['usernameth']; ?>&group_class=<?php echo $row['group_class']; ?>&semester=<?php echo $row['semester']; ?>">ยังไม่ส่ง</a>
+                                                                <?php } else { ?>
+                                                                    <span style="color:red">ยังไม่ส่ง</span>
+                                                                <?php } ?>
                                                             <?php } ?>
                                                         </td>
 
