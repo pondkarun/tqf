@@ -30,6 +30,6 @@ $result = $condb->query($sql);
 if ($result) {
     echo "<script type='text/javascript'>";
     echo "alert('บันทึกข้อมูลสำเร็จ');";
-    echo "window.location='listUser.php?id_mko=$_POST[id_mko]';";
+    echo "window.location='printmko3.php?id_mko=$_POST[id_mko]';";
     echo "</script>";
 }

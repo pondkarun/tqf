@@ -129,7 +129,7 @@ $num = mysqli_num_rows($result1);*/
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">2.ชื่อวิชา</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="namecourse" placeholder="การเตรียมฝึกประสบการณ์วิชาชีพทางบริหารธุรกิจ " value="<?php echo $row['Thaisubjectname']; ?>">
+                                                <input type="text" class="form-control" name="namecouree" placeholder="การเตรียมฝึกประสบการณ์วิชาชีพทางบริหารธุรกิจ " value="<?php echo $row['Thaisubjectname']; ?>">
                                             </div>
                                         </div>
 

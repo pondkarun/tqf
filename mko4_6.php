@@ -76,7 +76,7 @@
 
                                             <label for="story"></label>
 
-                                            <textarea id="story" name="story" rows="5" cols="120">
+                                            <textarea id="story" name="story" rows="7" cols="120" disabled>
                                             ช่วงคะแนน 	 	 ค่าระดับคะแนน                
                                          90 - 100                          A    
                                          80 - 89  	 	          B+ 

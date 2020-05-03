@@ -147,7 +147,7 @@ $row = mysqli_fetch_array($result);
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">5.อาจารย์ผู้รับผิดชอบรายวิชาและอาจารย์ผู้สอน</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name="semester[]" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " value="<?php echo $row['nameteacher']; ?>">
+                                                    <input type="text" class="form-control" name="semester" placeholder="นางสาวดวงพร คงพิกุล กลุ่มเรียน " value="<?php echo $row['nameteacher']; ?>">
                                                 </div>
                                                 <div class="col-md-1">
                                                     <button type="button" name="add" class="btn btn-success btn-sm add">+</button>
