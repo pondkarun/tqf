@@ -40,7 +40,7 @@
 	<header class="header-section">
 		<div class="container">
 			<a href="index.html" class="site-logo">
-				<img src="img/logovvv.png" alt="logo">
+				<!-- <img src="img/logovvv.png" alt="logo"> -->
 			</a>
 			<!-- Switch button -->
 			<div class="nav-switch">
@@ -83,9 +83,9 @@
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="img/ss.jpg">
+			<div class="hs-item set-bg" data-setbg="img/21799999.jpg">
 				<div class="container">
-					<h2>กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติ</h2>
+					<!-- <h2>กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติ</h2> -->
 					<div class="clearfix"></div>
 					<!-- <a href="coures.html" class="site-btn sb-c1">ไปยังมคอ</a> -->
 				</div>
