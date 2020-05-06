@@ -24,8 +24,8 @@ $row = mysqli_fetch_array($result);
     <title>รายงาน</title>
 </head>
 
-<body>
-    <input onclick="javascript:window.print()" type="button" value="คลิ๊กเพื่อ Print หน้านี้" name="print2">
+<body onload="javascript:window.print()">
+
 
     <div class="container">
         <h1 class="text-center">รายงาน</h1>

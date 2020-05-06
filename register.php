@@ -71,6 +71,10 @@
                                                     <span class="focus-input100"></span>
                                                 </div>
                                             </div>
+                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                <input class="form-control" type="text" name="tokenline" required placeholder="tokenline">
+                                                <span class="focus-input100"></span>
+                                            </div>
 
                                             <input type="submit" name="submit" value="สมัครสมาชิก" class="btn btn-primary btn-user btn-block">
                                     </div>

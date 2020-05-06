@@ -25,7 +25,7 @@ $result = $condb->query($sql);
 if ($result) {
     echo "<script type='text/javascript'>";
     echo "alert('บันทึกข้อมูลสำเร็จ');";
-    echo "window.location='printmko4?id_mko=$_POST[id_mko]';";
+    echo "window.location='printmko4?id=$_POST[id_mko]';";
     echo "</script>";
 } else {
     echo $sql;

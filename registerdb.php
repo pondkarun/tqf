@@ -36,7 +36,8 @@ if ($num > 0) {
             username,
             password,
             faculty,
-            email
+            email,
+            tokenline
   
         )
         VALUES
@@ -47,7 +48,8 @@ if ($num > 0) {
         '$_POST[username]',
         '$_POST[password]',
         '$_POST[faculty]',
-        '$_POST[email]'
+        '$_POST[email]',
+        '$_POST[tokenline]'
         
   
         )";

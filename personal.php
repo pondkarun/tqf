@@ -2,15 +2,21 @@
 include('include/condb.php');
 include('include/chklogin.php');
 
-$query = "SELECT * FROM tb_member ORDER BY member_id asc" or die("Error:" . mysqli_error());
-
 
 // echo '<pre>';
 // print_r($_SESSION);
 // echo '</pre>';
-// exit;
 
-
+if ($_SESSION['login_id']) {
+    //2. query ข้อมูลจากตาราง: 
+    $sql = "SELECT * FROM users WHERE id = $_SESSION[login_id]";
+    $result = mysqli_query($condb, $sql);
+    $row = mysqli_fetch_array($result);
+} else {
+    echo "<script>";
+    echo "window.history.back()";
+    echo "</script>";
+}
 ?>
 
 <head>
@@ -49,30 +55,30 @@ $query = "SELECT * FROM tb_member ORDER BY member_id asc" or die("Error:" . mysq
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">แก้ไขข้อมูลส่วนตัว</h1>
                                         </div>
-                                        <form class="login100-form validate-form flex-sb flex-w" action="registerdb.php" method="post">
+                                        <form class="login100-form validate-form flex-sb flex-w" action="personal_db.php" method="post">
                                             <div class="form-group row">
-                                                <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input class="form-control" type="text" name="name" required placeholder="ชื่อ">
+                                                <div class="col-sm-6 ">
+                                                    <input class="form-control" type="text" name="name" required placeholder="ชื่อ" value="<?php echo $row['name']; ?>">
                                                     <span class="focus-input100"></span>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <input class="form-control" type="text" name="sername" required placeholder="นามสกุล">
+                                                    <input class="form-control" type="text" name="sername" required placeholder="นามสกุล" value="<?php echo $row['sername']; ?>">
                                                     <span class="focus-input100"></span>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <input class="form-control" type="text" name="sername" required placeholder="สาขา">
-                                                    <span class="focus-input100"></span>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <input class="form-control" type="text" name="sername" required placeholder="tokenline">
-                                                    <span class="focus-input100"></span>
-                                                </div>
-
-
-
-
-                                                <input type="submit" name="submit" value="บันทึก" class="btn btn-primary btn-user btn-block">
                                             </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="text" name="faculty" required placeholder="สาขา" value="<?php echo $row['faculty']; ?>">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="text" name="tokenline" required placeholder="tokenline" value="<?php echo $row['tokenline']; ?>">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="id" value="<?php echo $_SESSION['login_id']; ?>">
+                                            <input type="submit" name="submit" value="บันทึก" class="btn btn-primary btn-user btn-block">
+                                        </form>
                                     </div>
                                 </div>
                             </div>

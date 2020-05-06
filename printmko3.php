@@ -24,8 +24,8 @@ $row = mysqli_fetch_array($result);
     <title>รายงาน</title>
 </head>
 
-<body>
-    <input onclick="javascript:window.print()" type="button" value="คลิ๊กเพื่อ Print หน้านี้" name="print2">
+<body onload="javascript:window.print()">
+    <!-- <input onclick="javascript:window.print()" type="button" value="คลิ๊กเพื่อ Print หน้านี้" name="print2"> -->
 
     <div class="container">
         <h1 class="text-center">รายงาน</h1>
@@ -34,7 +34,7 @@ $row = mysqli_fetch_array($result);
                 <p>เรื่อง : รายงานมคอ3</p>
             </div>
             <div class="col-6">
-                <p>วันที่ : 10/02/63</p>
+                <p>วันที่ : 06/05/63</p>
             </div>
         </div>
 
