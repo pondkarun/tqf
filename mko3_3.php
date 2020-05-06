@@ -73,11 +73,10 @@
                                     <h5>คำอธิบายรายวิชา</h5>
                                     <form action="mko3_3_save.php" method="post">
 
-                                        <div class="form-group row">
-                                            <!-- <label class="col-sm-2 col-form-label">1.1</label> -->
-                                            <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="jame1">
-                                            </div>
+                                        <div class="col-md-12 col-lg-30">
+
+                                            <!-- <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?> -->
+                                            <textarea name="jame1" class="form-control" cols=" 200" rows="10"></textarea>
                                         </div>
                                         <h5>จำนวนชั่วโมงที่ใช้ต่อภาคการศึกษา</h5>
 

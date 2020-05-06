@@ -74,11 +74,10 @@
 
                                         <form>
 
-                                            <div class="form-group row">
+                                            <div class="col-md-12 col-lg-30">
                                                 <label class="col-sm-4 col-form-label">1.เอกสารและตำราหลัก</label>
-                                                <div class="col-sm-12">
-                                                    <input type="text" name="documents" class="form-control form-control-user" placeholder="ณัฐพล ธนเขวงสกุล (2562) เอกสารประกอบการสอนวิชาการเขียนโปรแกรมเบื้องต้นทางธุรกิจ.กรุงเทพ" ?>
-                                                </div>
+                                                <!-- <input type="text" name="nameteacher" class="form-control form-control-user" placeholder="อาจารย์ผู้รับผิดชอบรายวิชา" ?> -->
+                                                <textarea name="documents" class="form-control" cols=" 200" rows="10"></textarea>
                                             </div>
 
                                             <div class="form-group row">

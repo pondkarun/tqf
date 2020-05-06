@@ -25,6 +25,7 @@ $row = mysqli_fetch_array($result);
 </head>
 
 <body onload="javascript:window.print()">
+    <li class="active"><a href="index.php">หน้าแรก</a></li>
     <!-- <input onclick="javascript:window.print()" type="button" value="คลิ๊กเพื่อ Print หน้านี้" name="print2"> -->
 
     <div class="container">

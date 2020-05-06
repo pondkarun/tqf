@@ -25,7 +25,7 @@ $row = mysqli_fetch_array($result);
 </head>
 
 <body onload="javascript:window.print()">
-
+    <li class="active"><a href="index.php">หน้าแรก</a></li>
 
     <div class="container">
         <h1 class="text-center">รายงาน</h1>
